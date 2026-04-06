@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rizal Azis — Digital Content & Media Enthusiast</title>
+  <meta name="description"
+    content="Portfolio pribadi Rizal Azis Nur Abdur Rasyid — Mahasiswa Psikologi, Digital Content Creator, dan aktif di organisasi serta media digital." />
+  <meta name="keywords"
+    content="portofolio, digital content creator, psikologi, media digital, desain grafis, Rizal Azis" />
+  <meta property="og:title" content="Rizal Azis — Digital Content & Media Enthusiast" />
+  <meta property="og:description"
+    content="Portofolio pribadi mahasiswa psikologi yang aktif di dunia digital, konten kreatif, dan inklusivitas." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+
+  <!-- ── Custom Cursor ──────────────────────────────────────── -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── Lightbox ───────────────────────────────────────────── -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Sebelumnya">‹</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Selanjutnya">›</button>
+    <div class="lb-counter" id="lbCounter"></div>
+    <div class="lightbox-caption">
+      <h4 id="lightboxTitle"></h4>
+      <p id="lightboxDesc"></p>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo">rizalazis.xyz</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#portfolio">Portokreatif</a></li>
+        <li><a href="#certificates">Pelatihan</a></li>
+        <li><a href="#experience">Organisasi</a></li>
+        <li><a href="#volunteer">Kepanitiaan</a></li>
+        <li><a href="#internship">Magang</a></li>
+        <li><a href="#projects">Projek</a></li>
+        <li><a href="#other-certs">Other</a></li>
+        <li><a href="#contact" class="nav-cta">Kontak</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-grid"></div>
+
+    <div class="container hero-inner">
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>●</span> Open for Collaboration &amp; Opportunities
+        </div>
+
+        <h1 class="hero-title">
+          <span class="typed-text gradient-text" id="heroTyped"></span><span class="cursor-blink"></span>
+        </h1>
+
+        <p class="hero-sub">
+          Mahasiswa S1 Psikologi Universitas Brawijaya yang berfokus pada
+          <strong>strategi komunikasi digital</strong>, pengelolaan media, dan
+          advokasi inklusivitas. Berpengalaman dalam mengembangkan konten kreatif
+          untuk meningkatkan kesadaran keberagaman serta keterlibatan komunitas.
+        </p>
+
+        <div class="hero-tags">
+          <span class="hero-tag">📱 Strategi Digital</span>
+          <span class="hero-tag">🎨 Desain Grafis</span>
+          <span class="hero-tag">🧠 Psikologi</span>
+          <span class="hero-tag">🤝 Inklusivitas</span>
+          <span class="hero-tag">📢 Komunikasi</span>
+        </div>
+
+        <div class="hero-btns">
+          <a href="#portfolio" class="btn btn-primary" id="btnLihatKarya">
+            <span>🎨</span> Lihat Karya
+          </a>
+          <a href="assets/cv/Rizal_CV.pdf" class="btn btn-outline" download id="btnDownloadCV">
+            <span>📄</span> Download CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Organisasi & Komunitas</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Event & Proyek</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Pelatihan & Sertifikasi</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="hero-visual">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo" id="heroPhoto">
+            <img src="assets/images/profile.jpg" alt="Foto Profil" class="hero-img">
+          </div>
+
+          <div class="hero-float-badge hfb-1">
+            <span class="icon">🧠</span> Psikologi UB
+          </div>
+          <div class="hero-float-badge hfb-2">
+            <span class="icon">📱</span> Digital Media
+          </div>
+          <div class="hero-float-badge hfb-3">
+            <span class="icon">🩸</span> KSR PMI Unit Brawijaya
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       TENTANG SAYA
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Kiri: Bio -->
+        <div class="about-text reveal-left">
+          <span class="badge">Tentang Saya</span>
+          <h2 class="section-title">Mengenal <span class="gradient-text">Rizal Azis</span></h2>
+          <p>
+            Halo! Saya <strong>Rizal Azis Nur Abdur Rasyid</strong>, mahasiswa Psikologi yang
+            memiliki passion besar di dunia media digital dan konten kreatif. Saya percaya bahwa
+            pemahaman psikologi manusia adalah fondasi komunikasi visual yang efektif.
+          </p>
+          <p>
+            Aktif di berbagai organisasi kemahasiswaan seperti <strong>KSR PMI Universitas Brawijaya</strong>,
+            <strong>FORMAPI</strong>, dan berbagai kepanitiaan, saya terlatih dalam kepemimpinan,
+            manajemen tim, dan dokumentasi event.
+          </p>
+          <p>
+            Di sisi digital, saya berpengalaman dalam produksi konten Instagram, desain poster,
+            foto/video event, dan campaign komunikasi yang inklusif dan berdampak.
+          </p>
+
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label">Universitas</span>
+              <span class="info-value">Universitas Brawijaya</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Jurusan</span>
+              <span class="info-value">Psikologi</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Lokasi</span>
+              <span class="info-value">Malang, Jawa Timur</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Status</span>
+              <span class="info-value">Aktif Berorganisasi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kanan: Skills -->
+        <div class="skills-section reveal-right">
+          <h3>Technical Skills</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Adobe Photoshop</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Adobe Illustrator</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Canva & Figma</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Foto & Video Editing</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Content Strategy</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="78"></div>
+            </div>
+          </div>
+
+          <div class="soft-skills">
+            <h3>Soft Skills</h3>
+            <div class="tags-cloud">
+              <span class="skill-tag">🎯 Leadership</span>
+              <span class="skill-tag">💬 Communication</span>
+              <span class="skill-tag">🤝 Teamwork</span>
+              <span class="skill-tag">⏱ Time Management</span>
+              <span class="skill-tag">🧠 Critical Thinking</span>
+              <span class="skill-tag">🎨 Creativity</span>
+              <span class="skill-tag">💡 Problem Solving</span>
+              <span class="skill-tag">🌍 Inklusivitas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       PORTFOLIO
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="section-pad" id="portfolio">
+    <div class="container">
+      <div class="portfolio-header reveal">
+        <span class="badge">Karya Saya</span>
+        <h2 class="section-title">Portfolio <span class="gradient-text">Kreatif</span></h2>
+        <p class="section-subtitle">
+          Kumpulan karya di bidang desain, dokumentasi event, dan konten digital
+          yang mencerminkan semangat kreatif dan komunikasi yang inklusif.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all" id="filterAll">Semua</button>
+        <button class="filter-btn" data-filter="design" id="filterDesign">🎨 Editing &amp; Desain</button>
+        <button class="filter-btn" data-filter="doc" id="filterDoc">📸 Dokumentasi</button>
+        <button class="filter-btn" data-filter="digital" id="filterDigital">📱 Konten Digital</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- Design items -->
+        <div class="portfolio-item" data-cat="design" data-title="Poster Event Organisasi"
+          data-desc="Desain poster untuk acara KSR PMI Universitas Brawijaya">
+          <div class="port-placeholder port-ph-1">🎨</div>
+          <!-- Ganti dengan: <img src="assets/images/portfolio/design/poster-1.jpg" alt="Poster Event" class="portfolio-img" /> -->
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Poster Event Organisasi</h4>
+            <p>Desain &amp; Ilustrasi · KSR PMI UB</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="design" data-title="Konten Instagram Feed"
+          data-desc="Desain feed Instagram untuk kampanye sosial inklusivitas">
+          <div class="port-placeholder port-ph-2">✨</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Konten Instagram Feed</h4>
+            <p>Social Media Design · Campaign</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="design" data-title="Infografis Edukasi"
+          data-desc="Infografis edukasi psikologi untuk media sosial">
+          <div class="port-placeholder port-ph-3">📊</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Infografis Edukasi</h4>
+            <p>Infografis · Psikologi &amp; Edukasi</p>
+          </div>
+        </div>
+
+        <!-- Documentation items -->
+        <div class="portfolio-item" data-cat="doc" data-title="Dokumentasi Donor Darah"
+          data-desc="Dokumentasi kegiatan donor darah yang diselenggarakan KSR PMI UB">
+          <div class="port-placeholder port-ph-4">📸</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Dokumentasi Donor Darah</h4>
+            <p>Event Photography · KSR PMI UB</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="doc" data-title="Dokumentasi Seminar"
+          data-desc="Liputan foto seminar dan workshop kemahasiswaan">
+          <div class="port-placeholder port-ph-5">🎤</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Dokumentasi Seminar</h4>
+            <p>Event Documentation · Seminar</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="doc" data-title="Dokumentasi Pelatihan"
+          data-desc="Foto dan video dokumentasi kegiatan pelatihan kepemimpinan">
+          <div class="port-placeholder port-ph-6">🏋️</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Dokumentasi Pelatihan</h4>
+            <p>Training Documentation · Leadership</p>
+          </div>
+        </div>
+
+        <!-- Digital Content items -->
+        <div class="portfolio-item" data-cat="digital" data-title="Campaign Inklusivitas"
+          data-desc="Campaign digital untuk promosi inklusivitas dan keberagaman">
+          <div class="port-placeholder port-ph-7">🌈</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Campaign Inklusivitas</h4>
+            <p>Digital Campaign · Inklusivitas</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="digital" data-title="Desain Edukasi Psikologi"
+          data-desc="Konten edukasi psikologi untuk platform digital">
+          <div class="port-placeholder port-ph-8">🧠</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Desain Edukasi Psikologi</h4>
+            <p>Educational Content · Psikologi</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="digital" data-title="Feed Instagram Tematik"
+          data-desc="Desain feed Instagram tematik dengan konsep visual yang konsisten">
+          <div class="port-placeholder port-ph-9">📱</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Feed Instagram Tematik</h4>
+            <p>Social Media · Instagram</p>
+          </div>
+        </div>
+      </div><!-- /portfolio-grid -->
+
+      <!-- Hint -->
+      <div class="add-hint reveal">
+        <span class="icon">📁</span>
+        <span>
+          Tambahkan karya kamu ke folder
+          <code>assets/images/portfolio/design/</code>,
+          <code>documentation/</code>, atau
+          <code>digital/</code> — lalu perbarui HTML sesuai panduan di README.md
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       PELATIHAN
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="certificates section-pad" id="certificates">
+    <div class="container">
+      <span class="badge reveal">Pelatihan</span>
+      <h2 class="section-title reveal">Riwayat <span class="gradient-text">Pelatihan</span></h2>
+      <p class="section-subtitle reveal">
+        Berbagai pelatihan yang telah diikuti untuk memperkaya
+        kompetensi.
+      </p>
+
+      <div class="cert-track-wrap reveal">
+        <div class="cert-track" id="certTrack">
+
+          <!-- 1. Pelatihan Administrasi Perkantoran — BLK Boyolali, Mei 2022 -->
+          <div class="cert-card" data-title="Pelatihan Administrasi Perkantoran"
+            data-desc="BLK Kabupaten Boyolali · Mei 2022">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-blk-boyolali.jpg" alt="Pelatihan Administrasi Perkantoran" />
+              <span class="cert-badge">Training</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Pelatihan Administrasi Perkantoran</h4>
+              <div class="cert-issuer">BLK Kabupaten Boyolali</div>
+              <p>Pelatihan vokasi administrasi perkantoran mencakup manajemen arsip, korespondensi, dan operasional
+                kantor.</p>
+              <div class="cert-date">📅 Mei 2022</div>
+            </div>
+          </div>
+
+
+
+          <!-- 3. Basic Sign Language Training — PLD UB, Oktober 2023 -->
+          <div class="cert-card" data-title="Basic Sign Language Training"
+            data-desc="Pusat Layanan Disabilitas (PLD) Universitas Brawijaya · Malang · Oktober 2023">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-bisindo-pld-ub.jpg" alt="Basic Sign Language Training PLD UB" />
+              <span class="cert-badge">Training</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Basic Sign Language Training</h4>
+              <div class="cert-issuer">Pusat Layanan Disabilitas (PLD) — Universitas Brawijaya</div>
+              <p>Pelatihan dasar bahasa isyarat (BISINDO) sebagai bentuk komitmen terhadap inklusivitas dan
+                aksesibilitas komunikasi.</p>
+              <div class="cert-date">📅 Oktober 2023</div>
+            </div>
+          </div>
+
+          <!-- 4. Navigasi Digital & Komunikasi Radio — ASB Navigator Indonesia, Juni 2024 -->
+          <div class="cert-card" data-title="Pelatihan Navigasi Digital &amp; Komunikasi Radio"
+            data-desc="ASB Navigator Indonesia · Balai Merdeka, Universitas Merdeka Malang · 22 Juni 2024 · No. 022/01.VII/ASB-NAV-KOM/2024">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-asb-navigator.png" alt="Sertifikat ASB Navigator Indonesia" />
+              <span class="cert-badge">Sertifikat</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Navigasi Digital &amp; Komunikasi Radio</h4>
+              <div class="cert-issuer">ASB Navigator Indonesia · Malang</div>
+              <p>Pelatihan Navigasi Digital Dan Komunikasi Radio — No. 022/01.VII/ASB-NAV-KOM/2024, di Balai Merdeka
+                Universitas Merdeka Malang.</p>
+              <div class="cert-date">📅 22 Juni 2024</div>
+            </div>
+          </div>
+
+          <!-- 5. Pelatihan Kegawatdaruratan (Kebakaran & P3K) — K3L UB, November 2024 -->
+          <div class="cert-card" data-title="Pelatihan Kegawatdaruratan (Kebakaran &amp; P3K)"
+            data-desc="Divisi K3L Universitas Brawijaya · Malang · November 2024">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-k3l-ub.jpg" alt="Pelatihan Kegawatdaruratan K3L UB" />
+              <span class="cert-badge">Training</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Pelatihan Kegawatdaruratan (Kebakaran &amp; P3K)</h4>
+              <div class="cert-issuer">Divisi K3L — Universitas Brawijaya</div>
+              <p>Pelatihan penanganan kegawatdaruratan kebakaran dan pertolongan pertama pada kecelakaan (P3K) di
+                lingkungan kampus.</p>
+              <div class="cert-date">📅 November 2024</div>
+            </div>
+          </div>
+
+          <!-- 6. Psychological First Aid (PFA) — Subdit Konseling UB, Februari 2025 -->
+          <div class="cert-card" data-title="Pelatihan Psychological First Aid (PFA)"
+            data-desc="Subdirektorat Layanan Konseling dan Pencegahan Kekerasan Seksual &amp; Perundungan, Universitas Brawijaya · Februari 2025">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-pfa-ub.jpg" alt="Pelatihan Psychological First Aid UB" />
+              <span class="cert-badge">Sertifikat</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Psychological First Aid (PFA)</h4>
+              <div class="cert-issuer">Subdirektorat Konseling &amp; Pencegahan KS — Universitas Brawijaya</div>
+              <p>Pelatihan Psychological First Aid untuk memberikan dukungan psikologis awal kepada individu yang
+                mengalami krisis atau trauma.</p>
+              <div class="cert-date">📅 Februari 2025</div>
+            </div>
+          </div>
+
+          <!-- 7. Pelatihan Admin HR — Talenesia, Maret 2026 -->
+          <div class="cert-card" data-title="Pelatihan Admin HR" data-desc="Talenesia Online Training · Maret 2026">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-talenesia-hr.jpg" alt="Pelatihan Admin HR Talenesia" />
+              <span class="cert-badge">Training</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Pelatihan Admin HR</h4>
+              <div class="cert-issuer">Talenesia Online Training</div>
+              <p>Pelatihan administrasi Human Resources mencakup pengelolaan data karyawan, rekrutmen, dan administrasi
+                SDM secara online.</p>
+              <div class="cert-date">📅 Maret 2026</div>
+            </div>
+          </div>
+
+          <!-- 8. Training HR Staff — Quantum HR Indonesia, Maret 2026 (2 sertifikat) -->
+          <div class="cert-card cert-card-multi"
+            data-images='["assets/images/certificates/cert-quantum-hr-completion.png","assets/images/certificates/cert-quantum-hr-learning.png"]'
+            data-titles='["Certificate of Completion","25 Learning Hours Certificate"]'
+            data-descs='["Quantum HR Indonesia · HR Staff Online Training Batch 40 · No. 370/SRT/QHR/III/2026 · 28-29 Maret 2026","Quantum HR Indonesia · Total 25 Jam Pembelajaran · UU Ketenagakerjaan, Recruitment, Payroll, SOP &amp; PKB · Nilai: 80"]'>
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-quantum-hr-completion.png"
+                alt="HR Staff Certificate Quantum HR" />
+              <span class="cert-badge cert-badge-multi">📄 2 Sertifikat</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk lihat semua</div>
+            </div>
+            <div class="cert-body">
+              <h4>Training HR Staff Online — Batch 40</h4>
+              <div class="cert-issuer">Quantum HR Indonesia · PT Kompeten Indonesia Unggul</div>
+              <p>Certificate of Completion + 25 Learning Hours. Rekrutmen, payroll, UU Ketenagakerjaan, SOP, dan
+                manajemen SDM.</p>
+              <div class="cert-date">📅 28–29 Maret 2026</div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-title="Microsoft Office Desktop Application"
+            data-desc="Trust Training Partners & Universitas Brawijaya · No. 25UBC12124084 · 23 Desember 2025">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-ms-office-trust.jpg"
+                alt="Microsoft Office Desktop Application" />
+              <span class="cert-badge">Professional</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Microsoft Office Desktop Application</h4>
+              <div class="cert-issuer">Trust Training Partners · Microsoft Partner</div>
+              <p>Sertifikasi kompetensi profesional dalam pengoperasian aplikasi perkantoran Microsoft Office dengan
+                predikat "Excellent Grade".</p>
+              <div class="cert-date">📅 23 Desember 2025</div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-title="Kita Sama Youth Capacity Building"
+            data-desc="The Asia Foundation & Kita Sama · April - Juli 2023">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-kita-sama-foundation.jpg"
+                alt="Kita Sama Youth Capacity Building" />
+              <span class="cert-badge">International</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Kita Sama Youth Capacity Building</h4>
+              <div class="cert-issuer">The Asia Foundation · US Embassy Jakarta</div>
+              <p>Pelatihan intensif pengembangan kapasitas pemuda dalam advokasi inklusivitas dan kepemimpinan sosial.
+              </p>
+              <div class="cert-date">📅 April – Juli 2023</div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-title="DBS BERSIAP 2024 Graduate"
+            data-desc="PT Bank DBS Indonesia & KONEKIN · 4 September 2024">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-dbs-bersiap-graduate.jpg" alt="DBS BERSIAP 2024 Graduate" />
+              <span class="cert-badge">Mentoring</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>DBS BERSIAP 2024 Graduate</h4>
+              <div class="cert-issuer">PT Bank DBS Indonesia · KONEKIN</div>
+              <p>Penyelesaian program workshop dan mentoring intensif untuk kesiapan kerja dan pemberdayaan ekonomi
+                inklusif.</p>
+              <div class="cert-date">📅 April – Juli 2024</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="cert-nav">
+        <button class="cert-btn" id="certPrev" aria-label="Sebelumnya">‹</button>
+        <button class="cert-btn" id="certNext" aria-label="Selanjutnya">›</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       PENGALAMAN ORGANISASI  (LinkedIn-style)
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="section-pad" id="experience">
+    <div class="container">
+      <span class="badge reveal">Rekam Jejak</span>
+      <h2 class="section-title reveal">Pengalaman <span class="gradient-text">Organisasi</span></h2>
+      <p class="section-subtitle reveal">
+        Perjalanan aktif di berbagai organisasi kemahasiswaan yang membentuk
+        karakter kepemimpinan, kolaborasi, dan kepedulian sosial.
+      </p>
+
+      <div class="exp-container">
+
+        <!-- KSR PMI UB -->
+        <div class="exp-group reveal">
+          <div class="exp-org-header">
+            <div class="exp-org-logo">
+              <img src="assets/logo/ksr.png" alt="Logo KSR PMI UB">
+            </div>
+            <div class="exp-org-info">
+              <h3>KSR PMI Universitas Brawijaya</h3>
+              <div class="org-type">Korps Sukarela PMI · Organisasi Kemahasiswaan</div>
+              <div class="org-total">
+                <span>📅</span> 2024 – 2025
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-role-list">
+
+            <!-- Kepala Divisi -->
+            <div class="exp-role">
+              <div class="exp-role-timeline">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-role-content">
+                <h4>Ketua Bidang 2</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Nov 2024 – Nov 2025</span>
+                  <span class="exp-type-badge badge-org">Organisasi</span>
+                </div>
+                <p class="exp-role-desc">
+                  Memimpin dan mengelola tiga sub-divisi, mengoordinasikan program kerja antar divisi,
+                  serta merancang strategi organisasi untuk meningkatkan efektivitas operasional dan
+                  keterlibatan anggota.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Leadership</span>
+                  <span class="exp-skill-chip">Team Management</span>
+                  <span class="exp-skill-chip">Strategic Planning</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Koordinator Media -->
+            <div class="exp-role">
+              <div class="exp-role-timeline">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-role-content">
+                <h4>Koordinator Konten Digital & Media</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Jan 2024 – Nov 2024</span>
+                  <span class="exp-type-badge badge-org">Organisasi</span>
+                </div>
+                <p class="exp-role-desc">
+                  Mengembangkan strategi komunikasi digital, mengelola konten multimedia,
+                  serta meningkatkan engagement dan visibilitas organisasi melalui media sosial
+                  dan kampanye digital.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Content Strategy</span>
+                  <span class="exp-skill-chip">Social Media Management</span>
+                  <span class="exp-skill-chip">Content Creation</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /KSR PMI -->
+
+        <!-- FORMAPI -->
+        <div class="exp-group reveal d2">
+          <div class="exp-org-header">
+            <div class="exp-org-logo">
+              <img src="assets/logo/formapi.jpg" alt="Logo Formapi">
+            </div>
+            <div class="exp-org-info">
+              <h3>FORMAPI – Universitas Brawijaya</h3>
+              <div class="org-type">Forum Mahasiswa Peduli Inklusi · Organisasi Kampus</div>
+              <div class="org-total">
+                <span>📅</span> 2024 · 1 tahun
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-role-list">
+            <div class="exp-role">
+              <div class="exp-role-timeline">
+                <div class="exp-dot"></div>
+              </div>
+
+              <div class="exp-role-content">
+                <h4>Inclusivity Advocate</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Januari 2024 – Desember 2024</span>
+                  <span class="exp-type-badge badge-org">Organisasi</span>
+                </div>
+
+                <p class="exp-role-desc">
+                  Mengedukasi mahasiswa terkait isu inklusivitas, kesetaraan, dan keberagaman melalui
+                  program diskusi, kampanye sosial, dan media digital. Menginisiasi serta mendukung
+                  pelaksanaan program inklusi, serta mengembangkan strategi komunikasi berbasis empati
+                  untuk meningkatkan partisipasi mahasiswa.
+                </p>
+
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Inklusi Sosial</span>
+                  <span class="exp-skill-chip">Mental Health Advocacy</span>
+                  <span class="exp-skill-chip">Strategi Komunikasi</span>
+                  <span class="exp-skill-chip">Public Campaign</span>
+                  <span class="exp-skill-chip">Kolaborasi Tim</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /FORMAPI -->
+
+        <!-- PMI -->
+        <div class="exp-group reveal d3">
+          <div class="exp-org-header">
+            <div class="exp-org-logo">
+              <img src="assets/logo/pmi.jpg" alt="Logo PMI">
+            </div>
+            <div class="exp-org-info">
+              <h3>Palang Merah Indonesia (PMI) Kota Malang</h3>
+              <div class="org-type">Organisasi Kemanusiaan · Kota Malang</div>
+              <div class="org-total">
+                <span>📅</span> 2024 – Sekarang
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-role-list">
+            <div class="exp-role">
+              <div class="exp-role-timeline">
+                <div class="exp-dot"></div>
+              </div>
+
+              <div class="exp-role-content">
+                <h4>Digital Team</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Oktober 2024 – Sekarang</span>
+                  <span class="exp-type-badge badge-org">Organisasi</span>
+                </div>
+
+                <p class="exp-role-desc">
+                  Bertanggung jawab dalam pengelolaan dan optimalisasi platform digital
+                  untuk mendukung operasional organisasi. Mengembangkan strategi komunikasi
+                  digital guna meningkatkan jangkauan informasi, efektivitas penyampaian pesan,
+                  serta keterlibatan masyarakat terhadap kegiatan kemanusiaan.
+                </p>
+
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Digital Strategy</span>
+                  <span class="exp-skill-chip">Social Media Management</span>
+                  <span class="exp-skill-chip">Content Development</span>
+                  <span class="exp-skill-chip">Public Communication</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /PMI -->
+
+        <!-- Komunitas Peduli Inklusi Nusantara -->
+        <div class="exp-group reveal d4">
+          <div class="exp-org-header">
+            <div class="exp-org-logo">
+              <img src="assets/logo/kpinn.jpg" alt="Logo KPINN">
+            </div>
+            <div class="exp-org-info">
+              <h3>Komunitas Peduli Inklusi Nusantara</h3>
+              <div class="org-type">Komunitas Sosial · Kota Malang</div>
+              <div class="org-total">
+                <span>📅</span> 2023 · 10 bulan
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-role-list">
+            <div class="exp-role">
+              <div class="exp-role-timeline">
+                <div class="exp-dot"></div>
+              </div>
+
+              <div class="exp-role-content">
+                <h4>Content Creator</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Maret 2023 – Desember 2023</span>
+                  <span class="exp-type-badge badge-org">Komunitas</span>
+                </div>
+
+                <p class="exp-role-desc">
+                  Bertanggung jawab dalam perancangan, pembuatan, dan pengelolaan konten kreatif
+                  yang informatif dan menarik untuk meningkatkan kesadaran terkait isu inklusivitas
+                  dan keberagaman. Menggunakan berbagai platform digital seperti media sosial,
+                  desain grafis, video, dan penulisan konten untuk menyampaikan pesan komunitas
+                  secara efektif.
+                </p>
+
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Content Creation</span>
+                  <span class="exp-skill-chip">Graphic Design</span>
+                  <span class="exp-skill-chip">Social Media Management</span>
+                  <span class="exp-skill-chip">Storytelling</span>
+                  <span class="exp-skill-chip">Creative Strategy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Komunitas Peduli Inklusi Nusantara -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       KEPANITIAAN & VOLUNTEER  (LinkedIn-style)
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="section-pad" id="volunteer" style="background: var(--bg-secondary);">
+    <div class="container">
+      <span class="badge reveal">Kepanitiaan &amp; Relawan</span>
+      <h2 class="section-title reveal">Kepanitiaan &amp; <span class="gradient-text">Volunteer</span></h2>
+      <p class="section-subtitle reveal">
+        Pengalaman aktif sebagai panitia dan relawan di berbagai event kemahasiswaan,
+        sosial, dan kemanusiaan — membangun manajemen event dan kerja tim.
+      </p>
+
+      <div class="exp-container">
+
+        <!-- Card 1 -->
+        <div class="exp-standalone reveal">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">📸</div>
+              <div class="exp-role-content">
+                <h4>Koordinator Publikasi & Dokumentasi — HUT RI ke-78 PPM Al Kautsar</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Agustus 2023</span>
+                  <span class="exp-type-badge badge-com">Kepanitiaan</span>
+                </div>
+                <p class="exp-role-desc">
+                  Mengkoordinasikan seluruh kegiatan publikasi dan dokumentasi acara,
+                  termasuk produksi konten visual, pengambilan foto/video, serta distribusi
+                  informasi melalui media sosial untuk meningkatkan jangkauan acara.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Leadership</span>
+                  <span class="exp-skill-chip">Media Management</span>
+                  <span class="exp-skill-chip">Documentation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="exp-standalone reveal d1">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">🎪</div>
+              <div class="exp-role-content">
+                <h4>Event Organizer — HUT KSR Brawijaya & Back To School</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 2023 – 2024</span>
+                  <span class="exp-type-badge badge-com">Kepanitiaan</span>
+                </div>
+                <p class="exp-role-desc">
+                  Bertanggung jawab dalam perencanaan, koordinasi, dan eksekusi acara,
+                  mulai dari konsep, logistik, hingga pelaksanaan. Berperan aktif dalam
+                  memastikan kelancaran event dan koordinasi tim lintas divisi.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Event Management</span>
+                  <span class="exp-skill-chip">Project Coordination</span>
+                  <span class="exp-skill-chip">Teamwork</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="exp-standalone reveal d2">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">📢</div>
+              <div class="exp-role-content">
+                <h4>Humas & Fundraising — HUT KSR Brawijaya 44</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Juli – September 2024</span>
+                  <span class="exp-type-badge badge-com">Kepanitiaan</span>
+                </div>
+                <p class="exp-role-desc">
+                  Mengelola komunikasi eksternal dan menjalin kerja sama dengan sponsor
+                  untuk mendukung kegiatan organisasi, serta melakukan penggalangan dana
+                  guna memastikan keberlangsungan program.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Public Relations</span>
+                  <span class="exp-skill-chip">Fundraising</span>
+                  <span class="exp-skill-chip">Communication</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="exp-standalone reveal d3">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">📰</div>
+              <div class="exp-role-content">
+                <h4>Publikasi & Dokumentasi — Multiple Events</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 2022 – 2024</span>
+                  <span class="exp-type-badge badge-com">Kepanitiaan</span>
+                </div>
+                <p class="exp-role-desc">
+                  Berkontribusi dalam berbagai kegiatan seperti PKKMB FISIP UB, Donor Darah KSR,
+                  Sowan Deso, Baris Science Festival, Diklatsar KSR, dan kegiatan sosial lainnya
+                  dengan fokus pada dokumentasi, pembuatan konten publikasi, serta distribusi
+                  informasi melalui media digital.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Content Creation</span>
+                  <span class="exp-skill-chip">Photography</span>
+                  <span class="exp-skill-chip">Social Media</span>
+                  <span class="exp-skill-chip">Visual Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="exp-standalone reveal d4">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">🎧</div>
+              <div class="exp-role-content">
+                <h4>Editor Podcast — Vorbi Kopinus</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 September – Desember 2023</span>
+                  <span class="exp-type-badge badge-vol">Volunteer</span>
+                </div>
+                <p class="exp-role-desc">
+                  Mengelola dan menyunting audio podcast untuk memastikan kualitas suara
+                  yang optimal, serta mendukung produksi konten digital berbasis audio.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Audio Editing</span>
+                  <span class="exp-skill-chip">Content Production</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="exp-standalone reveal d5">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">🎨</div>
+              <div class="exp-role-content">
+                <h4>Visual Design & Storytelling — Humanity KSR Brawijaya</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Maret – Desember 2023</span>
+                  <span class="exp-type-badge badge-com">Kepanitiaan</span>
+                </div>
+                <p class="exp-role-desc">
+                  Mendesain layout majalah dan elemen visual (tipografi, ilustrasi, gambar)
+                  untuk menghasilkan konten yang estetis, informatif, dan komunikatif.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Graphic Design</span>
+                  <span class="exp-skill-chip">Layout Design</span>
+                  <span class="exp-skill-chip">Creative Thinking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /exp-container -->
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       PENGALAMAN MAGANG
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="internship section-pad" id="internship">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">Pengalaman Magang</span>
+        <h2 class="section-title">Magang &amp; <span class="gradient-text">Praktik Kerja</span></h2>
+        <p class="section-sub">Pengalaman kerja nyata di lingkungan profesional yang membentuk kemampuan praktis dan
+          wawasan industri.</p>
+      </div>
+
+      <div class="internship-list">
+
+        <!-- Tambahkan card magang di sini -->
+        <div class="intern-card reveal">
+          <div class="intern-card-left">
+            <div class="intern-logo">🏢</div>
+            <div class="intern-timeline-line"></div>
+          </div>
+          <div class="intern-card-body">
+            <div class="intern-header">
+              <div>
+                <h3 class="intern-title">Staf Magang Rehabilitasi Sosial</h3>
+                <div class="intern-company">Dinas Sosial Kabupaten Boyolali</div>
+              </div>
+              <div class="intern-meta">
+                <span class="intern-period">📅 Februari 2025</span>
+                <span class="intern-type">Magang</span>
+              </div>
+            </div>
+            <p class="intern-desc">
+              Melakukan praktik kerja lapangan di Bidang Rehabilitasi Sosial, membantu dalam proses asesmen, 
+              pendampingan sosial, serta administrasi data penyandang disabilitas dan kelompok rentan di wilayah Kabupaten Boyolali.
+            </p>
+            <div class="intern-skills">
+              <span class="intern-chip">Rehabilitasi Sosial</span>
+              <span class="intern-chip">Social Assessment</span>
+              <span class="intern-chip">Administrasi Publik</span>
+              <span class="intern-chip">Empathetic Communication</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       PROJEK
+  ═══════════════════════════════════════════════════════════ -->
+
+  <section class="projects section-pad" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">Projek</span>
+        <h2 class="section-title">Projek &amp; <span class="gradient-text">Karya Mandiri</span></h2>
+        <p class="section-sub">Proyek pribadi, kolaboratif, dan akademik yang mencerminkan kemampuan teknis dan
+          kreativitas.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT CARD 1 -->
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/images/projects/project-1.jpg" alt="Projek 1" class="project-img" />
+            <div class="project-overlay">
+              <span class="project-status status-done">✅ Selesai</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Desain Grafis</span>
+              <span class="project-tag">Media Sosial</span>
+            </div>
+            <h3 class="project-title">Kampanye Digital Inklusivitas</h3>
+            <p class="project-desc">Merancang dan mengelola kampanye digital bertema inklusivitas di media sosial,
+              mencakup desain konten, copywriting, dan analitik engagement.</p>
+            <div class="project-footer">
+              <div class="project-stack">
+                <span class="stack-chip">Canva</span>
+                <span class="stack-chip">Instagram</span>
+                <span class="stack-chip">Photoshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 2 -->
+        <div class="project-card reveal d1">
+          <div class="project-img-wrap">
+            <img src="assets/images/projects/project-2.jpg" alt="Projek 2" class="project-img" />
+            <div class="project-overlay">
+              <span class="project-status status-progress">🔄 Ongoing</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Dokumentasi</span>
+              <span class="project-tag">Video</span>
+            </div>
+            <h3 class="project-title">Dokumentasi Kegiatan Kemanusiaan</h3>
+            <p class="project-desc">Mendokumentasikan berbagai kegiatan kemanusiaan KSR PMI UB — donor darah, sowan
+              deso, dan pelatihan — dalam format foto dan video storytelling.</p>
+            <div class="project-footer">
+              <div class="project-stack">
+                <span class="stack-chip">Lightroom</span>
+                <span class="stack-chip">Premiere Pro</span>
+                <span class="stack-chip">Photography</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 3 -->
+        <div class="project-card reveal d2">
+          <div class="project-img-wrap">
+            <img src="assets/images/projects/project-3.jpg" alt="Projek 3" class="project-img" />
+            <div class="project-overlay">
+              <span class="project-status status-done">✅ Selesai</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Layout & Desain</span>
+              <span class="project-tag">Editorial</span>
+            </div>
+            <h3 class="project-title">Majalah Humanity KSR Brawijaya</h3>
+            <p class="project-desc">Mendesain layout dan elemen visual majalah Humanity — tipografi, ilustrasi, dan
+              komposisi halaman — untuk menghasilkan media cetak yang estetis dan komunikatif.</p>
+            <div class="project-footer">
+              <div class="project-stack">
+                <span class="stack-chip">Adobe InDesign</span>
+                <span class="stack-chip">Illustrator</span>
+                <span class="stack-chip">Typography</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       SERTIFIKAT LAINNYA (Kepanitiaan & Lain-lain)
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="other-certs section-pad" id="other-certs">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">Koleksi Sertifikat</span>
+        <h2 class="section-title">Sertifikat <span class="gradient-text">Pelatihan & Partisipasi</span></h2>
+      </div>
+
+      <div class="ocert-gallery">
+        <div class="ocert-img-card reveal d1" data-title="Probin & Gathering Psikologi UB 2022"
+          data-desc="Fakultas Ilmu Sosial dan Ilmu Politik (FISIP) UB · 2022 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-probin-psikologi.jpg"
+            alt="Sertifikat Probin Psikologi 2022" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Probin Psikologi 2022</span>
+            <span class="ocert-overlay-badge">Peserta</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d2" data-title="ASEAN Digital Literacy Programme 2022"
+          data-desc="Google.org, ASEAN Foundation & Yayasan Fatihunnur · 2022 · Workshop">
+          <img src="assets/images/certificates/other/cert-asean-digital.jpg" alt="Sertifikat ASEAN Digital Literacy" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Digital Literacy Workshop</span>
+            <span class="ocert-overlay-badge">Internasional</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d3" data-title="Peserta Psyconsult HMP Psikologi"
+          data-desc="Himpunan Mahasiswa Psikologi Universitas Brawijaya · 2022 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-psyconsult.jpg" alt="Sertifikat Psyconsult Psikologi UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Psyconsult Participant</span>
+            <span class="ocert-overlay-badge">Psikologi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d4" data-title="Webinar Mental Disorder: Unromantically"
+          data-desc="KJF Kesehatan Mental Psikologi UB & Manusiabiasa · Agustus 2022 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-mental-disorder.jpg"
+            alt="Sertifikat Webinar Kesehatan Mental" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Webinar Kesehatan Mental</span>
+            <span class="ocert-overlay-badge">Psikologi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d5" data-title="Talkshow Ukhuwah Islamiyyah"
+          data-desc="DPD LDII Kota Malang · Oktober 2022 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-ldii-talkshow.jpg" alt="Sertifikat Talkshow LDII" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Sinergi Pemuda Talkshow</span>
+            <span class="ocert-overlay-badge">Keagamaan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal" data-title="Promosi Kesadaran Disabilitas di Kampus"
+          data-desc="Fakultas Psikologi Universitas Airlangga · Desember 2022 · Seminar">
+          <img src="assets/images/certificates/other/cert-unair-disability.jpg"
+            alt="Sertifikat Seminar Psikologi UNAIR" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Seminar Disabilitas UNAIR</span>
+            <span class="ocert-overlay-badge">Akademik</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d1" data-title="Divisi Perlengkapan & Dokumentasi"
+          data-desc="Komunitas Peduli Inklusi Nusantara (KOPINUS) · Desember 2022 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-kopinus-hdi.jpg" alt="Sertifikat Fun Game KOPINUS" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Kepanitiaan HDI 2022</span>
+            <span class="ocert-overlay-badge">Inklusi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d2" data-title="Seminar Kebencanaan Program JRCS"
+          data-desc="PMI Kab. Malang & Japanese Red Cross Society · Maret 2023 · Seminar">
+          <img src="assets/images/certificates/other/cert-pmi-japan.jpg" alt="Sertifikat Seminar PMI Japan Red Cross" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Disaster Preparedness</span>
+            <span class="ocert-overlay-badge">Relawan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d3" data-title="Workshop & Baris Art Competition"
+          data-desc="BARIS FISIP UB · 7 Mei 2023 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-baris-art.jpg" alt="Sertifikat BARIS FISIP UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Baris Art Participant</span>
+            <span class="ocert-overlay-badge">Seni</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d4" data-title="Peserta DIKSI (Diskusi Inklusi)"
+          data-desc="Kementerian Sosial dan Lingkungan BEM FIB UB · Mei 2023 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-diksi-fib.jpg" alt="Sertifikat DIKSI BEM FIB UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Diskusi Inklusi (DIKSI)</span>
+            <span class="ocert-overlay-badge">Peserta</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d5" data-title="Peer Counselor"
+          data-desc="Universitas Brawijaya · No. 10690/UN10.B60.04/TU/2023 · 28 Juli 2023">
+          <img src="assets/images/certificates/other/cert-peer-counselor-ub.jpg"
+            alt="Peer Counselor Universitas Brawijaya" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Peer Counselor</span>
+            <span class="ocert-overlay-badge">Counseling</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal" data-title="Perwakilan KOPINUS pada FGD 2023"
+          data-desc="Forum Mahasiswa Peduli Inklusi (FORMAPI) UB · September 2023 · Diskusi">
+          <img src="assets/images/certificates/other/cert-fgd-kopinus.jpg" alt="Sertifikat FGD FORMAPI UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">FGD Inklusi Mahasiswa</span>
+            <span class="ocert-overlay-badge">Peserta</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d1" data-title="The Psychology of Corruption - Dr. Niels Köbis"
+          data-desc="International Lecture Psychology Universitas Brawijaya · Oktober 2023 · Seminar">
+          <img src="assets/images/certificates/other/cert-psychology-lecture.jpg"
+            alt="Sertifikat International Lecture Psychology" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">International Lecture</span>
+            <span class="ocert-overlay-badge">Akademik</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d2" data-title="Staff Divisi PDD - Baris Science Festival"
+          data-desc="Badan Riset Ilmu Sosial (BARIS) FISIP UB · Oktober 2023 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-bsf-pdd.jpg"
+            alt="Sertifikat Staff PDD Baris Science Festival" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Staff PDD - BSF 2023</span>
+            <span class="ocert-overlay-badge">Kepanitiaan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d3" data-title="Webinar Nasional Disability Awareness"
+          data-desc="FORMAPI & EM UB · 21 Oktober 2023 · Seminar">
+          <img src="assets/images/certificates/other/cert-disability-awareness.jpg"
+            alt="Sertifikat Disability Awareness 2023" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Disability Awareness 2023</span>
+            <span class="ocert-overlay-badge">Webinar</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d4" data-title="Staff Divisi PDD - PKKMB FISIP UB"
+          data-desc="Fakultas Ilmu Sosial dan Ilmu Politik UB · 2023 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-pkkmb-pdd.jpg" alt="Sertifikat Staff PDD PKKMB FISIP" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Staff PDD - PKKMB 2023</span>
+            <span class="ocert-overlay-badge">Kepanitiaan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d5" data-title="Koordinator Divisi PDD - Sekolah Advokasi"
+          data-desc="Forum Mahasiswa Peduli Inklusi (FORMAPI) UB · Maret 2024 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-advokasi-pdd.jpg"
+            alt="Sertifikat Koordinator PDD Sekolah Advokasi" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Koordinator PDD - Advokasi</span>
+            <span class="ocert-overlay-badge">Kepemimpinan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal" data-title="Temu Inklusif 1.0"
+          data-desc="BEM FISIP UB 2024 · 25 Mei 2024 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-temu-inklusif.jpg" alt="Sertifikat Temu Inklusif 1.0" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Temu Inklusif 1.0 Participant</span>
+            <span class="ocert-overlay-badge">Inklusi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d1" data-title="Finisher HUT TNI Angkatan Udara 79"
+          data-desc="ONE Virtual Race · Jarak 18,13 KM · Olahraga">
+          <img src="assets/images/certificates/other/cert-run-tni-au.jpg" alt="Sertifikat Virtual Run TNI AU" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Finisher 18,13 KM Run</span>
+            <span class="ocert-overlay-badge">Olahraga</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d2" data-title="Co-Divisi Humas dan Dana"
+          data-desc="HUT XLIV KSR UB (Sembagi Arutala) · September - Oktober 2024 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-humas-ksr44.jpg" alt="Sertifikat Co-Divisi Humas KSR 44" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Humas & Dana - HUT KSR 44</span>
+            <span class="ocert-overlay-badge">Kepanitiaan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d3" data-title="Finisher Sumpah Pemuda Virtual Run"
+          data-desc="ONE Virtual Race · Jarak 30,84 KM · Olahraga">
+          <img src="assets/images/certificates/other/cert-run-sumpah-pemuda.jpg" alt="Sertifikat Virtual Run 30KM" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Finisher 30,84 KM Run</span>
+            <span class="ocert-overlay-badge">Olahraga</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d4" data-title="Koordinator Seksi Penerbitan & Penerangan"
+          data-desc="KSR PMI Unit Universitas Brawijaya · Tahun 2024 · Penghargaan">
+          <img src="assets/images/certificates/other/cert-piagam-ksr-2024.jpg" alt="Piagam Penghargaan KSR UB 2024" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Koordinator Penerbitan KSR</span>
+            <span class="ocert-overlay-badge">Organisasi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d5" data-title="Finisher Mie Ayam Series Virtual Run"
+          data-desc="Iconic Virtual Run · Jarak 10,1 KM · Olahraga">
+          <img src="assets/images/certificates/other/cert-run-mie-ayam.jpg" alt="Sertifikat Virtual Run Mie Ayam" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Finisher 10,1 KM Run</span>
+            <span class="ocert-overlay-badge">Olahraga</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal" data-title="Staff Ahli UKM FORMAPI UB"
+          data-desc="Kabinet Inklusi Brawijaya · Januari 2025 · Keanggotaan">
+          <img src="assets/images/certificates/other/cert-formapi-staff.jpg" alt="Sertifikat Staff Ahli FORMAPI UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Staff Ahli FORMAPI UB</span>
+            <span class="ocert-overlay-badge">Organisasi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d1" data-title="Pubdok - DIKLATSAR XLIV KSR UB"
+          data-desc="Korps Sukarela (KSR) Universitas Brawijaya · Februari 2025 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-diklatsar-ksr.jpg"
+            alt="Sertifikat Pubdok DIKLATSAR XLIV KSR UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Pubdok DIKLATSAR XLIV</span>
+            <span class="ocert-overlay-badge">Kepanitiaan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d2" data-title="Webinar HR Introduction"
+          data-desc="Quantum HR Indonesia · 26 Maret 2026 · Pelatihan">
+          <img src="assets/images/certificates/other/cert-hr-introduction.jpg"
+            alt="Sertifikat Webinar HR Introduction" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">HR Introduction Participant</span>
+            <span class="ocert-overlay-badge">Profesional</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       KONTAK
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <!-- Teks -->
+        <div class="reveal-left">
+          <span class="badge">Hubungi Saya</span>
+          <h2 class="section-title">Mari <span class="gradient-text">Berkolaborasi</span></h2>
+          <p>
+            Tertarik berkolaborasi dalam proyek digital, event, atau kampanye sosial?
+            Jangan ragu untuk menghubungi saya lewat salah satu channel di bawah ini.
+            Saya terbuka untuk diskusi, kolaborasi, dan peluang baru!
+          </p>
+
+          <div class="contact-cards">
+            <!-- TODO: Ganti dengan email asli kamu -->
+            <a href="mailto:rizalazis@email.com" class="contact-card" id="contactEmail">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-info">
+                <div class="label">Email</div>
+                <div class="value">rizalazis@email.com</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+
+            <!-- TODO: Ganti +62xxx dengan nomor WA kamu -->
+            <a href="https://wa.me/62xxxxxxxxxx" target="_blank" class="contact-card" id="contactWA">
+              <div class="contact-icon">💬</div>
+              <div class="contact-info">
+                <div class="label">WhatsApp</div>
+                <div class="value">+62 xxx-xxxx-xxxx</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+
+            <!-- TODO: Ganti @username dengan Instagram kamu -->
+            <a href="https://instagram.com/username" target="_blank" class="contact-card" id="contactIG">
+              <div class="contact-icon">📸</div>
+              <div class="contact-info">
+                <div class="label">Instagram</div>
+                <div class="value">@username</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+
+            <a href="https://linkedin.com/in/rizalazis" target="_blank" class="contact-card" id="contactLI">
+              <div class="contact-icon">💼</div>
+              <div class="contact-info">
+                <div class="label">LinkedIn</div>
+                <div class="value">linkedin.com/in/rizalazis</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Message Form -->
+        <div class="contact-form-area reveal-right">
+          <h3 style="font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:600;margin-bottom:24px;">
+            Kirim Pesan Cepat
+          </h3>
+          <div class="form-group">
+            <label for="formName">Nama Lengkap</label>
+            <input type="text" id="formName" placeholder="Nama kamu..." autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="formEmail">Email</label>
+            <input type="email" id="formEmail" placeholder="email@kamu.com" />
+          </div>
+          <div class="form-group">
+            <label for="formMsg">Pesan</label>
+            <textarea id="formMsg" placeholder="Tuliskan pesan atau ide kolaborasimu..."></textarea>
+          </div>
+          <!-- Tombol mengarah ke WhatsApp dengan pesan terauto -->
+          <button class="btn btn-primary" id="sendMsgBtn" style="margin-top:8px;width:100%;justify-content:center;">
+            <span>🚀</span> Kirim via WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      Dibuat dengan ❤️ oleh <strong>Rizal Azis Nur Abdur Rasyid</strong> &nbsp;·&nbsp;
+      Digital Content &amp; Media Enthusiast &nbsp;·&nbsp;
+      <span id="footerYear"></span>
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
