@@ -1,0 +1,2570 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rizal Azis — Human Resources Practitioner & People & Culture Advocate</title>
+  <meta name="description"
+    content="Portfolio pribadi Rizal Azis Nur Abdur Rasyid — Lulusan S1 Psikologi Universitas Brawijaya, Human Resources Practitioner, dan People & Culture Advocate." />
+  <meta name="keywords" content="portofolio, Human Resources, People & Culture, psikologi, inklusivitas, Rizal Azis" />
+  <meta property="og:title" content="Rizal Azis — Human Resources Practitioner" />
+  <meta property="og:description"
+    content="Lulusan S1 Psikologi Universitas Brawijaya dengan fokus pada Human Resources, inklusivitas, dan pengembangan sumber daya manusia." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css?v=1.1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png" />
+</head>
+
+<body>
+
+  <!-- ── Custom Cursor ──────────────────────────────────────── -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── Lightbox ───────────────────────────────────────────── -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Sebelumnya">‹</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Selanjutnya">›</button>
+    <div class="lb-counter" id="lbCounter"></div>
+    <div class="lightbox-caption">
+      <h4 id="lightboxTitle"></h4>
+      <p id="lightboxDesc"></p>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo">rizalazis.xyz</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li style="display: none;"><a href="#portfolio">Portokreatif</a></li>
+        <li><a href="#certificates">Pelatihan</a></li>
+        <li><a href="#experience">Organisasi</a></li>
+        <li><a href="#volunteer">Kepanitiaan</a></li>
+        <li><a href="#internship">Magang</a></li>
+        <li><a href="#projects">Projek</a></li>
+        <li><a href="#other-certs">Other</a></li>
+        <li><a href="#contact" class="nav-cta">Kontak</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <span class="icon-sun" id="iconSun" style="display: none;">☀️</span>
+          <span class="icon-moon" id="iconMoon">🌙</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="hero-grid"></div>
+
+    <div class="container hero-inner">
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>●</span> Open for Collaboration &amp; Opportunities
+        </div>
+
+        <h1 class="hero-title">
+          <span class="typed-text gradient-text" id="heroTyped"></span><span class="cursor-blink"></span>
+        </h1>
+
+        <p class="hero-sub">
+          Lulusan S1 Psikologi Universitas Brawijaya dengan fokus pada
+          <strong>inklusivitas, komunikasi digital, dan pengembangan SDM</strong>.
+          Berorientasi pada pengembangan diri dan kontribusi dalam menciptakan lingkungan kerja yang inklusif serta
+          kolaboratif.
+        </p>
+
+        <div class="hero-tags">
+          <span class="hero-tag">🧠 Psikologi HR</span>
+          <span class="hero-tag">🤝 People & Culture</span>
+          <span class="hero-tag">🌍 Inklusivitas</span>
+          <span class="hero-tag">🎯 Kepemimpinan</span>
+          <span class="hero-tag">📢 Komunikasi</span>
+        </div>
+
+        <div class="hero-btns">
+          <a href="assets/cv/Portofolio_Kreatif.pdf" target="_blank" class="btn btn-primary" id="btnLihatKarya">
+            <span>🎨</span> Portofolio Kreatif
+          </a>
+          <a href="assets/cv/Rizal_CV.pdf" class="btn btn-outline" download id="btnDownloadCV">
+            <span>📄</span> Download CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">4+</div>
+            <div class="stat-label">Organisasi & Komunitas</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Event & Proyek</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">7+</div>
+            <div class="stat-label">Pelatihan & Sertifikasi</div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!-- Visual -->
+      <div class="hero-visual">
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo" id="heroPhoto">
+            <img src="assets/images/profile.jpg" alt="Foto Profil" class="hero-img">
+          </div>
+
+          <div class="hero-float-badge hfb-1">
+            <span class="icon">🧠</span> Psikologi UB
+          </div>
+          <div class="hero-float-badge hfb-2">
+            <span class="icon">📱</span> Digital Media
+          </div>
+          <div class="hero-float-badge hfb-3">
+            <span class="icon">🩸</span> Human Resources
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+  </section>
+
+  <!-- ── LinkedIn-style Project Detail Modal ─────────────────── -->
+  <div class="li-modal" id="liModal" role="dialog" aria-modal="true" aria-label="Detail Proyek">
+    <div class="li-modal-backdrop" id="liModalBackdrop"></div>
+    <div class="li-modal-panel">
+
+      <!-- Header -->
+      <div class="li-modal-header">
+        <button class="li-modal-close" id="liModalClose" aria-label="Tutup">✕</button>
+        <div class="li-modal-header-meta">Proyek</div>
+      </div>
+
+      <!-- Media -->
+      <div class="li-modal-media">
+        <div class="li-media-ph">
+          <span class="li-media-icon">📖</span>
+          <span class="li-media-label">Melintas Banjaran</span>
+        </div>
+        <!-- Replace with: <img src="assets/images/projects/photobook-melintas-banjaran.jpg" class="li-media-img" alt="Photobook Melintas Banjaran" /> -->
+      </div>
+
+      <!-- Body -->
+      <div class="li-modal-body">
+
+        <!-- Project Identity -->
+        <div class="li-project-identity">
+          <div class="li-project-icon">📖</div>
+          <div class="li-project-main">
+            <h2 class="li-project-title">Photobook &ldquo;Melintas Banjaran&rdquo;</h2>
+            <div class="li-project-org">Kelompok 51 FBD Jantra &mdash; FISIP Universitas Brawijaya</div>
+            <div class="li-project-dates">
+              <svg class="li-icon-svg" viewBox="0 0 16 16" fill="none">
+                <rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.5" />
+                <path d="M5 1v2M11 1v2M2 6h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+              Jul 2024 &ndash; Sep 2024
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="li-divider"></div>
+
+        <!-- Description -->
+        <div class="li-section">
+          <h3 class="li-section-title">Deskripsi</h3>
+          <div class="li-desc" id="liDescContent">
+            <p>
+              Menyusun dan memproduksi photobook kolaboratif bersama <strong>Kelompok 51 FBD Jantra</strong> di
+              <strong>Desa Banjarejo</strong> dalam rangka program Field-Based Development (FBD) Jantra FISIP
+              Universitas Brawijaya.
+            </p>
+            <p>
+              Photobook berjudul <strong>&ldquo;Melintas Banjaran&rdquo;</strong> mengupas identitas unik Desa Banjarejo
+              sebagai <em>&ldquo;Desa Lintasan&rdquo;</em> &mdash; mengungkap potensi tersembunyi, kekayaan budaya
+              lokal, dan
+              keistimewaan yang belum banyak diketahui publik.
+            </p>
+            <p>
+              Photobook diresmikan pada <strong>Closing Ceremony, 31 Juli 2024</strong>, dan diserahkan langsung kepada
+              Kepala Desa Banjarejo, Ibu Suliyah. Karya ini mendapat apresiasi dari dosen pembimbing dan respons
+              hangat dari masyarakat, serta berpeluang dipublikasikan melalui <strong>UB Press</strong>.
+            </p>
+            <div class="li-desc-quote">
+              &ldquo;Banyak sekali hal-hal menarik yang membuat kami jatuh cinta dengan desa ini. Semoga dengan adanya
+              buku ini, masyarakat bisa menyadari bahwa Desa Banjarejo bukan hanya sekadar ‘Desa Lintasan’.&rdquo;
+              <span class="li-desc-quote-src">&mdash; Samuel, Tim Utama Penyusun</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="li-divider"></div>
+
+        <!-- Skills -->
+        <div class="li-section">
+          <h3 class="li-section-title">Keahlian yang Digunakan</h3>
+          <div class="li-skills">
+            <span>Photography</span>
+            <span>Layout Design</span>
+            <span>Lightroom</span>
+            <span>Canva</span>
+            <span>Visual Storytelling</span>
+            <span>Editorial Design</span>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="li-divider"></div>
+
+        <!-- Links -->
+        <div class="li-section">
+          <h3 class="li-section-title">Tautan</h3>
+          <div class="li-links">
+            <a href="https://fisip.ub.ac.id/kelompok-51-fbd-jantra-persembahkan-photobook-melintas-banjaran-mengungkap-potret-keunikan-desa-banjarejo/"
+              target="_blank" rel="noopener noreferrer" class="li-link-item" id="liExtLink" style="display: none;">
+              <div class="li-link-icon">📰</div>
+              <div class="li-link-text">
+                <div class="li-link-title" id="liExtTitle">Liputan Berita FISIP UB</div>
+                <div class="li-link-url" id="liExtUrl">fisip.ub.ac.id</div>
+              </div>
+              <svg class="li-ext-icon" viewBox="0 0 16 16" fill="none">
+                <path d="M6 3H3a1 1 0 00-1 1v9a1 1 0 001 1h9a1 1 0 001-1v-3M9 2h5v5M8.5 7.5L14 2" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+
+            <a href="#" target="_blank" rel="noopener noreferrer" class="li-link-item" id="liProjLink"
+              style="display: none;">
+              <div class="li-link-icon">↗️</div>
+              <div class="li-link-text">
+                <div class="li-link-title" id="liProjTitle">Lihat Proyek</div>
+                <div class="li-link-url" id="liProjUrlDomain">link</div>
+              </div>
+              <svg class="li-ext-icon" viewBox="0 0 16 16" fill="none">
+                <path d="M6 3H3a1 1 0 00-1 1v9a1 1 0 001 1h9a1 1 0 001-1v-3M9 2h5v5M8.5 7.5L14 2" stroke="currentColor"
+                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       TENTANG SAYA
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Kiri: Bio -->
+        <div class="about-text reveal-left">
+          <span class="badge">Tentang Saya</span>
+          <h2 class="section-title">Mengenal <span class="gradient-text">Rizal Azis</span></h2>
+          <p>
+            Halo! Saya <strong>Rizal Azis Nur Abdur Rasyid</strong>, Lulusan S1 Psikologi Universitas Brawijaya yang
+            fokus pada
+            inklusivitas, komunikasi digital, dan pengembangan sumber daya manusia (HR).
+            Saya memiliki landasan teori psikologi yang kuat untuk mendukung fungsi HR, khususnya dalam komunikasi
+            empatik,
+            peer counseling, dan pemahaman perilaku individu.
+          </p>
+          <p>
+            Saya berpengalaman memimpin unit organisasi besar sebagai <strong>Kepala Divisi di KSR PMI Unit Universitas
+              Brawijaya</strong>.
+            Peran ini membekali saya dengan tanggung jawab kepemimpinan strategis, manajemen tim, dan koordinasi antar
+            divisi.
+          </p>
+          <p>
+            Sebagai penyandang disabilitas fisik, saya membawa perspektif unik dalam mempromosikan nilai-nilai
+            kesetaraan,
+            penerimaan keberagaman, dan aksesibilitas di lingkungan profesional. Saya berorientasi pada kontribusi
+            dalam menciptakan lingkungan kerja yang inklusif dan kolaboratif.
+          </p>
+
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label">Universitas</span>
+              <span class="info-value">Universitas Brawijaya</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Pendidikan</span>
+              <span class="info-value">S1 Psikologi</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Fokus Utama</span>
+              <span class="info-value">HR &amp; Inklusivitas</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Minat Karir</span>
+              <span class="info-value">People &amp; Culture</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kanan: Skills -->
+        <div class="skills-section reveal-right">
+          <h3>Kualifikasi Utama Bidang HR</h3>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Psikologi &amp; Kesejahteraan Karyawan</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Kepemimpinan Strategis</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Advokasi Inklusivitas</span>
+              <span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="95"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Komunikasi &amp; Media</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Administrasi &amp; Teknis Kreatif</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="soft-skills">
+            <h3>Keahlian Khusus</h3>
+            <div class="tags-cloud">
+              <span class="skill-tag">🤝 Peer Counseling</span>
+              <span class="skill-tag">💙 Psychological First Aid (PFA)</span>
+              <span class="skill-tag">👥 Manajemen Tim</span>
+              <span class="skill-tag">🤟 Dasar Bahasa Isyarat</span>
+              <span class="skill-tag">🌍 Aksesibilitas</span>
+              <span class="skill-tag">📢 Strategi Komunikasi</span>
+              <span class="skill-tag">🧠 Analisis Perilaku</span>
+            </div>
+          </div>
+
+          <div class="tools-skills" style="margin-top: 32px">
+            <h3>Tools &amp; Software</h3>
+            <div class="tags-cloud">
+              <span class="skill-tag">🔧 Microsoft Office</span>
+              <span class="skill-tag">🔧 R Studio &amp; SPSS</span>
+              <span class="skill-tag">🔧 Canva &amp; Figma</span>
+              <span class="skill-tag">🔧 Adobe Photoshop &amp; Illustrator</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       PORTFOLIO
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="section-pad" id="portfolio" style="display: none;">
+    <div class="container">
+      <div class="portfolio-header reveal">
+        <span class="badge">Karya Saya</span>
+        <h2 class="section-title">Portfolio <span class="gradient-text">Kreatif</span></h2>
+        <p class="section-subtitle">
+          Kumpulan karya di bidang desain, dokumentasi event, dan konten digital
+          yang mencerminkan semangat kreatif dan komunikasi yang inklusif.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all" id="filterAll">Semua</button>
+        <button class="filter-btn" data-filter="design" id="filterDesign">🎨 Editing &amp; Desain</button>
+        <button class="filter-btn" data-filter="doc" id="filterDoc">📸 Dokumentasi</button>
+        <button class="filter-btn" data-filter="digital" id="filterDigital">📱 Konten Digital</button>
+        <button class="filter-btn filter-btn-socmed" data-filter="socmed" id="filterSocmed">📲 Social Media
+          Content</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- Design items -->
+        <div class="portfolio-item" data-cat="design" data-title="Poster Event Organisasi"
+          data-desc="Desain poster untuk acara KSR PMI Universitas Brawijaya">
+          <div class="port-placeholder port-ph-1">🎨</div>
+          <!-- Ganti dengan: <img src="assets/images/portfolio/design/poster-1.jpg" alt="Poster Event" class="portfolio-img" /> -->
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Poster Event Organisasi</h4>
+            <p>Desain &amp; Ilustrasi · KSR PMI UB</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="design" data-title="Konten Instagram Feed"
+          data-desc="Desain feed Instagram untuk kampanye sosial inklusivitas">
+          <div class="port-placeholder port-ph-2">✨</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Konten Instagram Feed</h4>
+            <p>Social Media Design · Campaign</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="design" data-title="Infografis Edukasi"
+          data-desc="Infografis edukasi psikologi untuk media sosial">
+          <div class="port-placeholder port-ph-3">📊</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Infografis Edukasi</h4>
+            <p>Infografis · Psikologi &amp; Edukasi</p>
+          </div>
+        </div>
+
+        <!-- Documentation items -->
+        <div class="portfolio-item" data-cat="doc" data-title="Dokumentasi Donor Darah"
+          data-desc="Dokumentasi kegiatan donor darah yang diselenggarakan KSR PMI UB">
+          <div class="port-placeholder port-ph-4">📸</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Dokumentasi Donor Darah</h4>
+            <p>Event Photography · KSR PMI UB</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="doc" data-title="Dokumentasi Seminar"
+          data-desc="Liputan foto seminar dan workshop kemahasiswaan">
+          <div class="port-placeholder port-ph-5">🎤</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Dokumentasi Seminar</h4>
+            <p>Event Documentation · Seminar</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="doc" data-title="Dokumentasi Pelatihan"
+          data-desc="Foto dan video dokumentasi kegiatan pelatihan kepemimpinan">
+          <div class="port-placeholder port-ph-6">🏋️</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Dokumentasi Pelatihan</h4>
+            <p>Training Documentation · Leadership</p>
+          </div>
+        </div>
+
+        <!-- Digital Content items -->
+        <div class="portfolio-item" data-cat="digital" data-title="Campaign Inklusivitas"
+          data-desc="Campaign digital untuk promosi inklusivitas dan keberagaman">
+          <div class="port-placeholder port-ph-7">🌈</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Campaign Inklusivitas</h4>
+            <p>Digital Campaign · Inklusivitas</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="digital" data-title="Desain Edukasi Psikologi"
+          data-desc="Konten edukasi psikologi untuk platform digital">
+          <div class="port-placeholder port-ph-8">🧠</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Desain Edukasi Psikologi</h4>
+            <p>Educational Content · Psikologi</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-cat="digital" data-title="Feed Instagram Tematik"
+          data-desc="Desain feed Instagram tematik dengan konsep visual yang konsisten">
+          <div class="port-placeholder port-ph-9">📱</div>
+          <div class="portfolio-overlay">
+            <div class="overlay-icon">🔍</div>
+            <h4>Feed Instagram Tematik</h4>
+            <p>Social Media · Instagram</p>
+          </div>
+        </div>
+      </div><!-- /portfolio-grid -->
+
+      <!-- ── Social Media Content Design Section ─────────────── -->
+      <div class="socmed-section" id="socmedSection" style="display:none;">
+        <div class="socmed-intro reveal">
+          <p>Klik pada proyek untuk melihat galeri konten lengkap dan deskripsi proyeknya.</p>
+        </div>
+
+        <div class="socmed-projects-grid" id="socmedProjectsGrid">
+
+          <!-- PROJECT 1: KSR PMI UB -->
+          <div class="socmed-project-card reveal" data-project-title="KSR PMI Universitas Brawijaya"
+            data-project-desc="Pengelolaan konten media sosial resmi KSR PMI Universitas Brawijaya. Mencakup desain poster event, konten edukasi donor darah, kampanye rekrutmen anggota, dan update kegiatan organisasi. Strategi konten difokuskan pada visual yang informatif dan menarik minat mahasiswa untuk aktif berdonor."
+            data-project-tags="Instagram · Canva · Photoshop · Content Strategy" data-project-year="2024"
+            data-images='[]' data-image-descs='[]'>
+            <div class="smp-thumbnail">
+              <div class="smp-thumb-grid">
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#7c3aed,#3b82f6);">🩸
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#3b82f6,#7c3aed);">📢
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#9d5cf7,#60a5fa);">✨
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#60a5fa,#9d5cf7);">❤️
+                </div>
+              </div>
+              <div class="smp-thumb-overlay">
+                <span class="smp-view-btn">👁 Lihat Proyek</span>
+              </div>
+            </div>
+            <div class="smp-info">
+              <div class="smp-year-badge">2024</div>
+              <h3>KSR PMI Universitas Brawijaya</h3>
+              <p>Konten media sosial organisasi kemahasiswaan — donor darah, rekrutmen, &amp; edukasi kemanusiaan.</p>
+              <div class="smp-tags"><span>Instagram</span><span>Canva</span><span>Photoshop</span></div>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: FORMAPI UB -->
+          <div class="socmed-project-card reveal d1" data-project-title="FORMAPI – Forum Mahasiswa Peduli Inklusi"
+            data-project-desc="Produksi konten digital untuk FORMAPI UB yang berfokus pada advokasi inklusivitas dan keberagaman. Desain mencakup infografis edukasi, poster kampanye sosial, konten awareness disabilitas, dan publikasi kegiatan diskusi. Visual dirancang untuk menyampaikan isu sensitif secara empatik dan mudah dipahami."
+            data-project-tags="Instagram · Canva · Illustrator · Social Campaign" data-project-year="2024"
+            data-images='[]' data-image-descs='[]'>
+            <div class="smp-thumbnail">
+              <div class="smp-thumb-grid">
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#f59e0b,#ef4444);">🌈
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#ef4444,#f59e0b);">♿
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#10b981,#3b82f6);">💙
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#3b82f6,#10b981);">🤝
+                </div>
+              </div>
+              <div class="smp-thumb-overlay">
+                <span class="smp-view-btn">👁 Lihat Proyek</span>
+              </div>
+            </div>
+            <div class="smp-info">
+              <div class="smp-year-badge">2024</div>
+              <h3>FORMAPI – Inklusivitas UB</h3>
+              <p>Konten advokasi inklusivitas dan kesadaran disabilitas untuk komunitas kampus.</p>
+              <div class="smp-tags"><span>Instagram</span><span>Canva</span><span>Campaign</span></div>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: PMI Kota Malang -->
+          <div class="socmed-project-card reveal d2" data-project-title="PMI Kota Malang — Digital Team"
+            data-project-desc="Pengelolaan platform digital organisasi kemanusiaan PMI Kota Malang. Mengembangkan strategi komunikasi untuk meningkatkan jangkauan informasi kegiatan PMI kepada masyarakat, mencakup desain poster event, konten awareness kesehatan, dan laporan kegiatan visual untuk media sosial resmi PMI Kota Malang."
+            data-project-tags="Instagram · Canva · Photoshop · Digital Strategy" data-project-year="2024–Skrg"
+            data-images='[]' data-image-descs='[]'>
+            <div class="smp-thumbnail">
+              <div class="smp-thumb-grid">
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#ef4444,#dc2626);">🏥
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#dc2626,#ef4444);">🚑
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#f87171,#dc2626);">❤️‍🔥
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#b91c1c,#f87171);">🫀
+                </div>
+              </div>
+              <div class="smp-thumb-overlay">
+                <span class="smp-view-btn">👁 Lihat Proyek</span>
+              </div>
+            </div>
+            <div class="smp-info">
+              <div class="smp-year-badge">2024–Skrg</div>
+              <h3>PMI Kota Malang</h3>
+              <p>Konten digital kemanusiaan — awareness kesehatan, donor darah, &amp; publikasi event PMI.</p>
+              <div class="smp-tags"><span>Instagram</span><span>Photoshop</span><span>Strategy</span></div>
+            </div>
+          </div>
+
+          <!-- PROJECT 4: KOPINUS -->
+          <div class="socmed-project-card reveal d3" data-project-title="Komunitas Peduli Inklusi Nusantara (KOPINUS)"
+            data-project-desc="Content creator untuk Komunitas Peduli Inklusi Nusantara (KOPINUS) Kota Malang. Merancang dan memproduksi konten digital bertema inklusi sosial dan keberagaman — infografis, poster campaign, konten storytelling, dan visual awareness untuk meningkatkan kesadaran publik terhadap isu penyandang disabilitas."
+            data-project-tags="Instagram · Canva · Storytelling · Inklusi" data-project-year="2023" data-images='[]'
+            data-image-descs='[]'>
+            <div class="smp-thumbnail">
+              <div class="smp-thumb-grid">
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#8b5cf6,#a78bfa);">💜
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#a78bfa,#8b5cf6);">🌸
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#6d28d9,#c4b5fd);">✊
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#c4b5fd,#6d28d9);">🌺
+                </div>
+              </div>
+              <div class="smp-thumb-overlay">
+                <span class="smp-view-btn">👁 Lihat Proyek</span>
+              </div>
+            </div>
+            <div class="smp-info">
+              <div class="smp-year-badge">2023</div>
+              <h3>KOPINUS – Inklusi Nusantara</h3>
+              <p>Konten inklusi sosial dan keberagaman untuk komunitas peduli disabilitas di Kota Malang.</p>
+              <div class="smp-tags"><span>Instagram</span><span>Canva</span><span>Inklusi</span></div>
+            </div>
+          </div>
+
+          <!-- PROJECT 5: Event Kampus -->
+          <div class="socmed-project-card reveal d4" data-project-title="Publikasi &amp; Dokumentasi Event Kampus"
+            data-project-desc="Produksi konten publikasi untuk berbagai event kemahasiswaan — PKKMB FISIP UB, HUT KSR Brawijaya, Baris Science Festival, Donor Darah, Sowan Deso, dan event sosial lainnya. Mencakup desain poster acara, flyer digital, countdown post, dan laporan visual pasca-event untuk media sosial."
+            data-project-tags="Instagram · Canva · Photoshop · Event Publicity" data-project-year="2022–2024"
+            data-images='[]' data-image-descs='[]'>
+            <div class="smp-thumbnail">
+              <div class="smp-thumb-grid">
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#0ea5e9,#38bdf8);">🎪
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#38bdf8,#0ea5e9);">📅
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#0284c7,#7dd3fc);">🎉
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#7dd3fc,#0284c7);">📣
+                </div>
+              </div>
+              <div class="smp-thumb-overlay">
+                <span class="smp-view-btn">👁 Lihat Proyek</span>
+              </div>
+            </div>
+            <div class="smp-info">
+              <div class="smp-year-badge">2022–2024</div>
+              <h3>Publikasi Event Kampus</h3>
+              <p>Poster, flyer, &amp; konten publikasi berbagai event kemahasiswaan dan sosial.</p>
+              <div class="smp-tags"><span>Canva</span><span>Photoshop</span><span>Event</span></div>
+            </div>
+          </div>
+
+          <!-- PROJECT 6: Edukasi Psikologi -->
+          <div class="socmed-project-card reveal d5" data-project-title="Konten Edukasi Psikologi &amp; Mental Health"
+            data-project-desc="Produksi konten digital bertema psikologi, mental health, dan kesejahteraan emosional untuk media sosial. Dirancang untuk menjembatani pemahaman ilmu psikologi kepada audiens awam melalui infografis yang informatif, visual storytelling, dan tips praktis berbasis evidens psikologi positif."
+            data-project-tags="Instagram · Canva · Psikologi · Mental Health" data-project-year="2023–2024"
+            data-images='[]' data-image-descs='[]'>
+            <div class="smp-thumbnail">
+              <div class="smp-thumb-grid">
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#10b981,#34d399);">🧠
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#34d399,#10b981);">💚
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#059669,#6ee7b7);">🌿
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#6ee7b7,#059669);">🧘
+                </div>
+              </div>
+              <div class="smp-thumb-overlay">
+                <span class="smp-view-btn">👁 Lihat Proyek</span>
+              </div>
+            </div>
+            <div class="smp-info">
+              <div class="smp-year-badge">2023–2024</div>
+              <h3>Edukasi Psikologi &amp; Mental Health</h3>
+              <p>Infografis &amp; visual edukasi psikologi yang informatif dan ramah-awam untuk media sosial.</p>
+              <div class="smp-tags"><span>Instagram</span><span>Canva</span><span>Psikologi</span></div>
+            </div>
+          </div>
+
+          <!-- PROJECT 7: Quantum HR Indonesia -->
+          <div class="socmed-project-card reveal" data-project-title="Quantum HR Indonesia – HR Staff Online Training"
+            data-project-desc="Mengikuti Training HR Staff Online Batch 40 yang diselenggarakan oleh Quantum HR Indonesia (PT Kompeten Indonesia Unggul). Program intensif 2 hari (28–29 Maret 2026) mencakup Undang-Undang Ketenagakerjaan, proses rekrutmen &amp; seleksi, pengelolaan payroll, penyusunan SOP &amp; PKB, serta administrasi SDM. Mendapatkan Certificate of Completion (No. 370/SRT/QHR/III/2026) dan sertifikat 25 Learning Hours dengan nilai 80."
+            data-project-tags="HR Staff Training · Rekrutmen · Payroll · UU Ketenagakerjaan · SOP &amp; PKB"
+            data-project-year="Maret 2026"
+            data-images='["assets/images/certificates/cert-quantum-hr-completion.png","assets/images/certificates/cert-quantum-hr-learning.png"]'
+            data-image-descs='["Certificate of Completion – HR Staff Online Training Batch 40. No. 370/SRT/QHR/III/2026. Quantum HR Indonesia · PT Kompeten Indonesia Unggul · 28–29 Maret 2026.","25 Learning Hours Certificate – UU Ketenagakerjaan, Rekrutmen & Seleksi, Payroll, SOP & PKB · Nilai: 80 · Quantum HR Indonesia."]'>
+            <div class="smp-thumbnail">
+              <div class="smp-thumb-grid">
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#d97706,#f59e0b);">💼
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#f59e0b,#fbbf24);">📋
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#b45309,#d97706);">🏆
+                </div>
+                <div class="smp-thumb-cell smp-thumb-ph" style="--ph-bg:linear-gradient(135deg,#fbbf24,#b45309);">👥
+                </div>
+              </div>
+              <div class="smp-thumb-overlay">
+                <span class="smp-view-btn">👁 Lihat Sertifikat</span>
+              </div>
+            </div>
+            <div class="smp-info">
+              <div class="smp-year-badge">Maret 2026</div>
+              <h3>Quantum HR Indonesia</h3>
+              <p>HR Staff Online Training Batch 40 — rekrutmen, payroll, UU Ketenagakerjaan, SOP &amp; PKB.
+                <strong>Nilai: 80</strong>
+              </p>
+              <div class="smp-tags"><span>HR Staff</span><span>Payroll</span><span>Rekrutmen</span><span>SOP</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /socmed-projects-grid -->
+      </div><!-- /socmed-section -->
+
+      <!-- Hint -->
+      <div class="add-hint reveal">
+        <span class="icon">📁</span>
+        <span>
+          Tambahkan karya desain ke folder
+          <code>assets/images/portfolio/design/</code>,
+          <code>documentation/</code>,
+          <code>digital/</code>, atau
+          <code>socmed/[nama-proyek]/</code> untuk konten Social Media — lalu perbarui <code>data-images</code> di HTML.
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Social Media Project Modal ───────────────────────── -->
+  <div class="smp-modal" id="smpModal" role="dialog" aria-modal="true" aria-label="Detail Proyek">
+    <div class="smp-modal-backdrop" id="smpModalBackdrop"></div>
+    <div class="smp-modal-inner">
+      <button class="smp-modal-close" id="smpModalClose" aria-label="Tutup">✕</button>
+
+      <!-- Left: Gallery -->
+      <div class="smp-modal-gallery">
+        <div class="smp-gallery-main">
+          <img src="" alt="" id="smpGalleryMain" class="smp-gallery-main-img" />
+          <div class="smp-gallery-empty" id="smpGalleryEmpty">
+            <div class="smp-empty-icon">🖼️</div>
+            <p>Tambahkan gambar proyek ke<br><code>assets/images/portfolio/socmed/[nama-proyek]/</code></p>
+          </div>
+          <button class="smp-gallery-nav smp-gallery-prev" id="smpGalleryPrev">&#8249;</button>
+          <button class="smp-gallery-nav smp-gallery-next" id="smpGalleryNext">&#8250;</button>
+          <div class="smp-gallery-counter" id="smpGalleryCounter"></div>
+        </div>
+        <div class="smp-gallery-thumbs" id="smpGalleryThumbs"></div>
+      </div>
+
+      <!-- Right: Info -->
+      <div class="smp-modal-info">
+        <div class="smp-modal-year" id="smpModalYear"></div>
+        <h2 class="smp-modal-title" id="smpModalTitle"></h2>
+        <p class="smp-modal-desc" id="smpModalDesc"></p>
+        <div class="smp-modal-tags" id="smpModalTags"></div>
+        <div class="smp-modal-img-desc-wrap" id="smpModalImgDescWrap" style="display:none;">
+          <div class="smp-img-desc-label">📝 Deskripsi Gambar</div>
+          <p class="smp-modal-img-desc" id="smpModalImgDesc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════
+       PELATIHAN
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="certificates section-pad" id="certificates">
+    <div class="container">
+      <span class="badge reveal">Pelatihan</span>
+      <h2 class="section-title reveal">Riwayat <span class="gradient-text">Pelatihan</span></h2>
+      <p class="section-subtitle reveal">
+        Berbagai pelatihan yang telah diikuti untuk memperkaya
+        kompetensi.
+      </p>
+
+      <div class="cert-track-wrap reveal">
+        <div class="cert-track" id="certTrack">
+
+          <!-- 1. Pelatihan Administrasi Perkantoran — BLK Boyolali, Mei 2022 -->
+          <div class="cert-card" data-title="Pelatihan Administrasi Perkantoran"
+            data-desc="BLK Kabupaten Boyolali · Mei 2022">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-blk-boyolali.jpg" alt="Pelatihan Administrasi Perkantoran" />
+              <span class="cert-badge">Training</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Pelatihan Administrasi Perkantoran</h4>
+              <div class="cert-issuer">BLK Kabupaten Boyolali</div>
+              <p>Pelatihan vokasi administrasi perkantoran mencakup manajemen arsip, korespondensi, dan operasional
+                kantor.</p>
+              <div class="cert-date">📅 Mei 2022</div>
+            </div>
+          </div>
+
+
+
+          <!-- 3. Basic Sign Language Training — PLD UB, Oktober 2023 -->
+          <div class="cert-card" data-title="Basic Sign Language Training"
+            data-desc="Pusat Layanan Disabilitas (PLD) Universitas Brawijaya · Malang · Oktober 2023">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-bisindo-pld-ub.jpg" alt="Basic Sign Language Training PLD UB" />
+              <span class="cert-badge">Training</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Basic Sign Language Training</h4>
+              <div class="cert-issuer">Pusat Layanan Disabilitas (PLD) — Universitas Brawijaya</div>
+              <p>Pelatihan dasar bahasa isyarat (BISINDO) sebagai bentuk komitmen terhadap inklusivitas dan
+                aksesibilitas komunikasi.</p>
+              <div class="cert-date">📅 Oktober 2023</div>
+            </div>
+          </div>
+
+          <!-- 4. Navigasi Digital & Komunikasi Radio — ASB Navigator Indonesia, Juni 2024 -->
+          <div class="cert-card" data-title="Pelatihan Navigasi Digital &amp; Komunikasi Radio"
+            data-desc="ASB Navigator Indonesia · Balai Merdeka, Universitas Merdeka Malang · 22 Juni 2024 · No. 022/01.VII/ASB-NAV-KOM/2024">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-asb-navigator.png" alt="Sertifikat ASB Navigator Indonesia" />
+              <span class="cert-badge">Sertifikat</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Navigasi Digital &amp; Komunikasi Radio</h4>
+              <div class="cert-issuer">ASB Navigator Indonesia · Malang</div>
+              <p>Pelatihan Navigasi Digital Dan Komunikasi Radio — No. 022/01.VII/ASB-NAV-KOM/2024, di Balai Merdeka
+                Universitas Merdeka Malang.</p>
+              <div class="cert-date">📅 22 Juni 2024</div>
+            </div>
+          </div>
+
+          <!-- 5. Pelatihan Kegawatdaruratan (Kebakaran & P3K) — K3L UB, November 2024 -->
+          <div class="cert-card" data-title="Pelatihan Kegawatdaruratan (Kebakaran &amp; P3K)"
+            data-desc="Divisi K3L Universitas Brawijaya · Malang · November 2024">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-k3l-ub.jpg" alt="Pelatihan Kegawatdaruratan K3L UB" />
+              <span class="cert-badge">Training</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Pelatihan Kegawatdaruratan (Kebakaran &amp; P3K)</h4>
+              <div class="cert-issuer">Divisi K3L — Universitas Brawijaya</div>
+              <p>Pelatihan penanganan kegawatdaruratan kebakaran dan pertolongan pertama pada kecelakaan (P3K) di
+                lingkungan kampus.</p>
+              <div class="cert-date">📅 November 2024</div>
+            </div>
+          </div>
+
+          <!-- 6. Psychological First Aid (PFA) — Subdit Konseling UB, Februari 2025 -->
+          <div class="cert-card" data-title="Pelatihan Psychological First Aid (PFA)"
+            data-desc="Subdirektorat Layanan Konseling dan Pencegahan Kekerasan Seksual &amp; Perundungan, Universitas Brawijaya · Februari 2025">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-pfa-ub.jpg" alt="Pelatihan Psychological First Aid UB" />
+              <span class="cert-badge">Sertifikat</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Psychological First Aid (PFA)</h4>
+              <div class="cert-issuer">Subdirektorat Konseling &amp; Pencegahan KS — Universitas Brawijaya</div>
+              <p>Pelatihan Psychological First Aid untuk memberikan dukungan psikologis awal kepada individu yang
+                mengalami krisis atau trauma.</p>
+              <div class="cert-date">📅 Februari 2025</div>
+            </div>
+          </div>
+
+          <!-- 7. Pelatihan Admin HR — Talenesia, Maret 2026 -->
+          <div class="cert-card" data-title="Pelatihan Admin HR" data-desc="Talenesia Online Training · Maret 2026">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-talenesia-hr.jpg" alt="Pelatihan Admin HR Talenesia" />
+              <span class="cert-badge">Training</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Pelatihan Admin HR</h4>
+              <div class="cert-issuer">Talenesia Online Training</div>
+              <p>Pelatihan administrasi Human Resources mencakup pengelolaan data karyawan, rekrutmen, dan administrasi
+                SDM secara online.</p>
+              <div class="cert-date">📅 Maret 2026</div>
+            </div>
+          </div>
+
+          <!-- 8. Training HR Staff — Quantum HR Indonesia, Maret 2026 (2 sertifikat) -->
+          <div class="cert-card cert-card-multi"
+            data-images='["assets/images/certificates/cert-quantum-hr-completion.png","assets/images/certificates/cert-quantum-hr-learning.png"]'
+            data-titles='["Certificate of Completion","25 Learning Hours Certificate"]'
+            data-descs='["Quantum HR Indonesia · HR Staff Online Training Batch 40 · No. 370/SRT/QHR/III/2026 · 28-29 Maret 2026","Quantum HR Indonesia · Total 25 Jam Pembelajaran · UU Ketenagakerjaan, Recruitment, Payroll, SOP &amp; PKB · Nilai: 80"]'>
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-quantum-hr-completion.png"
+                alt="HR Staff Certificate Quantum HR" />
+              <span class="cert-badge cert-badge-multi">📄 2 Sertifikat</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk lihat semua</div>
+            </div>
+            <div class="cert-body">
+              <h4>Training HR Staff Online — Batch 40</h4>
+              <div class="cert-issuer">Quantum HR Indonesia · PT Kompeten Indonesia Unggul</div>
+              <p>Certificate of Completion + 25 Learning Hours. Rekrutmen, payroll, UU Ketenagakerjaan, SOP, dan
+                manajemen SDM.</p>
+              <div class="cert-date">📅 28–29 Maret 2026</div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-title="Microsoft Office Desktop Application"
+            data-desc="Trust Training Partners & Universitas Brawijaya · No. 25UBC12124084 · 23 Desember 2025">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-ms-office-trust.jpg"
+                alt="Microsoft Office Desktop Application" />
+              <span class="cert-badge">Professional</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Microsoft Office Desktop Application</h4>
+              <div class="cert-issuer">Trust Training Partners · Microsoft Partner</div>
+              <p>Sertifikasi kompetensi profesional dalam pengoperasian aplikasi perkantoran Microsoft Office dengan
+                predikat "Excellent Grade".</p>
+              <div class="cert-date">📅 23 Desember 2025</div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-title="Kita Sama Youth Capacity Building"
+            data-desc="The Asia Foundation & Kita Sama · April - Juli 2023">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-kita-sama-foundation.jpg"
+                alt="Kita Sama Youth Capacity Building" />
+              <span class="cert-badge">International</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>Kita Sama Youth Capacity Building</h4>
+              <div class="cert-issuer">The Asia Foundation · US Embassy Jakarta</div>
+              <p>Pelatihan intensif pengembangan kapasitas pemuda dalam advokasi inklusivitas dan kepemimpinan sosial.
+              </p>
+              <div class="cert-date">📅 April – Juli 2023</div>
+            </div>
+          </div>
+
+          <div class="cert-card" data-title="DBS BERSIAP 2024 Graduate"
+            data-desc="PT Bank DBS Indonesia & KONEKIN · 4 September 2024">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-dbs-bersiap-graduate.jpg" alt="DBS BERSIAP 2024 Graduate" />
+              <span class="cert-badge">Mentoring</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>DBS BERSIAP 2024 Graduate</h4>
+              <div class="cert-issuer">PT Bank DBS Indonesia · KONEKIN</div>
+              <p>Penyelesaian program workshop dan mentoring intensif untuk kesiapan kerja dan pemberdayaan ekonomi
+                inklusif.</p>
+              <div class="cert-date">📅 April – Juli 2024</div>
+            </div>
+          </div>
+
+          <!-- Pelatihan HR Staff Online — Quantum HR Indonesia, Maret 2026 -->
+          <div class="cert-card" data-title="HR Staff Online Training Batch 40"
+            data-desc="Quantum HR Indonesia · PT Kompeten Indonesia Unggul · No. 370/SRT/QHR/III/2026 · 28–29 Maret 2026">
+            <div class="cert-img-wrap">
+              <img src="assets/images/certificates/cert-quantum-hr-completion.png"
+                alt="HR Staff Online Training Batch 40 — Quantum HR Indonesia" />
+              <span class="cert-badge">Training</span>
+              <div class="cert-zoom-hint">🔍 Klik untuk perbesar</div>
+            </div>
+            <div class="cert-body">
+              <h4>HR Staff Online Training Batch 40</h4>
+              <div class="cert-issuer">Quantum HR Indonesia · PT Kompeten Indonesia Unggul</div>
+              <p>Certificate of Completion — No. 370/SRT/QHR/III/2026. Materi: Rekrutmen &amp; Seleksi,
+                Payroll, UU Ketenagakerjaan, SOP &amp; PKB.</p>
+              <div class="cert-date">📅 28–29 Maret 2026</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="cert-nav">
+        <button class="cert-btn" id="certPrev" aria-label="Sebelumnya">‹</button>
+        <button class="cert-btn" id="certNext" aria-label="Selanjutnya">›</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       PENGALAMAN ORGANISASI  (LinkedIn-style)
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="section-pad" id="experience">
+    <div class="container">
+      <span class="badge reveal">Rekam Jejak</span>
+      <h2 class="section-title reveal">Pengalaman <span class="gradient-text">Organisasi</span></h2>
+      <p class="section-subtitle reveal">
+        Perjalanan aktif di berbagai organisasi kemahasiswaan yang membentuk
+        karakter kepemimpinan, kolaborasi, dan kepedulian sosial.
+      </p>
+
+      <div class="exp-container">
+
+        <!-- KSR PMI UB -->
+        <div class="exp-group reveal">
+          <div class="exp-org-header">
+            <div class="exp-org-logo">
+              <img src="assets/logo/ksr.png" alt="Logo KSR PMI UB">
+            </div>
+            <div class="exp-org-info">
+              <h3>KSR PMI Universitas Brawijaya</h3>
+              <div class="org-type">Korps Sukarela PMI · Organisasi Kemahasiswaan</div>
+              <div class="org-total">
+                <span>📅</span> 2024 – 2025
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-role-list">
+
+            <!-- Kepala Divisi -->
+            <div class="exp-role">
+              <div class="exp-role-timeline">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-role-content">
+                <h4>Ketua Bidang 2</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Nov 2024 – Nov 2025</span>
+                  <span class="exp-type-badge badge-org">Organisasi</span>
+                </div>
+                <p class="exp-role-desc">
+                  Memimpin dan mengelola tiga sub-divisi, mengoordinasikan program kerja antar divisi,
+                  serta merancang strategi organisasi untuk meningkatkan efektivitas operasional dan
+                  keterlibatan anggota.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Leadership</span>
+                  <span class="exp-skill-chip">Team Management</span>
+                  <span class="exp-skill-chip">Strategic Planning</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Koordinator Media -->
+            <div class="exp-role">
+              <div class="exp-role-timeline">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-role-content">
+                <h4>Koordinator Konten Digital & Media</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Jan 2024 – Nov 2024</span>
+                  <span class="exp-type-badge badge-org">Organisasi</span>
+                </div>
+                <p class="exp-role-desc">
+                  Mengembangkan strategi komunikasi digital, mengelola konten multimedia,
+                  serta meningkatkan engagement dan visibilitas organisasi melalui media sosial
+                  dan kampanye digital.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Content Strategy</span>
+                  <span class="exp-skill-chip">Social Media Management</span>
+                  <span class="exp-skill-chip">Content Creation</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /KSR PMI -->
+
+        <!-- FORMAPI -->
+        <div class="exp-group reveal d2">
+          <div class="exp-org-header">
+            <div class="exp-org-logo">
+              <img src="assets/logo/formapi.jpg" alt="Logo Formapi">
+            </div>
+            <div class="exp-org-info">
+              <h3>FORMAPI – Universitas Brawijaya</h3>
+              <div class="org-type">Forum Mahasiswa Peduli Inklusi · Organisasi Kampus</div>
+              <div class="org-total">
+                <span>📅</span> 2024 · 1 tahun
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-role-list">
+            <div class="exp-role">
+              <div class="exp-role-timeline">
+                <div class="exp-dot"></div>
+              </div>
+
+              <div class="exp-role-content">
+                <h4>Inclusivity Advocate</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Januari 2024 – Desember 2024</span>
+                  <span class="exp-type-badge badge-org">Organisasi</span>
+                </div>
+
+                <p class="exp-role-desc">
+                  Mengedukasi mahasiswa terkait isu inklusivitas, kesetaraan, dan keberagaman melalui
+                  program diskusi, kampanye sosial, dan media digital. Menginisiasi serta mendukung
+                  pelaksanaan program inklusi, serta mengembangkan strategi komunikasi berbasis empati
+                  untuk meningkatkan partisipasi mahasiswa.
+                </p>
+
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Inklusi Sosial</span>
+                  <span class="exp-skill-chip">Mental Health Advocacy</span>
+                  <span class="exp-skill-chip">Strategi Komunikasi</span>
+                  <span class="exp-skill-chip">Public Campaign</span>
+                  <span class="exp-skill-chip">Kolaborasi Tim</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /FORMAPI -->
+
+        <!-- PMI -->
+        <div class="exp-group reveal d3">
+          <div class="exp-org-header">
+            <div class="exp-org-logo">
+              <img src="assets/logo/pmi.jpg" alt="Logo PMI">
+            </div>
+            <div class="exp-org-info">
+              <h3>Palang Merah Indonesia (PMI) Kota Malang</h3>
+              <div class="org-type">Organisasi Kemanusiaan · Kota Malang</div>
+              <div class="org-total">
+                <span>📅</span> 2024 – Sekarang
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-role-list">
+            <div class="exp-role">
+              <div class="exp-role-timeline">
+                <div class="exp-dot"></div>
+              </div>
+
+              <div class="exp-role-content">
+                <h4>Digital Team</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Oktober 2024 – Sekarang</span>
+                  <span class="exp-type-badge badge-org">Organisasi</span>
+                </div>
+
+                <p class="exp-role-desc">
+                  Bertanggung jawab dalam pengelolaan dan optimalisasi platform digital
+                  untuk mendukung operasional organisasi. Mengembangkan strategi komunikasi
+                  digital guna meningkatkan jangkauan informasi, efektivitas penyampaian pesan,
+                  serta keterlibatan masyarakat terhadap kegiatan kemanusiaan.
+                </p>
+
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Digital Strategy</span>
+                  <span class="exp-skill-chip">Social Media Management</span>
+                  <span class="exp-skill-chip">Content Development</span>
+                  <span class="exp-skill-chip">Public Communication</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /PMI -->
+
+        <!-- Komunitas Peduli Inklusi Nusantara -->
+        <div class="exp-group reveal d4">
+          <div class="exp-org-header">
+            <div class="exp-org-logo">
+              <img src="assets/logo/kpinn.jpg" alt="Logo KPINN">
+            </div>
+            <div class="exp-org-info">
+              <h3>Komunitas Peduli Inklusi Nusantara</h3>
+              <div class="org-type">Komunitas Sosial · Kota Malang</div>
+              <div class="org-total">
+                <span>📅</span> 2023 · 10 bulan
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-role-list">
+            <div class="exp-role">
+              <div class="exp-role-timeline">
+                <div class="exp-dot"></div>
+              </div>
+
+              <div class="exp-role-content">
+                <h4>Content Creator</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Maret 2023 – Desember 2023</span>
+                  <span class="exp-type-badge badge-org">Komunitas</span>
+                </div>
+
+                <p class="exp-role-desc">
+                  Bertanggung jawab dalam perancangan, pembuatan, dan pengelolaan konten kreatif
+                  yang informatif dan menarik untuk meningkatkan kesadaran terkait isu inklusivitas
+                  dan keberagaman. Menggunakan berbagai platform digital seperti media sosial,
+                  desain grafis, video, dan penulisan konten untuk menyampaikan pesan komunitas
+                  secara efektif.
+                </p>
+
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Content Creation</span>
+                  <span class="exp-skill-chip">Graphic Design</span>
+                  <span class="exp-skill-chip">Social Media Management</span>
+                  <span class="exp-skill-chip">Storytelling</span>
+                  <span class="exp-skill-chip">Creative Strategy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /Komunitas Peduli Inklusi Nusantara -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       KEPANITIAAN & VOLUNTEER  (LinkedIn-style)
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="section-pad" id="volunteer" style="background: var(--bg-secondary);">
+    <div class="container">
+      <span class="badge reveal">Kepanitiaan &amp; Relawan</span>
+      <h2 class="section-title reveal">Kepanitiaan &amp; <span class="gradient-text">Volunteer</span></h2>
+      <p class="section-subtitle reveal">
+        Pengalaman aktif sebagai panitia dan relawan di berbagai event kemahasiswaan,
+        sosial, dan kemanusiaan — membangun manajemen event dan kerja tim.
+      </p>
+
+      <div class="exp-container">
+
+        <!-- Card 1 -->
+        <div class="exp-standalone reveal">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">📸</div>
+              <div class="exp-role-content">
+                <h4>Koordinator Publikasi & Dokumentasi — HUT RI ke-78 PPM Al Kautsar</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Agustus 2023</span>
+                  <span class="exp-type-badge badge-com">Kepanitiaan</span>
+                </div>
+                <p class="exp-role-desc">
+                  Mengkoordinasikan seluruh kegiatan publikasi dan dokumentasi acara,
+                  termasuk produksi konten visual, pengambilan foto/video, serta distribusi
+                  informasi melalui media sosial untuk meningkatkan jangkauan acara.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Leadership</span>
+                  <span class="exp-skill-chip">Media Management</span>
+                  <span class="exp-skill-chip">Documentation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="exp-standalone reveal d1">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">🎪</div>
+              <div class="exp-role-content">
+                <h4>Event Organizer — HUT KSR Brawijaya & Back To School</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 2023 – 2024</span>
+                  <span class="exp-type-badge badge-com">Kepanitiaan</span>
+                </div>
+                <p class="exp-role-desc">
+                  Bertanggung jawab dalam perencanaan, koordinasi, dan eksekusi acara,
+                  mulai dari konsep, logistik, hingga pelaksanaan. Berperan aktif dalam
+                  memastikan kelancaran event dan koordinasi tim lintas divisi.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Event Management</span>
+                  <span class="exp-skill-chip">Project Coordination</span>
+                  <span class="exp-skill-chip">Teamwork</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="exp-standalone reveal d2">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">📢</div>
+              <div class="exp-role-content">
+                <h4>Humas & Fundraising — HUT KSR Brawijaya 44</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Juli – September 2024</span>
+                  <span class="exp-type-badge badge-com">Kepanitiaan</span>
+                </div>
+                <p class="exp-role-desc">
+                  Mengelola komunikasi eksternal dan menjalin kerja sama dengan sponsor
+                  untuk mendukung kegiatan organisasi, serta melakukan penggalangan dana
+                  guna memastikan keberlangsungan program.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Public Relations</span>
+                  <span class="exp-skill-chip">Fundraising</span>
+                  <span class="exp-skill-chip">Communication</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="exp-standalone reveal d3">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">📰</div>
+              <div class="exp-role-content">
+                <h4>Publikasi & Dokumentasi — Multiple Events</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 2022 – 2024</span>
+                  <span class="exp-type-badge badge-com">Kepanitiaan</span>
+                </div>
+                <p class="exp-role-desc">
+                  Berkontribusi dalam berbagai kegiatan seperti PKKMB FISIP UB, Donor Darah KSR,
+                  Sowan Deso, Baris Science Festival, Diklatsar KSR, dan kegiatan sosial lainnya
+                  dengan fokus pada dokumentasi, pembuatan konten publikasi, serta distribusi
+                  informasi melalui media digital.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Content Creation</span>
+                  <span class="exp-skill-chip">Photography</span>
+                  <span class="exp-skill-chip">Social Media</span>
+                  <span class="exp-skill-chip">Visual Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="exp-standalone reveal d4">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">🎧</div>
+              <div class="exp-role-content">
+                <h4>Editor Podcast — Vorbi Kopinus</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 September – Desember 2023</span>
+                  <span class="exp-type-badge badge-vol">Volunteer</span>
+                </div>
+                <p class="exp-role-desc">
+                  Mengelola dan menyunting audio podcast untuk memastikan kualitas suara
+                  yang optimal, serta mendukung produksi konten digital berbasis audio.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Audio Editing</span>
+                  <span class="exp-skill-chip">Content Production</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="exp-standalone reveal d5">
+          <div class="exp-role">
+            <div class="exp-standalone-header">
+              <div class="standalone-logo">🎨</div>
+              <div class="exp-role-content">
+                <h4>Visual Design & Storytelling — Humanity KSR Brawijaya</h4>
+                <div class="exp-role-meta">
+                  <span class="exp-period">📅 Maret – Desember 2023</span>
+                  <span class="exp-type-badge badge-com">Kepanitiaan</span>
+                </div>
+                <p class="exp-role-desc">
+                  Mendesain layout majalah dan elemen visual (tipografi, ilustrasi, gambar)
+                  untuk menghasilkan konten yang estetis, informatif, dan komunikatif.
+                </p>
+                <div class="exp-role-skills">
+                  <span class="exp-skill-chip">Graphic Design</span>
+                  <span class="exp-skill-chip">Layout Design</span>
+                  <span class="exp-skill-chip">Creative Thinking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /exp-container -->
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       PENGALAMAN MAGANG
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="internship section-pad" id="internship">
+    <div class="container">
+      <span class="badge reveal">Pengalaman Magang</span>
+      <h2 class="section-title reveal">Magang &amp; <span class="gradient-text">Praktik Kerja</span></h2>
+      <p class="section-subtitle reveal">
+        Pengalaman kerja nyata di lingkungan profesional yang membentuk kemampuan praktis dan
+        wawasan industri.
+      </p>
+
+      <div class="internship-list">
+
+        <!-- Tambahkan card magang di sini -->
+        <div class="intern-card reveal">
+          <div class="intern-card-left">
+            <div class="intern-logo">🏢</div>
+            <div class="intern-timeline-line"></div>
+          </div>
+          <div class="intern-card-body">
+            <div class="intern-header">
+              <div>
+                <h3 class="intern-title">Staf Magang Rehabilitasi Sosial</h3>
+                <div class="intern-company">Dinas Sosial Kabupaten Boyolali</div>
+              </div>
+              <div class="intern-meta">
+                <span class="intern-period">📅 Februari 2025</span>
+                <span class="intern-type">Magang</span>
+              </div>
+            </div>
+            <p class="intern-desc">
+              Melakukan praktik kerja lapangan di Bidang Rehabilitasi Sosial, membantu dalam proses asesmen,
+              pendampingan sosial, serta administrasi data penyandang disabilitas dan kelompok rentan di wilayah
+              Kabupaten Boyolali.
+            </p>
+            <div class="intern-skills">
+              <span class="intern-chip">Rehabilitasi Sosial</span>
+              <span class="intern-chip">Social Assessment</span>
+              <span class="intern-chip">Administrasi Publik</span>
+              <span class="intern-chip">Empathetic Communication</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       PROJEK
+  ═══════════════════════════════════════════════════════════ -->
+
+  <section class="projects section-pad" id="projects">
+    <div class="container">
+      <span class="badge reveal">Projek</span>
+      <h2 class="section-title reveal">Projek &amp; <span class="gradient-text">Karya Mandiri</span></h2>
+      <p class="section-subtitle reveal">
+        Proyek pribadi, kolaboratif, dan akademik yang mencerminkan kemampuan teknis dan
+        kreativitas.
+      </p>
+
+      <!-- ── 3 KARTU PROJEK UNGGULAN ────────────────────────── -->
+      <div class="projects-grid proj-featured-grid reveal">
+
+        <!-- KARTU 1 — Photobook "Melintas Banjaran" -->
+        <div class="project-card btn-li-modal" data-li-title="Photobook &ldquo;Melintas Banjaran&rdquo;"
+          data-li-org="Kelompok 51 FBD Jantra &mdash; FISIP Universitas Brawijaya"
+          data-li-date="Jul 2024 &ndash; Sep 2024" data-li-icon="📖"
+          data-li-img="assets/images/projects/photobook-melintas-banjaran.jpg"
+          data-li-desc="&lt;p&gt;Photobook kolaboratif bersama &lt;strong&gt;Kelompok 51 FBD Jantra&lt;/strong&gt; di &lt;strong&gt;Desa Banjarejo&lt;/strong&gt;, dalam program Field-Based Development (FBD) Jantra FISIP Universitas Brawijaya.&lt;/p&gt;&lt;p&gt;Bertajuk &lt;strong&gt;&ldquo;Melintas Banjaran&rdquo;&lt;/strong&gt;, karya ini mengulas identitas Desa Banjarejo sebagai &lt;em&gt;&ldquo;Desa Lintasan&rdquo;&lt;/em&gt; — mengungkap potensi tersembunyi, kekayaan budaya, dan keistimewaan yang belum banyak dikenal publik.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Fotografi Lapangan &amp; Visual Storytelling&lt;/li&gt;&lt;li&gt;Desain Publikasi Kolaboratif (Photobook Layouting)&lt;/li&gt;&lt;li&gt;Komunikasi Antar Komunitas Pedesaan&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Diresmikan langsung oleh aparatur Kepala Desa Banjarejo&lt;/li&gt;&lt;li&gt;Berpeluang diterbitkan secara luas melalui UB Press&lt;/li&gt;&lt;/ul&gt;"
+          data-li-skills="Photography, Layout Design, Lightroom, Canva, Visual Storytelling"
+          data-li-ext-url="https://fisip.ub.ac.id/kelompok-51-fbd-jantra-persembahkan-photobook-melintas-banjaran-mengungkap-potret-keunikan-desa-banjarejo/"
+          data-li-ext-text="Liputan Berita FISIP UB" data-li-proj-url="https://heyzine.com/flip-book/485e808a08.html"
+          data-li-proj-text="Lihat Photobook Digital">
+          <div class="project-img-wrap">
+            <img src="assets/images/projects/photobook-melintas-banjaran.jpg" alt="Photobook Melintas Banjaran"
+              class="project-img" />
+            <div class="project-overlay">
+              <span class="project-status status-done">✅ Selesai</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Photobook</span>
+              <span class="project-tag">Fotografi</span>
+              <span class="project-tag">FBD Jantra</span>
+            </div>
+            <h3 class="project-title">Photobook "Melintas Banjaran"</h3>
+            <p class="project-desc">Menyusun dan memproduksi photobook kolaboratif bersama Kelompok 51 FBD Jantra FISIP
+              UB di Desa Banjarejo — diresmikan pada Closing Ceremony dan berpeluang diterbitkan melalui UB Press.</p>
+            <div class="project-footer">
+              <div class="project-stack">
+                <span class="stack-chip">Photography</span>
+                <span class="stack-chip">Layout Design</span>
+                <span class="stack-chip">Lightroom</span>
+              </div>
+            </div>
+            <a href="https://fisip.ub.ac.id/kelompok-51-fbd-jantra-persembahkan-photobook-melintas-banjaran-mengungkap-potret-keunikan-desa-banjarejo/"
+              target="_blank" rel="noopener noreferrer" class="project-news-link">
+              📰 Lihat Liputan Berita — FISIP UB
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 18 — SOP Manajemen SDM HR -->
+        <div class="project-card reveal btn-li-modal"
+          data-li-title="Perancangan SOP Manajemen SDM: Prosedur Izin Meninggalkan Pekerjaan"
+          data-li-org="Proyek Akademik / Human Resources (HR)" data-li-date="Selesai" data-li-icon="📋"
+          data-li-img="assets/images/projects/sop-hr.jpg"
+          data-li-desc="&lt;p&gt;Penyusunan dokumen tata kelola organisasi dalam bidang &lt;strong&gt;Human Resources (HR)&lt;/strong&gt; yang berfokus pada standarisasi sistem absensi dan mobilitas karyawan — guna mewujudkan &lt;strong&gt;Tertib Administrasi&lt;/strong&gt;, &lt;strong&gt;Tertib Hukum&lt;/strong&gt;, dan keselamatan kerja di area operasional.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Penyusunan Kebijakan:&lt;/strong&gt; Merumuskan ketentuan internal tentang kewajiban karyawan untuk memperoleh persetujuan atasan sebelum meninggalkan lokasi kerja.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Business Process Mapping:&lt;/strong&gt; Menyusun alur birokrasi berjenjang dari pengajuan staf, persetujuan kepala departemen, hingga validasi HRD.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Desain Flowchart:&lt;/strong&gt; Membuat diagram alur yang intuitif dan mudah dipahami oleh semua level divisi.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Kontrol Keamanan:&lt;/strong&gt; Menetapkan mekanisme verifikasi formulir dan pencatatan jam keluar/masuk oleh personel keamanan.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Instrumen Administrasi:&lt;/strong&gt; Merancang formulir &quot;Surat Izin Meninggalkan Pekerjaan&quot; sebagai dasar penyesuaian timesheet dan kalkulasi payroll bulanan.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;HR Operations &amp;amp; Tata Tertib Karyawan&lt;/li&gt;&lt;li&gt;Technical Writing (Penyusunan SOP Korporasi)&lt;/li&gt;&lt;li&gt;Business Process Mapping &amp;amp; Flowcharting&lt;/li&gt;&lt;li&gt;Analisis Risiko Kontrol Kehadiran Karyawan&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Menghasilkan dokumen SOP siap implementasi untuk mencegah penyalahgunaan jam kerja&lt;/li&gt;&lt;li&gt;Menyederhanakan alur administrasi antar departemen dan menjaga integritas kalkulasi Payroll&lt;/li&gt;&lt;/ul&gt;"
+          data-li-skills="HR Operations, SOP Formulation, Business Process Mapping, Flowcharting, Administration &amp; Payroll Integration"
+          data-li-ext-url="" data-li-ext-text=""
+          data-li-proj-url="https://drive.google.com/file/d/1uIgoifK9mwBNalEd1R0Fm3eBKW9XhZx5/view?usp=sharing"
+          data-li-proj-text="📄 Lihat SOP &amp; Flowchart">
+          <div class="project-img-wrap">
+            <img src="assets/images/projects/sop-hr.jpg" alt="Dokumen SOP HR: Prosedur Izin Karyawan"
+              class="project-img" />
+            <div class="project-overlay">
+              <span class="project-status status-done">✅ Selesai</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HR Operations</span>
+              <span class="project-tag">SOP</span>
+              <span class="project-tag">Business Process</span>
+            </div>
+            <h3 class="project-title">Perancangan SOP SDM: Prosedur Izin Meninggalkan Pekerjaan</h3>
+            <p class="project-desc">Menyusun dokumen tata kelola (SOP, Flowchart, Administrasi) untuk merapikan
+              mobilitas karyawan dan kontrol kehadiran Payroll.</p>
+            <div class="project-footer">
+              <div class="project-stack">
+                <span class="stack-chip">Flowcharting</span>
+                <span class="stack-chip">HR Payroll Valid.</span>
+              </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1uIgoifK9mwBNalEd1R0Fm3eBKW9XhZx5/view?usp=sharing" target="_blank"
+              rel="noopener noreferrer" class="project-news-link" style="margin-top: 14px;">
+              📄 Lihat SOP &amp; Flowchart
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 19 — Peraturan Perusahaan (PP) HR -->
+        <div class="project-card reveal btn-li-modal"
+          data-li-title="Penyusunan Peraturan Perusahaan (PP): Standarisasi Hubungan Kerja dan Tata Tertib Organisasi"
+          data-li-org="Proyek Akademik &amp; Pelatihan / Human Resources (HR)" data-li-date="Selesai" data-li-icon="⚖️"
+          data-li-img="assets/images/projects/peraturan-perusahaan.jpg"
+          data-li-desc="&lt;p&gt;Luaran tugas akhir &lt;strong&gt;Sertifikasi Pelatihan HR&lt;/strong&gt; berupa penyusunan dokumen hukum internal perusahaan. Dirancang untuk industri riil dengan tujuan menciptakan harmonisasi hubungan kerja antara pengusaha dan karyawan, selaras dengan &lt;strong&gt;UU Ketenagakerjaan&lt;/strong&gt; dan &lt;strong&gt;UU Cipta Kerja&lt;/strong&gt; terkini.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Ketentuan Hubungan Kerja:&lt;/strong&gt; Merumuskan klausul status kepegawaian (PKWT/PKWTT), prosedur masa percobaan, dan legalitas pengangkatan karyawan.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Hak &amp;amp; Kewajiban:&lt;/strong&gt; Menetapkan standar kompensasi (upah minimum, jam kerja, istirahat) dan sinkronisasi kewajiban karyawan.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Kesejahteraan Karyawan:&lt;/strong&gt; Menyusun kebijakan BPJS, tunjangan kesehatan, dan THR sebagai fondasi retensi karyawan.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Tata Tertib &amp;amp; Disiplin:&lt;/strong&gt; Menetapkan eskalasi sanksi disipliner (teguran hingga Surat Peringatan 1–3) secara adil dan definitif.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Prosedur PHK:&lt;/strong&gt; Menerjemahkan tata cara pengunduran diri dan kalkulasi hak pesangon untuk meminimalkan sengketa hubungan industrial.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Industrial Relations (Harmonisasi Hubungan Industrial)&lt;/li&gt;&lt;li&gt;Labor Law Compliance (UU Ketenagakerjaan &amp;amp; UU Cipta Kerja)&lt;/li&gt;&lt;li&gt;Policy Development (Kebijakan Manajerial)&lt;/li&gt;&lt;li&gt;Legal Drafting Regulasi SDM&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Menghasilkan dokumen PP yang holistik dan berkekuatan hukum untuk melindungi pengusaha sekaligus menjamin hak karyawan&lt;/li&gt;&lt;li&gt;Membuktikan kemampuan menyusun kebijakan HR yang patuh terhadap dinamika hukum ketenagakerjaan Indonesia&lt;/li&gt;&lt;/ul&gt;"
+          data-li-skills="Industrial Relations, Labor Law Compliance, Policy Development, Legal Drafting, HR Management"
+          data-li-ext-url="" data-li-ext-text=""
+          data-li-proj-url="https://drive.google.com/file/d/1Piw_yG4aU5CTpZvX3_4vvbFPFYS73ASN/view"
+          data-li-proj-text="📄 Lihat Draf Peraturan Perusahaan">
+          <div class="project-img-wrap">
+            <img src="assets/images/projects/peraturan-perusahaan.jpg" alt="Peraturan Perusahaan (PP) HR"
+              class="project-img" />
+            <div class="project-overlay">
+              <span class="project-status status-done">✅ Selesai</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Industrial Relations</span>
+              <span class="project-tag">Labor Law</span>
+              <span class="project-tag">Legal Drafting</span>
+            </div>
+            <h3 class="project-title">Penyusunan Peraturan Perusahaan (PP): Standarisasi Hubungan Kerja</h3>
+            <p class="project-desc">Merancang draf dokumen legal untuk tata tertib, hak kompensasi, dan kepatuhan UU
+              Cipta Kerja sebagai pilar harmonisasi hubungan industrial perusahaan.</p>
+            <div class="project-footer">
+              <div class="project-stack">
+                <span class="stack-chip">UU Ketenagakerjaan</span>
+                <span class="stack-chip">Policy Dev.</span>
+              </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1Piw_yG4aU5CTpZvX3_4vvbFPFYS73ASN/view" target="_blank"
+              rel="noopener noreferrer" class="project-news-link" style="margin-top: 14px;">
+              📄 Lihat Draf Peraturan Perusahaan
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD 20 — PKWT Admin Project -->
+        <div class="project-card reveal btn-li-modal"
+          data-li-title="Penyusunan Perjanjian Kerja Waktu Tertentu (PKWT): Legalitas Hubungan Kerja Berbasis Proyek"
+          data-li-org="Proyek Akademik &amp; Pelatihan / Human Resources (HR)" data-li-date="Selesai" data-li-icon="📄"
+          data-li-img="assets/images/projects/pkwt-draft.jpg"
+          data-li-desc="&lt;p&gt;Penyusunan dokumen hukum &lt;strong&gt;Perjanjian Kerja Waktu Tertentu (PKWT)&lt;/strong&gt; untuk posisi strategis Admin Project. Tugas ini mensimulasikan proses rekrutmen riil di industri konstruksi/proyek, memastikan seluruh klausul kontrak selaras dengan regulasi ketenagakerjaan Indonesia terkini.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Struktur Kontrak &amp; Jangka Waktu:&lt;/strong&gt; Menetapkan masa berlaku kontrak selama 1 tahun sesuai masa proyek (by project) dan prosedur perpanjangan hubungan kerja.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Manajemen Kompensasi:&lt;/strong&gt; Merumuskan struktur upah yang mencakup Gaji Pokok dan Tunjangan Kost sesuai kesepakatan penempatan kerja.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Pengaturan Jam Kerja:&lt;/strong&gt; Mengatur jadwal kerja 6 hari seminggu dengan detail jam operasional dan waktu istirahat yang efektif.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Mitigasi Risiko &amp; Rahasia Dagang:&lt;/strong&gt; Menyusun klausul perlindungan informasi rahasia perusahaan (Non-Disclosure) dan sanksi atas pelanggaran disiplin.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Kepatuhan Jaminan Sosial:&lt;/strong&gt; Mengintegrasikan kewajiban iuran BPJS Kesehatan dan BPJS Ketenagakerjaan (JKK, JHT, JK) ke dalam kontrak.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Legal Drafting (PKWT)&lt;/li&gt;&lt;li&gt;Compensation &amp; Benefit Administration&lt;/li&gt;&lt;li&gt;Employee Relations&lt;/li&gt;&lt;li&gt;Compliance UU Cipta Kerja&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Menghasilkan draf kontrak kerja yang komprehensif, melindungi hak perusahaan sekaligus menjamin kesejahteraan karyawan sesuai standar industri.&lt;/li&gt;&lt;li&gt;Menunjukkan akurasi dalam menerjemahkan kebutuhan operasional ke dalam bahasa hukum yang formal.&lt;/li&gt;&lt;/ul&gt;"
+          data-li-skills="Legal Drafting, Compensation & Benefits, Labor Law, Employee Relations" data-li-ext-url=""
+          data-li-ext-text="" data-li-proj-url="https://drive.google.com/file/d/1Xl2fZA3LgxV9z1PXJic7Np8C1m7nJYrX/view"
+          data-li-proj-text="📄 Lihat Draf PKWT Admin Project">
+          <div class="project-img-wrap">
+            <img src="assets/images/projects/pkwt-draft.jpg" alt="Draft PKWT Admin Project" class="project-img" />
+            <div class="project-overlay">
+              <span class="project-status status-done">✅ Selesai</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Legal Drafting</span>
+              <span class="project-tag">HR Compliance</span>
+              <span class="project-tag">Comp & Ben</span>
+            </div>
+            <h3 class="project-title">Penyusunan PKWT: Legalitas Hubungan Kerja Admin Project</h3>
+            <p class="project-desc">Merancang draf kontrak kerja berbasis proyek (1 tahun) dengan standarisasi upah,
+              tunjangan, dan kepatuhan BPJS sesuai regulasi.</p>
+            <div class="project-footer">
+              <div class="project-stack">
+                <span class="stack-chip">PKWT</span>
+                <span class="stack-chip">HR Admin</span>
+              </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1Xl2fZA3LgxV9z1PXJic7Np8C1m7nJYrX/view" target="_blank"
+              rel="noopener noreferrer" class="project-news-link" style="margin-top: 14px;">
+              📄 Lihat Draf PKWT Admin Project
+            </a>
+          </div>
+        </div>
+
+        <!-- PROJECT CARD: Job Description Graphic Designer -->
+        <div class="project-card reveal btn-li-modal"
+          data-li-title="Analisis & Penyusunan Uraian Jabatan (Job Description): Standardisasi Peran Graphic Designer"
+          data-li-org="Proyek Akademik &amp; Pelatihan / Human Resources (HR)" data-li-date="Selesai" data-li-icon="🖋️"
+          data-li-img="assets/images/projects/job-desc-designer.jpg"
+          data-li-desc="&lt;p&gt;Proyek penyusunan &lt;strong&gt;Uraian Jabatan (Job Description)&lt;/strong&gt; komprehensif untuk posisi Graphic Designer di departemen Marketing &amp; Creative. Dokumen ini dirancang untuk memberikan kejelasan peran, batasan wewenang, dan standar kompetensi yang dibutuhkan guna mendukung efektivitas rekrutmen dan penilaian kinerja.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab & Analisis:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Identifikasi & Tujuan Jabatan:&lt;/strong&gt; Mendefinisikan kontribusi utama posisi terhadap citra visual dan branding perusahaan melalui berbagai platform media.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Pemetaan Tanggung Jawab Utama:&lt;/strong&gt; Merumuskan aktivitas kunci mulai dari produksi aset digital, desain media cetak, hingga koordinasi teknis dengan vendor percetakan.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Matriks Hubungan Kerja:&lt;/strong&gt; Mengidentifikasi alur koordinasi internal (Marketing, Socmed, Copywriter) dan eksternal (Vendor & Agency) untuk menjamin kelancaran alur kerja kreatif.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Spesifikasi Jabatan:&lt;/strong&gt; Menetapkan standar kompetensi fungsional (Adobe Suite, Design Principles) dan kompetensi perilaku (kreativitas, manajemen waktu) yang relevan.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Dimensi & Wewenang:&lt;/strong&gt; Menentukan aset yang dikelola (Capex/Opex) serta batasan pengambilan keputusan dalam proses kreatif dan produksi.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Job Analysis & Design&lt;/li&gt;&lt;li&gt;Organizational Development&lt;/li&gt;&lt;li&gt;Manajemen Kinerja SDM&lt;/li&gt;&lt;li&gt;Legal & Administrative Writing&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tersusunnya dokumen Job Description yang sistematis dan objektif sebagai fondasi pengembangan SDM di divisi kreatif.&lt;/li&gt;&lt;li&gt;Memudahkan tim HR dalam menyusun iklan lowongan kerja dan panduan wawancara berbasis kompetensi.&lt;/li&gt;&lt;/ul&gt;"
+          data-li-skills="Job Analysis, Talent Acquisition, Organization Design, HR Planning" data-li-ext-url=""
+          data-li-ext-text="" data-li-proj-url="https://drive.google.com/file/d/1CU5zaFg-dsU9L5tRXCfkj1Mmfj0QzwRe/view"
+          data-li-proj-text="📄 Lihat Uraian Jabatan Graphic Designer">
+          <div class="project-img-wrap">
+            <img src="assets/images/projects/job-desc-designer.jpg" alt="Job Description Graphic Designer"
+              class="project-img" />
+            <div class="project-overlay">
+              <span class="project-status status-done">✅ Selesai</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Job Analysis</span>
+              <span class="project-tag">Organization Design</span>
+              <span class="project-tag">Talent Mgmt</span>
+            </div>
+            <h3 class="project-title">Analisis Jabatan: Standardisasi Peran Graphic Designer</h3>
+            <p class="project-desc">Menyusun struktur uraian jabatan detail untuk fungsi kreatif, mencakup tanggung
+              jawab utama, kompetensi, dan matriks wewenang operasional.</p>
+            <div class="project-footer">
+              <div class="project-stack">
+                <span class="stack-chip">Job Analysis</span>
+                <span class="stack-chip">HR Ops</span>
+              </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1CU5zaFg-dsU9L5tRXCfkj1Mmfj0QzwRe/view" target="_blank"
+              rel="noopener noreferrer" class="project-news-link" style="margin-top: 14px;">
+              📄 Lihat Uraian Jabatan Graphic Designer
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card reveal btn-li-modal"
+          data-li-title="Manajemen Penggajian (Payroll): Penyusunan Rekapitulasi Gaji & Slip Gaji Karyawan Berbasis Regulasi"
+          data-li-org="Proyek Akademik &amp; Pelatihan / Human Resources (HR)" data-li-date="Selesai" data-li-icon="💰"
+          data-li-img="assets/images/projects/payroll-management.jpg"
+          data-li-desc="&lt;p&gt;Proyek &lt;strong&gt;Manajemen Penggajian (Payroll)&lt;/strong&gt; yang mencakup kalkulasi komprehensif seluruh komponen upah karyawan untuk memastikan akurasi pembayaran dan kepatuhan terhadap regulasi ketenagakerjaan. Proyek ini melibatkan pengolahan data absensi, lembur, serta potongan wajib lainnya.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab & Analisis:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Kalkulasi Upah & Tunjangan:&lt;/strong&gt; Menyusun struktur gaji yang terdiri dari Gaji Pokok serta berbagai tunjangan (Makan, Transport, Kost) sesuai dengan penempatan kerja[cite: 4, 5].&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Perhitungan Lembur (Overtime):&lt;/strong&gt; Menghitung upah lembur secara akurat berdasarkan jam kerja efektif melebihi waktu standar perusahaan[cite: 68, 72].&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Manajemen Potongan Wajib:&lt;/strong&gt; Mengelola pemotongan iuran BPJS Kesehatan (1% karyawan, 4% perusahaan) dan BPJS Ketenagakerjaan (JHT, JKK, JK) sesuai ketentuan perundang-undangan[cite: 57, 60, 65].&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Rekapitulasi & Slip Gaji:&lt;/strong&gt; Mengintegrasikan seluruh data ke dalam Rekap Payroll bulanan dan menghasilkan Slip Gaji individual sebagai bukti pembayaran yang transparan[cite: 51, 52].&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Kepatuhan Pajak:&lt;/strong&gt; Memastikan perhitungan gaji bersih telah mempertimbangkan estimasi potongan pajak penghasilan (PPh Pasal 21) bagi karyawan yang memenuhi syarat.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Compensation & Benefits Management&lt;/li&gt;&lt;li&gt;Advanced Excel for Payroll&lt;/li&gt;&lt;li&gt;Taxation (PPh 21 Basics)&lt;/li&gt;&lt;li&gt;Social Security Administration (BPJS)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Menghasilkan sistem rekapitulasi gaji yang sistematis, meminimalkan risiko kesalahan input manual, dan mempercepat proses administrasi bulanan.&lt;/li&gt;&lt;li&gt;Membuktikan kemampuan dalam mengelola komponen finansial SDM secara detail dan akuntabel.&lt;/li&gt;&lt;/ul&gt;"
+          data-li-skills="Payroll Administration, Advanced Excel, Tax Compliance, BPJS Processing" data-li-ext-url=""
+          data-li-ext-text="" data-li-proj-url="https://drive.google.com/file/d/1SrnjUh6KN8zIC1Gwvva4iBWi8lqPy_uS/view"
+          data-li-proj-text="📄 Lihat Rekap Payroll & Slip Gaji">
+          <div class="project-img-wrap">
+            <img src="assets/images/projects/payroll-management.jpg" alt="Payroll Management" class="project-img" />
+            <div class="project-overlay">
+              <span class="project-status status-done">✅ Selesai</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Payroll</span>
+              <span class="project-tag">Excel Specialist</span>
+              <span class="project-tag">Comp & Ben</span>
+            </div>
+            <h3 class="project-title">Payroll Management: Akurasi Upah & Administrasi BPJS</h3>
+            <p class="project-desc">Mengelola perhitungan gaji karyawan secara menyeluruh, mencakup tunjangan, lembur,
+              iuran BPJS, hingga penerbitan slip gaji bulanan.</p>
+            <div class="project-footer">
+              <div class="project-stack">
+                <span class="stack-chip">Payroll Admin</span>
+                <span class="stack-chip">Excel</span>
+              </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1SrnjUh6KN8zIC1Gwvva4iBWi8lqPy_uS/view" target="_blank"
+              rel="noopener noreferrer" class="project-news-link" style="margin-top: 14px;">
+              📄 Lihat Rekap Payroll & Slip Gaji
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /proj-featured-grid -->
+
+      <!-- Show All Button -->
+      <div class="proj-showall-wrap reveal" style="text-align:center; margin-top: 48px;">
+        <button class="btn btn-outline proj-showall-btn" id="projShowAll">
+          <span>📂</span> Lihat Projek Lainnya
+        </button>
+      </div>
+
+      <!-- ── ALL PROJECTS GRID (hidden by default) ────────── -->
+      <div class="proj-allgrid-wrap" id="projAllGrid" style="display:none; margin-top: 48px;">
+        <div class="projects-grid">
+
+          <!-- PROJECT CARD 3 — Majalah Humanity 2023 -->
+          <div class="project-card reveal d2 btn-li-modal" data-li-title="Majalah Humanity 2023"
+            data-li-org="KSR PMI Universitas Brawijaya" data-li-date="2023" data-li-icon="📰"
+            data-li-img="assets/images/projects/project-3.jpg"
+            data-li-desc="&lt;p&gt;&lt;strong&gt;Humanity&lt;/strong&gt; adalah majalah tahunan KSR PMI Universitas Brawijaya yang memuat kegiatan organisasi, artikel aktual, dan karya anggota.&lt;/p&gt;&lt;p&gt;Edisi 2023 mengusung tema &lt;em&gt;&ldquo;Kreativitas Tanpa Batas&rdquo;&lt;/em&gt;. Saya berperan penuh sebagai &lt;strong&gt;Layouter&lt;/strong&gt;, mencakup pemilihan tipografi, pembuatan ilustrasi, dan penataan tata letak halaman untuk menghasilkan media yang estetis sekaligus komunikatif.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Tata Letak &amp; Desain Editorial (Adobe InDesign)&lt;/li&gt;&lt;li&gt;Ilustrasi Vektor &amp; Tipografi (Illustrator)&lt;/li&gt;&lt;li&gt;Manajemen Publikasi Skala Organisasi&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Majalah terdistribusi dalam format cetak dan digital dengan tampilan yang estetis&lt;/li&gt;&lt;li&gt;Meningkatkan minat baca publik melalui sajian visual yang menarik dan bermakna&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Adobe InDesign, Illustrator, Typography, Layout Design" data-li-ext-url="">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/project-3.jpg" alt="Projek 3" class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Layout &amp; Desain</span>
+                <span class="project-tag">Editorial</span>
+              </div>
+              <h3 class="project-title">Majalah Humanity 2023</h3>
+              <p class="project-desc">Berperan sebagai Layouter untuk Majalah Humanity 2023 KSR UB bertema "Kreativitas
+                Tanpa Batas", menata komposisi halaman, tipografi, dan ilustrasi keseluruhan majalah.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">Adobe InDesign</span>
+                  <span class="stack-chip">Illustrator</span>
+                  <span class="stack-chip">Typography</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- PROJECT CARD 5 — Proposal Risol Homemade -->
+          <div class="project-card reveal btn-li-modal" data-li-title="Proposal Usaha &ldquo;Risol Homemade&rdquo;"
+            data-li-org="Proyek Mandiri / Akademik" data-li-date="Selesai" data-li-icon="🥟"
+            data-li-img="assets/images/projects/proposal-risol.jpg"
+            data-li-desc="&lt;p&gt;Pengembangan proposal usaha &lt;strong&gt;Risol Homemade&lt;/strong&gt; yang berfokus pada inovasi jajanan tradisional dengan sentuhan modern untuk menarik pasar masa kini.&lt;/p&gt;&lt;p&gt;Saya terlibat aktif dalam &lt;strong&gt;perancangan konsep bisnis&lt;/strong&gt;, &lt;strong&gt;analisis strategi pemasaran&lt;/strong&gt;, dan &lt;strong&gt;penyusunan rencana keuangan&lt;/strong&gt; secara menyeluruh untuk merumuskan arah bisnis yang realistis dan menguntungkan.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Pengembangan Rencana Bisnis (Business Plan)&lt;/li&gt;&lt;li&gt;Analisis Strategi Pemasaran UMKM F&amp;amp;B&lt;/li&gt;&lt;li&gt;Proyeksi dan Validasi Rencana Finansial&lt;/li&gt;&lt;li&gt;Creative Problem Solving &amp;amp; Kerja Tim&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Menghasilkan proposal investasi kuliner yang terstruktur dengan parameter kelayakan yang rasional&lt;/li&gt;&lt;li&gt;Tersusunnya roadmap finansial yang solid sebagai panduan operasional pemasaran&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Business Analysis, Marketing Strategy, Financial Planning, Creative Thinking, Teamwork"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url=""
+            data-li-proj-text="📄 Lihat Proposal Risol Homemade">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/proposal-risol.jpg" alt="Proposal Risol Homemade" class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Business Plan</span>
+                <span class="project-tag">Marketing</span>
+                <span class="project-tag">F&B</span>
+              </div>
+              <h3 class="project-title">Proposal Usaha "Risol Homemade"</h3>
+              <p class="project-desc">Pengembangan rencana bisnis inovasi jajanan tradisional, mencakup perancangan
+                konsep usaha, analisis strategi pemasaran, hingga proyeksi finansial.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">Business Strategy</span>
+                  <span class="stack-chip">Financial Planning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 6 — Konselor Remaja ISMKMI -->
+          <div class="project-card reveal btn-li-modal"
+            data-li-title="Analisis Strategis &amp; Pengembangan Komunitas: Konselor Remaja ISMKMI"
+            data-li-org="Ikatan Senat Mahasiswa Kesehatan Masyarakat Indonesia (ISMKMI)" data-li-date="Selesai"
+            data-li-icon="🧠" data-li-img="assets/images/projects/ismkmi.jpg"
+            data-li-desc="&lt;p&gt;Analisis mendalam terhadap &lt;strong&gt;Komunitas Konselor Remaja ISMKMI&lt;/strong&gt;, sebuah inisiatif yang berfokus pada kesehatan mental dan reproduksi remaja. Proyek ini mengevaluasi efektivitas pendekatan &lt;em&gt;peer counseling&lt;/em&gt; dalam menangani isu seperti stres akademik, kecemasan, dan perundungan.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Analisis SWOT Organisasi:&lt;/strong&gt; Mengidentifikasi kekuatan program dan hambatan internal seperti ketimpangan beban kerja dan miskomunikasi.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Perancangan Strategi Intervensi:&lt;/strong&gt; Merumuskan kontribusi ilmu psikologi untuk memperkuat program, termasuk kurikulum pelatihan konselor yang lebih komprehensif.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Eksplorasi Isu Kontemporer:&lt;/strong&gt; Menghubungkan dinamika komunitas dengan tantangan remaja di era digital, termasuk pemanfaatan media sosial sebagai sarana edukasi.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Analisis Organisasi (SWOT)&lt;/li&gt;&lt;li&gt;Perancangan Intervensi Psikologi Komunitas&lt;/li&gt;&lt;li&gt;Konseling Sebaya (Peer Counseling)&lt;/li&gt;&lt;li&gt;Pelaporan Akademik &amp;amp; Problem Solving Sistemik&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Menghasilkan rekomendasi kolaborasi strategis antara akademisi dan mahasiswa psikologi untuk program berbasis bukti&lt;/li&gt;&lt;li&gt;Memberikan kerangka kerja bagi komunitas untuk menjadi &quot;ruang aman&quot; yang inklusif bagi remaja&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Analisis Organisasi (SWOT), Psikologi Komunitas, Konseling Sebaya, Laporan Akademik, Problem Solving"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url="" data-li-proj-text="📄 Lihat Laporan Analisis">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/ismkmi.jpg" alt="Konselor Remaja ISMKMI" class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Psikologi</span>
+                <span class="project-tag">Analisis Strategis</span>
+                <span class="project-tag">Konseling</span>
+              </div>
+              <h3 class="project-title">Analisis Strategis Komunitas: Konselor Remaja ISMKMI</h3>
+              <p class="project-desc">Melakukan identifikasi mendalam (SWOT), merumuskan intervensi psikologi, serta
+                memberikan kerangka kerja "ruang aman" inklusif bagi remaja Indonesia.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">Analisis Organisasi</span>
+                  <span class="stack-chip">Psikologi Komunitas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 7 — TAMBALER.ID -->
+          <div class="project-card reveal btn-li-modal" data-li-title="Product Design &amp; Business Plan: TAMBALER.ID"
+            data-li-org="Proyek Inovasi Digital / Akademik" data-li-date="Selesai" data-li-icon="📱"
+            data-li-img="assets/images/projects/tambaler.jpg"
+            data-li-desc="&lt;p&gt;&lt;strong&gt;TAMBALER.ID&lt;/strong&gt; adalah solusi digital yang dirancang untuk membantu pengendara saat mengalami kebocoran ban di lokasi asing atau di luar jam operasional bengkel konvensional.&lt;/p&gt;&lt;p&gt;Proyek ini mencakup perancangan ekosistem layanan menyeluruh, mulai dari antarmuka pengguna (UI), alur kerja aplikasi (UX), hingga strategi analisis bisnis yang komprehensif.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Identifikasi Masalah &amp;amp; Solusi:&lt;/strong&gt; Menganalisis kebutuhan pasar akan layanan bantuan darurat 24/7 dan transparansi harga dalam industri tambal ban tradisional.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Perancangan Fitur Produk:&lt;/strong&gt; Merumuskan fitur utama seperti &lt;em&gt;Real-time Tracking&lt;/em&gt;, estimasi harga transparan, dan sistem pembayaran multi-metode (Tunai &amp;amp; QRIS).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Analisis SWOT Bisnis:&lt;/strong&gt; Mengevaluasi peluang ekspansi geografis melalui kemitraan strategis dengan agen lokal.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Segmentasi Konsumen:&lt;/strong&gt; Memetakan pengguna primer dari masyarakat bermobilitas tinggi hingga komunitas pengendara yang adaptif terhadap teknologi.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Product Design (UI/UX Concept &amp;amp; Wireframing)&lt;/li&gt;&lt;li&gt;Analisis Strategi Bisnis Startup (SWOT)&lt;/li&gt;&lt;li&gt;Segmentasi Pasar &amp;amp; Manajemen Operasional&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Purwarupa sistem aplikasi layanan On-Demand bantuan darurat yang komprehensif&lt;/li&gt;&lt;li&gt;Cetak biru ekosistem digital yang transparan bagi pengguna maupun mitra tambal ban&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Product Design (UI/UX Concept), Business Strategy &amp; Analysis (SWOT), Market Segmentation, Operations Management"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url="" data-li-proj-text="📄 Lihat Laporan TAMBALER.ID">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/tambaler.jpg" alt="Aplikasi TAMBALER.ID" class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">UI/UX</span>
+                <span class="project-tag">Business Plan</span>
+                <span class="project-tag">Startup Tech</span>
+              </div>
+              <h3 class="project-title">Product Design & Business Plan: TAMBALER.ID</h3>
+              <p class="project-desc">Inovasi solusi digital panggilan tambal ban darurat (On-Demand Service) lengkap
+                dengan perancangan UI/UX konsep, transparansi harga, dan analisis SWOT komprehensif.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">UI/UX Concept</span>
+                  <span class="stack-chip">Market Strategy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 8 — Psikoedukasi Kesehatan Mental Remaja -->
+          <div class="project-card reveal btn-li-modal"
+            data-li-title="Psikoedukasi Kesehatan Mental: &quot;Yuk Kenali Gejala Dini Depresi pada Remaja&quot;"
+            data-li-org="SMA Kertanegara, Kota Malang / Proyek Intervensi Psikologi" data-li-date="Selesai"
+            data-li-icon="🫂" data-li-img="assets/images/projects/psikoedukasi.jpg"
+            data-li-desc="&lt;p&gt;Program intervensi psikoedukasi untuk meningkatkan literasi kesehatan mental di kalangan siswa &lt;strong&gt;SMA Kertanegara, Kota Malang&lt;/strong&gt;. Lahir sebagai respons atas tingginya kasus depresi remaja (15&amp;ndash;24 tahun) dan keterbatasan akses layanan bimbingan konseling di sekolah.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Need Assessment:&lt;/strong&gt; Mengidentifikasi urgensi intervensi melalui observasi kondisi sosio-ekonomi siswa dan fasilitas sekolah.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Desain Media Edukatif:&lt;/strong&gt; Merancang poster psikoedukasi visual dan menyunting video dokumentasi sebagai media literasi pasif.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Penyusunan Materi:&lt;/strong&gt; Memformulasikan konten edukasi berbasis DSM-5, mencakup definisi depresi, gejala awal, faktor risiko, dan strategi pencegahan.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Analisis Statistik:&lt;/strong&gt; Mengukur efektivitas program melalui data &lt;em&gt;pre-test&lt;/em&gt; dan &lt;em&gt;post-test&lt;/em&gt; menggunakan JASP (Paired Sample T-Test).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Implementasi Psikoedukasi Kesehatan Mental Terstruktur&lt;/li&gt;&lt;li&gt;Analisis Statistik Kuantitatif (JASP / Paired T-Test)&lt;/li&gt;&lt;li&gt;Desain Grafis Media Visual &amp;amp; Public Speaking&lt;/li&gt;&lt;li&gt;Needs Assessment&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Skor rata-rata pengetahuan siswa meningkat signifikan dari 6,00 menjadi 8,38&lt;/li&gt;&lt;li&gt;Berhasil mengubah persepsi siswa tentang kesehatan mental ke arah yang lebih terbuka&lt;/li&gt;&lt;li&gt;Mendapat rekomendasi dari tenaga pendidik SMA Kertanegara untuk pengembangan program lanjutan&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Psychoeducation, Public Speaking, Quantitative Analysis (JASP/T-Test), Graphic Design, Needs Assessment"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url=""
+            data-li-proj-text="📄 Lihat Laporan / Dokumentasi Edukasi">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/psikoedukasi.jpg" alt="Psikoedukasi Kesehatan Mental"
+                class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Psikoedukasi</span>
+                <span class="project-tag">Kesehatan Mental</span>
+                <span class="project-tag">Analisis Statistik</span>
+              </div>
+              <h3 class="project-title">Psikoedukasi: "Yuk Kenali Gejala Dini Depresi pada Remaja"</h3>
+              <p class="project-desc">Program intervensi mental di SMA Kertanegara, mencakup need assessment, kurikulum
+                DSM-5, desain poster edukatif, hingga analisis statistik Paired T-Test.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">Psychoeducation</span>
+                  <span class="stack-chip">Data Analysis (JASP)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 9 — Teori Reinforcement B.F. Skinner -->
+          <div class="project-card reveal btn-li-modal"
+            data-li-title="Diseminasi Kepribadian: Teori Reinforcement B.F. Skinner"
+            data-li-org="Proyek Akademik / Teori Kepribadian" data-li-date="Selesai" data-li-icon="🧩"
+            data-li-img="assets/images/projects/skinner.jpg"
+            data-li-desc="&lt;p&gt;Luaran akademik mata kuliah &lt;strong&gt;Teori Kepribadian&lt;/strong&gt; yang bertujuan mengedukasi khalayak luas tentang psikologi perilaku melalui media visual populer.&lt;/p&gt;&lt;p&gt;Fokus utama adalah menyederhanakan dan menerjemahkan teori &lt;strong&gt;B.F. Skinner&lt;/strong&gt; — khususnya dikotomi &lt;em&gt;Reinforcement Positif&lt;/em&gt; dan &lt;em&gt;Negatif&lt;/em&gt; — menjadi konten edukatif yang mudah dipahami oleh audiens awam di media sosial.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Penyusunan Konten (Copywriter):&lt;/strong&gt; Menerjemahkan terminologi teknis ke dalam narasi kasual tanpa mengurangi kedalaman teorinya.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Desain Visual:&lt;/strong&gt; Merancang tata letak poster dengan ilustrasi kontekstual (seperti interaksi orang tua-anak) untuk memperkuat pemahaman pembaca.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Manajemen Media Sosial:&lt;/strong&gt; Mempublikasikan konten di Instagram dan memperoleh lebih dari 50 &lt;em&gt;likes&lt;/em&gt; organik serta diskusi aktif di kolom komentar.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Validasi Ilmiah:&lt;/strong&gt; Memastikan seluruh konten bersumber dari literatur primer (Feist, Feist, &amp;amp; Roberts, 2018).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Behavioral Psychology (B.F. Skinner)&lt;/li&gt;&lt;li&gt;Visual Storytelling Kreatif&lt;/li&gt;&lt;li&gt;Manajemen Media Sosial &amp;amp; Copywriting&lt;/li&gt;&lt;li&gt;Science Communication&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Meningkatkan pemahaman publik tentang teori reinforcement melalui edukasi visual (50+ likes organik)&lt;/li&gt;&lt;li&gt;Berhasil menyederhanakan jargon psikologi menjadi bahasa yang mudah dicerna&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Behavioral Psychology, Visual Storytelling, Social Media Management, Copywriting, Science Communication"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url=""
+            data-li-proj-text="📄 Lihat Publikasi Edukasi (Instagram)">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/skinner.jpg" alt="Diseminasi Edukasi B.F. Skinner" class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Psikologi</span>
+                <span class="project-tag">Desain Visual</span>
+                <span class="project-tag">Media Sosial</span>
+              </div>
+              <h3 class="project-title">Diseminasi Edukasi: Teori Reinforcement B.F. Skinner</h3>
+              <p class="project-desc">Menerjemahkan teori kompleks Behaviorisme B.F. Skinner ke dalam desain komunikasi
+                visual (poster edukatif Instagram) yang mudah dipahami oleh audiens umum.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">Visual Storytelling</span>
+                  <span class="stack-chip">Science Comm.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 10 — Tutorial Psikometrika (IRT - PCM) -->
+          <div class="project-card reveal btn-li-modal"
+            data-li-title="Tutorial Analisis Psikometrika Lanjut: IRT &mdash; Partial Credit Model"
+            data-li-org="Proyek Akademik Akhir / Psikometrika" data-li-date="Selesai" data-li-icon="📈"
+            data-li-img="assets/images/projects/psikometrika.jpg"
+            data-li-desc="&lt;p&gt;Luaran akhir mata kuliah &lt;strong&gt;Psikometrika&lt;/strong&gt; berupa media edukatif mandiri tentang analisis &lt;em&gt;Item Response Theory (IRT)&lt;/em&gt; — khususnya menggunakan &lt;em&gt;Partial Credit Model (PCM)&lt;/em&gt; untuk menganalisis data skala politomi (seperti Skala Likert).&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab (Kelompok 11):&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Pengolahan Data (R Studio):&lt;/strong&gt; Menjalankan simulasi parameter data menggunakan R Studio untuk mendeteksi keandalan alat tes.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Produksi Video Tutorial:&lt;/strong&gt; Menyusun materi video tutorial komprehensif (screencast) dari tahap pra-pemrosesan hingga kesimpulan reliabilitas psikometrik.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Validasi Data:&lt;/strong&gt; Memastikan dataset yang digunakan memenuhi standar literatur psikologi yang bereputasi.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Diseminasi Sains:&lt;/strong&gt; Mengubah kalkulasi statistik kompleks menjadi panduan belajar mandiri yang mudah dipahami.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Pengolahan Data R Studio (Advanced Statistics IRT-PCM)&lt;/li&gt;&lt;li&gt;Evaluasi Instrumen Psikometri&lt;/li&gt;&lt;li&gt;Science Educational Communication&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Menghasilkan tutorial audiovisual yang sistematis dan mudah diikuti&lt;/li&gt;&lt;li&gt;Membuktikan kemampuan komputasi statistik lanjutan secara independen&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Advanced Statistics (IRT-PCM), Programming in R (R Studio), Psychometrics Data Analysis, Science Educational Communication"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url=""
+            data-li-proj-text="📄 Lihat Tutorial (YouTube / Drive)">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/psikometrika.jpg" alt="Tutorial Psikometrika IRT-PCM R Studio"
+                class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Psikometrika</span>
+                <span class="project-tag">Data Analytics (R)</span>
+                <span class="project-tag">Statistik</span>
+              </div>
+              <h3 class="project-title">Tutorial Psikometrika: IRT &mdash; Partial Credit Model (R Studio)</h3>
+              <p class="project-desc">Memproduksi panduan audiovisual interaktif terkait eksekusi komputasional Item
+                Response Theory berbasis R Studio guna menguji validitas instrumen psikologis poli-skala.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">R Studio</span>
+                  <span class="stack-chip">IRT - PCM</span>
+                  <span class="stack-chip">Data Analysis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 11 — Praktikum Psikologi Konseling -->
+          <div class="project-card reveal btn-li-modal"
+            data-li-title="Praktikum Psikologi Konseling: Simulasi &amp; Analisis Intervensi Klinis"
+            data-li-org="Proyek Tugas Akhir / Psikologi Konseling" data-li-date="Selesai" data-li-icon="🛋️"
+            data-li-img="assets/images/projects/konseling.jpg"
+            data-li-desc="&lt;p&gt;Tugas akhir praktikum &lt;strong&gt;Psikologi Konseling&lt;/strong&gt; berupa simulasi sesi konseling profesional melalui &lt;em&gt;roleplay&lt;/em&gt; terstruktur berdurasi 15&amp;ndash;20 menit.&lt;/p&gt;&lt;p&gt;Proyek ini mendemonstrasikan penerapan tahapan konseling sistematis dan penguasaan teknik komunikasi terapeutik (&lt;em&gt;Micro-Skills&lt;/em&gt;) yang esensial bagi praktisi klinis.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Pengembangan Skenario Klinis:&lt;/strong&gt; Menyusun naskah konseling terstruktur, mencakup identifikasi masalah konseli, goal-setting terapi, dan alur percakapan berbasis kode etik psikologi.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Penerapan Micro-Skills:&lt;/strong&gt; Mengeksekusi teknik seperti &lt;em&gt;attending behavior&lt;/em&gt;, &lt;em&gt;paraphrasing&lt;/em&gt;, &lt;em&gt;reflection of feeling&lt;/em&gt;, dan &lt;em&gt;summarizing&lt;/em&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Analisis Fase Konseling:&lt;/strong&gt; Mendokumentasikan perjalanan sesi dari &lt;em&gt;building rapport&lt;/em&gt;, eksplorasi masalah, hingga terminasi.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Penulisan Laporan Klinis:&lt;/strong&gt; Menyusun laporan observasi yang merangkum riwayat sesi, kendala, resolusi, dan evaluasi.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Produksi Video:&lt;/strong&gt; Bertanggung jawab atas pengambilan gambar dan penyuntingan video untuk dokumentasi pembelajaran.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Keterampilan Interpersonal &amp;amp; Konseling Klinis&lt;/li&gt;&lt;li&gt;Penguasaan Teknik Micro-Skills&lt;/li&gt;&lt;li&gt;Penulisan Laporan Observasi Ilmiah&lt;/li&gt;&lt;li&gt;Manajemen Produksi Konten Audiovisual&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Berhasil mendemonstrasikan peran konselor profesional dalam simulasi yang sesuai kode etik&lt;/li&gt;&lt;li&gt;Menghasilkan dokumen laporan dan video evaluasi sebagai referensi praktikum&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Keterampilan Klinis (Micro-Skills &amp; Interpersonal), Penulisan Laporan Kasus Observasi, Terapi Perilaku Komunikasi, Manajemen Produksi Konten Kreatif"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url=""
+            data-li-proj-text="📄 Lihat Laporan / Video Simulasi">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/konseling.jpg" alt="Simulasi Praktikum Psikologi Konseling"
+                class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Psikologi Klinis</span>
+                <span class="project-tag">Konseling</span>
+                <span class="project-tag">Observasi</span>
+              </div>
+              <h3 class="project-title">Praktikum Konseling: Simulasi Intervensi Klinis</h3>
+              <p class="project-desc">Mendemonstrasikan penerapan tahapan konseling sistematis dan penguasaan teknik
+                terapeutik (Micro-Skills) melalui simulasi roleplay terstruktur (15-20 Menit).</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">Micro-Skills Konseling</span>
+                  <span class="stack-chip">Laporan Klinis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 12 — Analisis Prediktif Konsumen (Regresi Logistik) -->
+          <div class="project-card reveal btn-li-modal"
+            data-li-title="Analisis Prediktif Perilaku Konsumen: Implementasi Regresi Logistik Biner"
+            data-li-org="Proyek Akademik / Data Analytics" data-li-date="Selesai" data-li-icon="📊"
+            data-li-img="assets/images/projects/data-analytics.jpg"
+            data-li-desc="&lt;p&gt;Proyek analitik data yang bertujuan membangun model statistik prediktif untuk memahami faktor-faktor yang mendorong keputusan pembelian konsumen.&lt;/p&gt;&lt;p&gt;Menggunakan pendekatan &lt;strong&gt;Regresi Logistik Biner&lt;/strong&gt;, model ini menganalisis perilaku individu berdasarkan variabel demografis (Usia, Pendidikan, Status Pernikahan) dan profesional (Pendapatan, Pengalaman Kerja).&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Exploratory Data Analysis (EDA):&lt;/strong&gt; Memetakan distribusi data dan mengidentifikasi tren serta korelasi, termasuk antara pendapatan dan kecenderungan pembelian.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Data Preprocessing:&lt;/strong&gt; Menerapkan teknik &lt;em&gt;dummy variables&lt;/em&gt;, penanganan &lt;em&gt;outliers&lt;/em&gt;, dan imputasi &lt;em&gt;missing values&lt;/em&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Statistical Modeling:&lt;/strong&gt; Membangun model regresi logistik (Python/R) untuk mengukur pengaruh tiap variabel terhadap output.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Model Evaluation:&lt;/strong&gt; Menggunakan metrik industri: Confusion Matrix, Accuracy Rate, dan kurva AUC-ROC.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Technical Storytelling:&lt;/strong&gt; Menyajikan hasil analisis dalam presentasi audiovisual 10 menit yang komunikatif.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Statistical Modeling (Machine Learning — Logistic Regression)&lt;/li&gt;&lt;li&gt;Evaluasi Metrik Prediktif (AUC-ROC)&lt;/li&gt;&lt;li&gt;Data Science (Python/R)&lt;/li&gt;&lt;li&gt;Technical Data Storytelling&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Mengidentifikasi &lt;strong&gt;Pendapatan&lt;/strong&gt; dan &lt;strong&gt;Usia&lt;/strong&gt; sebagai prediktor terkuat keputusan pembelian&lt;/li&gt;&lt;li&gt;Model mencapai skor &lt;strong&gt;AUC-ROC 0,85&lt;/strong&gt; — melampaui ekspektasi dan terklasifikasi sebagai excellent&lt;/li&gt;&lt;li&gt;Menghasilkan rekomendasi pemasaran berbasis data (data-driven marketing)&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Data Analysis &amp; Visualization, Statistical Modeling (Logistic Regression), ML Evaluation Metrics (AUC-ROC), Technical Storytelling, Python/R"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url=""
+            data-li-proj-text="📄 Lihat Presentasi (Video / PDF)">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/data-analytics.jpg" alt="Analisis Prediktif Regresi Logistik Biner"
+                class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Data Analytics</span>
+                <span class="project-tag">Machine Learning</span>
+                <span class="project-tag">Python/R</span>
+              </div>
+              <h3 class="project-title">Analisis Prediktif Konsumen: Regresi Logistik Biner</h3>
+              <p class="project-desc">Membangun model regresi statistik komputasional guna memprediksi probabilitas
+                keputusan pembelian (Purchasing Decision) dengan metrik keandalan AUC-ROC 0.85.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">Data Sci. Python/R</span>
+                  <span class="stack-chip">Logistic Regression</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 13 — Data Cleaning & Wrangling (R Studio) -->
+          <div class="project-card reveal btn-li-modal"
+            data-li-title="Data Cleaning &amp; Wrangling Tutorial: Pre-processing Dataset Kompleks Menggunakan R"
+            data-li-org="Proyek Mandiri / Data Analytics" data-li-date="Selesai" data-li-icon="🧹"
+            data-li-img="assets/images/projects/data-cleaning.jpg"
+            data-li-desc="&lt;p&gt;Proyek independen yang mendemonstrasikan proses fundamental &lt;em&gt;Data Cleaning&lt;/em&gt; dan &lt;em&gt;Data Wrangling&lt;/em&gt; menggunakan bahasa pemrograman &lt;strong&gt;R&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;Fokus utama adalah menangani tantangan umum pada data mentah — seperti inkonsistensi respons, nilai ekstrem (&lt;em&gt;outliers&lt;/em&gt;), dan data kosong (&lt;em&gt;missing values&lt;/em&gt;) — agar dataset final valid untuk pemodelan dan Machine Learning.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Demonstrasi Teknis:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Simulasi Dataset:&lt;/strong&gt; Membuat dataset artifisial 100 observasi dengan variabel numerik &amp;amp; kategorikal (Jenis Kelamin, Usia, Penghasilan, Status).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Transformasi Data:&lt;/strong&gt; Mengubah format &lt;em&gt;Wide Table&lt;/em&gt; menjadi &lt;em&gt;Long Table&lt;/em&gt; untuk kebutuhan visualisasi kompleks.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Penanganan Missing Values:&lt;/strong&gt; Mengatasi sel kosong dengan metode &lt;em&gt;Mean/Median Imputation&lt;/em&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Validasi Konsistensi:&lt;/strong&gt; Membersihkan typo dan nilai tidak wajar pada variabel kategorikal.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Penanganan Outliers:&lt;/strong&gt; Menganalisis nilai ekstrem dan menentukan apakah perlu dibuang atau disesuaikan.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Modul Tutorial:&lt;/strong&gt; Mengemas proses ke dalam video tutorial 10 menit yang berfokus pada pemahaman logika sintaks.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Pemrograman R (Tidyverse, Dplyr, Tidyr)&lt;/li&gt;&lt;li&gt;Data Cleaning &amp;amp; Wrangling (Pre-processing)&lt;/li&gt;&lt;li&gt;Statistik Deskriptif &amp;amp; Imputasi Missing Values&lt;/li&gt;&lt;li&gt;Logika Algoritmik &amp;amp; Prompt Engineering&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Menguasai pipeline pembersihan data dari dataset kotor menjadi data yang siap dianalisis&lt;/li&gt;&lt;li&gt;Menghasilkan video tutorial instruksional sebagai referensi komunal pemrograman R&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="R Programming (Tidyverse, Dplyr, Tidyr), Data Cleaning &amp; Wrangling, Descriptive Statistics, Missing Values Imputation, Algorithmic Logic"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url=""
+            data-li-proj-text="📄 Lihat Tutorial Pre-processing Data">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/data-cleaning.jpg" alt="Data Cleaning &amp; Wrangling Tutorial R Studio"
+                class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Data Wrangling</span>
+                <span class="project-tag">R Language</span>
+                <span class="project-tag">Tidyverse</span>
+              </div>
+              <h3 class="project-title">Data Cleaning & Wrangling Tutorial: Pre-processing Dataset via R</h3>
+              <p class="project-desc">Mendemonstrasikan pipeline teknis manipulasi data mentah (Wide-to-Long, Outliers
+                removal, Missing Values imputation) berbasis Tidyverse di console R Studio.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">Data Cleaning Tools</span>
+                  <span class="stack-chip">R Studio (Dplyr)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 14 — Life After Campus -->
+          <div class="project-card reveal btn-li-modal"
+            data-li-title="Psikoedukasi Kognitif: Strategi Menghadapi &quot;Life After Campus&quot;"
+            data-li-org="Proyek Akademik / Psikologi Kognitif &amp; Ekonomi Perilaku" data-li-date="Selesai"
+            data-li-icon="🎓" data-li-img="assets/images/projects/life-after-campus.jpg"
+            data-li-desc="&lt;p&gt;Inisiatif psikoedukasi audiovisual yang ditujukan untuk membantu &lt;em&gt;fresh graduates&lt;/em&gt; menghadapi kecemasan transisi dari dunia kampus ke kehidupan nyata.&lt;/p&gt;&lt;p&gt;Fokus analisis mencakup strategi pengambilan keputusan karir, kemandirian finansial, dan manajemen krisis &lt;em&gt;quarter-life&lt;/em&gt; — dipadukan dengan kaidah psikologi kognitif untuk menetralisir bias berpikir yang kontraproduktif.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Integrasi Teori Ekonomi Perilaku (Daniel Kahneman):&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Prospect Theory &amp;amp; Loss Aversion:&lt;/strong&gt; Memetakan kecenderungan otak dalam berlebihan menghindari kerugian, sehingga menghambat pengambilan risiko yang rasional untuk keuntungan jangka panjang.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Reference Point Bias:&lt;/strong&gt; Membantu lulusan melepaskan diri dari ekspektasi eksternal dan membangun acuan keberhasilan berdasarkan kapasitas diri sendiri.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Framing Effect:&lt;/strong&gt; Mengkritisi narasi sosial yang membentuk pilihan karir secara tidak sadar, seperti romanisasi berlebihan atas keamanan kerja di perusahaan besar.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Merancang strategi mitigasi kecemasan yang aplikatif, termasuk manajemen risiko, pemetaan minat, dan networking profesional.&lt;/li&gt;&lt;li&gt;Menyusun panduan intervensi empatik bagi orang tua agar tidak menambah tekanan pada anak yang sedang bertransisi.&lt;/li&gt;&lt;li&gt;Memproduksi konten video edukatif yang padat dan engaging.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Psikologi Kognitif &amp;amp; Ekonomi Perilaku (Kahneman)&lt;/li&gt;&lt;li&gt;Komunikasi Sains Multidisiplin &amp;amp; Psikoedukasi&lt;/li&gt;&lt;li&gt;Analisis Transisi Perkembangan Remaja Akhir&lt;/li&gt;&lt;li&gt;Produksi Konten Edukatif Digital&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Menciptakan media literasi digital untuk memandu fresh graduates mengenali bias psikologis mereka&lt;/li&gt;&lt;li&gt;Menyusun panduan praktis bagi keluarga dalam mendampingi masa transisi karir anak&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Cognitive Psychology Frameworks, Behavioral Economics (Loss Aversion/Prospect Theory), Emotional Intervention Strategy, Multimedia Content Storytelling"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url=""
+            data-li-proj-text="📄 Lihat Video Edukasi: Life After Campus">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/life-after-campus.jpg" alt="Psikoedukasi Life After Campus"
+                class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Psikoedukasi</span>
+                <span class="project-tag">Psikologi Kognitif</span>
+                <span class="project-tag">Visual Edukasi</span>
+              </div>
+              <h3 class="project-title">Psikoedukasi Kognitif: Strategi Menghadapi "Life After Campus"</h3>
+              <p class="project-desc">Mengkaji bias keputusan kognitif fresh graduates melalui kacamata Teori Prospek
+                Kahneman (Loss Aversion & Framing Effect) ke dalam video edukasi.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">Cognitive Psychology</span>
+                  <span class="stack-chip">Science Comm.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 15 — Praktikum Asesmen Psikologi Komprehensif -->
+          <div class="project-card reveal btn-li-modal"
+            data-li-title="Praktikum Asesmen Psikologi Komprehensif: Integrasi Fungsi Kognitif dan Profil Kepribadian"
+            data-li-org="Proyek Akademik / Asesmen Kepribadian &amp; Kognitif" data-li-date="Selesai" data-li-icon="📋"
+            data-li-img="assets/images/projects/asesmen-komprehensif.jpg"
+            data-li-desc="&lt;p&gt;Pemeriksaan psikologis menyeluruh yang mengintegrasikan asesmen kemampuan kognitif, bakat minat, dan profil kepribadian non-kognitif. Menggunakan pendekatan multimetode, saya bertanggung jawab dalam administrasi tes, observasi klinis, skoring, hingga sintesis laporan integratif.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Asesmen Kognitif &amp;amp; Bakat:&lt;/strong&gt; Mengadministrasikan IST (struktur kecerdasan), RMIB (minat karir), dan Pauli (daya tahan kerja &amp;amp; stabilitas emosi).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Asesmen Kepribadian:&lt;/strong&gt; Menganalisis PAPI Kostick (20 aspek gaya kerja) dan tes proyektif grafis (BAUM &amp;amp; DAP) untuk mengeksplorasi dinamika psikologis subjek.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Observasi Klinis &amp;amp; Wawancara:&lt;/strong&gt; Mencatat perilaku selama proses tes untuk memvalidasi hasil skor kuantitatif.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Sintesis Laporan:&lt;/strong&gt; Mengintegrasikan temuan lintas instrumen menjadi satu Laporan Pemeriksaan Psikologis (LPP) yang utuh.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Asesmen Psikologi Kognitif &amp;amp; Kepribadian (IST, Pauli, RMIB, PAPI Kostick, BAUM, DAP)&lt;/li&gt;&lt;li&gt;Analisis Data Klinis untuk Rekomendasi Karir&lt;/li&gt;&lt;li&gt;Kepatuhan Etika Profesional (Informed Consent)&lt;/li&gt;&lt;li&gt;Observasi &amp;amp; Interpretasi Tes Proyektif&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Mengungkap profil intelektual subjek (IQ 113: Di Atas Rata-rata) dengan kekuatan di area numerik dan verbal, selaras dengan minat Scientific &amp;amp; Literary&lt;/li&gt;&lt;li&gt;Menghasilkan laporan komprehensif dengan rekomendasi pengembangan kepemimpinan yang konkret&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Psychological Assessment, Cognitive Tests (IST/Pauli), Interest Inventory (RMIB), Personality Tests (PAPI/BAUM/DAP), Clinical Observation"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url=""
+            data-li-proj-text="📄 Lihat Laporan Asesmen Komprehensif">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/asesmen-komprehensif.jpg" alt="Asesmen Psikologi Komprehensif"
+                class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Psikologi Klinis</span>
+                <span class="project-tag">Asesmen Kognitif</span>
+                <span class="project-tag">Tes Kepribadian</span>
+              </div>
+              <h3 class="project-title">Asesmen Psikologi Komprehensif: Integrasi Kognitif &amp; Kepribadian</h3>
+              <p class="project-desc">Pemeriksaan psikologis menyeluruh mengintegrasikan asesmen kognitif (IST, Pauli,
+                RMIB) dan kepribadian (PAPI Kostick, BAUM, DAP).</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">IST &amp; Pauli</span>
+                  <span class="stack-chip">Tes Proyektif</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 16 — Analisis Portofolio Diri -->
+          <div class="project-card reveal btn-li-modal"
+            data-li-title="Analisis Portofolio Diri: Dinamika Emosi dan Regulasi Diri"
+            data-li-org="Proyek Akademik / Psikologi Diri dan Emosi" data-li-date="Selesai" data-li-icon="🧠"
+            data-li-img="assets/images/projects/refleksi-diri.jpg"
+            data-li-desc="&lt;p&gt;Tugas portofolio komprehensif untuk mata kuliah &lt;strong&gt;Diri dan Emosi&lt;/strong&gt;, berfokus pada identifikasi dan analisis mendalam permasalahan personal melalui lensa psikologi. Mencakup pemetaan respons emosional, tantangan regulasi diri, dan latar belakang perkembangan yang memengaruhi cara individu menghadapi krisis.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Identifikasi Masalah &amp;amp; Audit Emosional:&lt;/strong&gt; Menentukan fenomena krisis personal sebagai studi kasus, memetakan emosi dominan dan pemicunya (&lt;em&gt;trigger&lt;/em&gt;), serta menganalisis dampaknya terhadap perilaku.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Strategi Regulasi Emosi:&lt;/strong&gt; Mengevaluasi kesulitan pengendalian emosi dan menentukan strategi regulasi yang paling tepat untuk menyelaraskan kembali konflik kognitif.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Analisis Perkembangan &amp;amp; Interpersonal:&lt;/strong&gt; Menghubungkan riwayat pengalaman masa lalu dengan pola respons emosional saat ini dalam kerangka psikologi perkembangan.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Refleksi Diri &amp;amp; Simpulan:&lt;/strong&gt; Menyusun sintesis akhir untuk meningkatkan &lt;em&gt;self-awareness&lt;/em&gt; dan kematangan emosional.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Psikologi Emosi &amp;amp; Regulasi Diri&lt;/li&gt;&lt;li&gt;Analisis Introspektif Berbasis Psikologi Perkembangan&lt;/li&gt;&lt;li&gt;Kecerdasan Intrapersonal (Self-Awareness &amp;amp; Self-Management)&lt;/li&gt;&lt;li&gt;Tinjauan Teori Psikologi Interpersonal&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Menghasilkan dokumen refleksi yang mengaitkan teori psikologi akademik dengan pengalaman empiris personal&lt;/li&gt;&lt;li&gt;Membuktikan kemampuan mengubah kerentanan personal menjadi sistem manajemen krisis yang adaptif&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Emotion/Self-Regulation, Introspective Analysis, Developmental Psychology, Self-Awareness, Interpersonal Psychology"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url=""
+            data-li-proj-text="📄 Lihat Portofolio / Refleksi Diri">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/refleksi-diri.jpg" alt="Portofolio Diri: Emosi &amp; Regulasi"
+                class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Psikologi Emosi</span>
+                <span class="project-tag">Regulasi Diri</span>
+                <span class="project-tag">Introspeksi</span>
+              </div>
+              <h3 class="project-title">Analisis Portofolio Diri: Dinamika Emosi dan Regulasi Diri</h3>
+              <p class="project-desc">Memetakan fenomena masalah personal, audit emosional, observasi riwayat
+                perkembangan interpersonal masa lalu, dan penetapan strategi tata laksana regulasi diri.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">Self-Awareness</span>
+                  <span class="stack-chip">Emotion Regulation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJECT CARD 17 — Laporan Intervensi Modifikasi Perilaku -->
+          <div class="project-card reveal btn-li-modal"
+            data-li-title="Laporan Intervensi Modifikasi Perilaku: Aplikasi Teknik Operant Conditioning"
+            data-li-org="Proyek Akademik / Modifikasi Perilaku" data-li-date="Selesai" data-li-icon="📈"
+            data-li-img="assets/images/projects/modifikasi-perilaku.jpg"
+            data-li-desc="&lt;p&gt;Implementasi praktis prinsip teori belajar untuk memodifikasi perilaku spesifik pada subjek melalui intervensi yang terukur. Menggunakan prosedur &lt;strong&gt;Modifikasi Perilaku&lt;/strong&gt; non-aversif secara sistematis, dari pengukuran &lt;em&gt;baseline&lt;/em&gt; hingga fase intervensi, untuk meningkatkan perilaku adaptif dan menekan perilaku maladaptif.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tanggung Jawab:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Asesmen Perilaku:&lt;/strong&gt; Mengidentifikasi dan mendefinisikan perilaku target secara operasional agar terukur secara empiris.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Analisis Fungsional A-B-C:&lt;/strong&gt; Memetakan &lt;em&gt;Antecedent&lt;/em&gt; (pemicu) dan &lt;em&gt;Consequence&lt;/em&gt; (konsekuensi) yang mempertahankan perilaku maladaptif.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Perancangan Intervensi:&lt;/strong&gt; Menggunakan strategi &lt;em&gt;Operant Conditioning&lt;/em&gt; dengan &lt;strong&gt;Positive Reinforcement&lt;/strong&gt; (pujian dan afirmasi sosial) secara presisi dan bertahap.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Pemantauan Data:&lt;/strong&gt; Merekam data secara konsisten dari &lt;em&gt;baseline&lt;/em&gt; hingga pasca-intervensi menggunakan &lt;em&gt;Frequency Recording&lt;/em&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Evaluasi:&lt;/strong&gt; Menyusun grafik komparasi Baseline vs. Intervensi untuk memvisualisasikan progres perubahan perilaku.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Kompetensi:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Applied Behavior Analysis (ABA)&lt;/li&gt;&lt;li&gt;Observasi Empiris &amp;amp; Pencatatan Perilaku Sistematis&lt;/li&gt;&lt;li&gt;Konstruksi Intervensi Psikologis Terapan&lt;/li&gt;&lt;li&gt;Etika Intervensi Non-Aversif&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Hasil:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Mendemonstrasikan perubahan perilaku positif yang signifikan, dibuktikan melalui grafik tren frekuensi&lt;/li&gt;&lt;li&gt;Menyusun strategi pemeliharaan perilaku (&lt;em&gt;maintenance strategies&lt;/em&gt;) untuk lingkungan subjek sehari-hari&lt;/li&gt;&lt;/ul&gt;"
+            data-li-skills="Applied Behavior Analysis (ABA), Operant Conditioning, Behavioral Assessment, Positive Reinforcement, Ethical Modification"
+            data-li-ext-url="" data-li-ext-text="" data-li-proj-url=""
+            data-li-proj-text="📄 Lihat Laporan &amp; Grafik Proyek">
+            <div class="project-img-wrap">
+              <img src="assets/images/projects/modifikasi-perilaku.jpg" alt="Laporan Intervensi Modifikasi Perilaku"
+                class="project-img" />
+              <div class="project-overlay">
+                <span class="project-status status-done">✅ Selesai</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Psikologi Klinis</span>
+                <span class="project-tag">Modifikasi Perilaku</span>
+                <span class="project-tag">ABA</span>
+              </div>
+              <h3 class="project-title">Laporan Intervensi Modifikasi Perilaku: Aplikasi Teknik Operant Conditioning
+              </h3>
+              <p class="project-desc">Menerapkan prosedur modifikasi perilaku etis non-aversif (Positive Reinforcement)
+                melalui analisis data Baseline-Intervensi empiris berorientasi grafik.</p>
+              <div class="project-footer">
+                <div class="project-stack">
+                  <span class="stack-chip">Analysis A-B-C</span>
+                  <span class="stack-chip">Behavior Assessment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div><!-- /projects-grid (all) -->
+        <div style="text-align:center; margin-top: 40px;">
+          <button class="btn btn-outline" id="projHideAll">
+            <span>🔼</span> Sembunyikan Projek
+          </button>
+        </div>
+      </div><!-- /proj-allgrid-wrap -->
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       SERTIFIKAT LAINNYA (Kepanitiaan & Lain-lain)
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="other-certs section-pad" id="other-certs">
+    <div class="container">
+      <span class="badge reveal">Koleksi Sertifikat</span>
+      <h2 class="section-title reveal">Sertifikat <span class="gradient-text">Kepanitiaan & Partisipasi</span></h2>
+      <p class="section-subtitle reveal">
+        Sertifikat penghargaan, kepanitiaan, dan keikutsertaan acara dari berbagai organisasi.
+      </p>
+
+      <div class="ocert-gallery">
+        <div class="ocert-img-card reveal d1" data-title="Probin & Gathering Psikologi UB 2022"
+          data-desc="Fakultas Ilmu Sosial dan Ilmu Politik (FISIP) UB · 2022 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-probin-psikologi.jpg"
+            alt="Sertifikat Probin Psikologi 2022" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Probin Psikologi 2022</span>
+            <span class="ocert-overlay-badge">Peserta</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d2" data-title="ASEAN Digital Literacy Programme 2022"
+          data-desc="Google.org, ASEAN Foundation & Yayasan Fatihunnur · 2022 · Workshop">
+          <img src="assets/images/certificates/other/cert-asean-digital.jpg" alt="Sertifikat ASEAN Digital Literacy" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Digital Literacy Workshop</span>
+            <span class="ocert-overlay-badge">Internasional</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d3" data-title="Peserta Psyconsult HMP Psikologi"
+          data-desc="Himpunan Mahasiswa Psikologi Universitas Brawijaya · 2022 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-psyconsult.jpg" alt="Sertifikat Psyconsult Psikologi UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Psyconsult Participant</span>
+            <span class="ocert-overlay-badge">Psikologi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d4" data-title="Webinar Mental Disorder: Unromantically"
+          data-desc="KJF Kesehatan Mental Psikologi UB & Manusiabiasa · Agustus 2022 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-mental-disorder.jpg"
+            alt="Sertifikat Webinar Kesehatan Mental" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Webinar Kesehatan Mental</span>
+            <span class="ocert-overlay-badge">Psikologi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d5" data-title="Talkshow Ukhuwah Islamiyyah"
+          data-desc="DPD LDII Kota Malang · Oktober 2022 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-ldii-talkshow.jpg" alt="Sertifikat Talkshow LDII" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Sinergi Pemuda Talkshow</span>
+            <span class="ocert-overlay-badge">Keagamaan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal" data-title="Promosi Kesadaran Disabilitas di Kampus"
+          data-desc="Fakultas Psikologi Universitas Airlangga · Desember 2022 · Seminar">
+          <img src="assets/images/certificates/other/cert-unair-disability.jpg"
+            alt="Sertifikat Seminar Psikologi UNAIR" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Seminar Disabilitas UNAIR</span>
+            <span class="ocert-overlay-badge">Akademik</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d1" data-title="Divisi Perlengkapan & Dokumentasi"
+          data-desc="Komunitas Peduli Inklusi Nusantara (KOPINUS) · Desember 2022 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-kopinus-hdi.jpg" alt="Sertifikat Fun Game KOPINUS" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Kepanitiaan HDI 2022</span>
+            <span class="ocert-overlay-badge">Inklusi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d2" data-title="Seminar Kebencanaan Program JRCS"
+          data-desc="PMI Kab. Malang & Japanese Red Cross Society · Maret 2023 · Seminar">
+          <img src="assets/images/certificates/other/cert-pmi-japan.jpg" alt="Sertifikat Seminar PMI Japan Red Cross" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Disaster Preparedness</span>
+            <span class="ocert-overlay-badge">Relawan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d3" data-title="Workshop & Baris Art Competition"
+          data-desc="BARIS FISIP UB · 7 Mei 2023 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-baris-art.jpg" alt="Sertifikat BARIS FISIP UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Baris Art Participant</span>
+            <span class="ocert-overlay-badge">Seni</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d4" data-title="Peserta DIKSI (Diskusi Inklusi)"
+          data-desc="Kementerian Sosial dan Lingkungan BEM FIB UB · Mei 2023 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-diksi-fib.jpg" alt="Sertifikat DIKSI BEM FIB UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Diskusi Inklusi (DIKSI)</span>
+            <span class="ocert-overlay-badge">Peserta</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d5" data-title="Peer Counselor"
+          data-desc="Universitas Brawijaya · No. 10690/UN10.B60.04/TU/2023 · 28 Juli 2023">
+          <img src="assets/images/certificates/other/cert-peer-counselor-ub.jpg"
+            alt="Peer Counselor Universitas Brawijaya" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Peer Counselor</span>
+            <span class="ocert-overlay-badge">Counseling</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal" data-title="Perwakilan KOPINUS pada FGD 2023"
+          data-desc="Forum Mahasiswa Peduli Inklusi (FORMAPI) UB · September 2023 · Diskusi">
+          <img src="assets/images/certificates/other/cert-fgd-kopinus.jpg" alt="Sertifikat FGD FORMAPI UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">FGD Inklusi Mahasiswa</span>
+            <span class="ocert-overlay-badge">Peserta</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d1" data-title="The Psychology of Corruption - Dr. Niels Köbis"
+          data-desc="International Lecture Psychology Universitas Brawijaya · Oktober 2023 · Seminar">
+          <img src="assets/images/certificates/other/cert-psychology-lecture.jpg"
+            alt="Sertifikat International Lecture Psychology" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">International Lecture</span>
+            <span class="ocert-overlay-badge">Akademik</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d2" data-title="Staff Divisi PDD - Baris Science Festival"
+          data-desc="Badan Riset Ilmu Sosial (BARIS) FISIP UB · Oktober 2023 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-bsf-pdd.jpg"
+            alt="Sertifikat Staff PDD Baris Science Festival" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Staff PDD - BSF 2023</span>
+            <span class="ocert-overlay-badge">Kepanitiaan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d3" data-title="Webinar Nasional Disability Awareness"
+          data-desc="FORMAPI & EM UB · 21 Oktober 2023 · Seminar">
+          <img src="assets/images/certificates/other/cert-disability-awareness.jpg"
+            alt="Sertifikat Disability Awareness 2023" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Disability Awareness 2023</span>
+            <span class="ocert-overlay-badge">Webinar</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d4" data-title="Staff Divisi PDD - PKKMB FISIP UB"
+          data-desc="Fakultas Ilmu Sosial dan Ilmu Politik UB · 2023 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-pkkmb-pdd.jpg" alt="Sertifikat Staff PDD PKKMB FISIP" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Staff PDD - PKKMB 2023</span>
+            <span class="ocert-overlay-badge">Kepanitiaan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d5" data-title="Koordinator Divisi PDD - Sekolah Advokasi"
+          data-desc="Forum Mahasiswa Peduli Inklusi (FORMAPI) UB · Maret 2024 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-advokasi-pdd.jpg"
+            alt="Sertifikat Koordinator PDD Sekolah Advokasi" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Koordinator PDD - Advokasi</span>
+            <span class="ocert-overlay-badge">Kepemimpinan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal" data-title="Temu Inklusif 1.0"
+          data-desc="BEM FISIP UB 2024 · 25 Mei 2024 · Partisipasi">
+          <img src="assets/images/certificates/other/cert-temu-inklusif.jpg" alt="Sertifikat Temu Inklusif 1.0" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Temu Inklusif 1.0 Participant</span>
+            <span class="ocert-overlay-badge">Inklusi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d1" data-title="Finisher HUT TNI Angkatan Udara 79"
+          data-desc="ONE Virtual Race · Jarak 18,13 KM · Olahraga">
+          <img src="assets/images/certificates/other/cert-run-tni-au.jpg" alt="Sertifikat Virtual Run TNI AU" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Finisher 18,13 KM Run</span>
+            <span class="ocert-overlay-badge">Olahraga</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d2" data-title="Co-Divisi Humas dan Dana"
+          data-desc="HUT XLIV KSR UB (Sembagi Arutala) · September - Oktober 2024 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-humas-ksr44.jpg" alt="Sertifikat Co-Divisi Humas KSR 44" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Humas & Dana - HUT KSR 44</span>
+            <span class="ocert-overlay-badge">Kepanitiaan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d3" data-title="Finisher Sumpah Pemuda Virtual Run"
+          data-desc="ONE Virtual Race · Jarak 30,84 KM · Olahraga">
+          <img src="assets/images/certificates/other/cert-run-sumpah-pemuda.jpg" alt="Sertifikat Virtual Run 30KM" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Finisher 30,84 KM Run</span>
+            <span class="ocert-overlay-badge">Olahraga</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d4" data-title="Koordinator Seksi Penerbitan & Penerangan"
+          data-desc="KSR PMI Unit Universitas Brawijaya · Tahun 2024 · Penghargaan">
+          <img src="assets/images/certificates/other/cert-piagam-ksr-2024.jpg" alt="Piagam Penghargaan KSR UB 2024" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Koordinator Penerbitan KSR</span>
+            <span class="ocert-overlay-badge">Organisasi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d5" data-title="Finisher Mie Ayam Series Virtual Run"
+          data-desc="Iconic Virtual Run · Jarak 10,1 KM · Olahraga">
+          <img src="assets/images/certificates/other/cert-run-mie-ayam.jpg" alt="Sertifikat Virtual Run Mie Ayam" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Finisher 10,1 KM Run</span>
+            <span class="ocert-overlay-badge">Olahraga</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal" data-title="Staff Ahli UKM FORMAPI UB"
+          data-desc="Kabinet Inklusi Brawijaya · Januari 2025 · Keanggotaan">
+          <img src="assets/images/certificates/other/cert-formapi-staff.jpg" alt="Sertifikat Staff Ahli FORMAPI UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Staff Ahli FORMAPI UB</span>
+            <span class="ocert-overlay-badge">Organisasi</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d1" data-title="Pubdok - DIKLATSAR XLIV KSR UB"
+          data-desc="Korps Sukarela (KSR) Universitas Brawijaya · Februari 2025 · Kepanitiaan">
+          <img src="assets/images/certificates/other/cert-diklatsar-ksr.jpg"
+            alt="Sertifikat Pubdok DIKLATSAR XLIV KSR UB" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">Pubdok DIKLATSAR XLIV</span>
+            <span class="ocert-overlay-badge">Kepanitiaan</span>
+          </div>
+        </div>
+
+        <div class="ocert-img-card reveal d2" data-title="Webinar HR Introduction"
+          data-desc="Quantum HR Indonesia · 26 Maret 2026 · Pelatihan">
+          <img src="assets/images/certificates/other/cert-hr-introduction.jpg"
+            alt="Sertifikat Webinar HR Introduction" />
+          <div class="ocert-img-overlay">
+            <span class="ocert-overlay-title">HR Introduction Participant</span>
+            <span class="ocert-overlay-badge">Profesional</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       KONTAK
+  ═══════════════════════════════════════════════════════════ -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <!-- Teks -->
+        <div class="reveal-left">
+          <span class="badge">Hubungi Saya</span>
+          <h2 class="section-title">Mari <span class="gradient-text">Berkolaborasi</span></h2>
+          <p>
+            Tertarik berkolaborasi dalam proyek digital, event, atau kampanye sosial?
+            Jangan ragu untuk menghubungi saya lewat salah satu channel di bawah ini.
+            Saya terbuka untuk diskusi, kolaborasi, dan peluang baru!
+          </p>
+
+          <div class="contact-cards">
+            <!-- TODO: Ganti dengan email asli kamu -->
+            <a href="mailto:rizalbyi03@gmail.com" class="contact-card" id="contactEmail">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-info">
+                <div class="label">Email</div>
+                <div class="value">rizalbyi03@gmail.com</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+
+            <!-- TODO: Ganti +62xxx dengan nomor WA kamu -->
+            <a href="https://wa.me/6288226637840?text=Halo%20kak,%20saya%20tertarik%20dengan%20portofolio%20Anda.%20Boleh%20bertanya%20lebih%20lanjut?"
+              target="_blank" class="contact-card" id="contactWA">
+              <div class="contact-icon">💬</div>
+              <div class="contact-info">
+                <div class="label">WhatsApp</div>
+                <div class="value">088226637840</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+
+            <!-- TODO: Ganti @username dengan Instagram kamu -->
+            <a href="https://instagram.com/rizalazis_12" target="_blank" class="contact-card" id="contactIG">
+              <div class="contact-icon">📸</div>
+              <div class="contact-info">
+                <div class="label">Instagram</div>
+                <div class="value">@rizalazis_12</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+
+            <a href="https://linkedin.com/in/rizalazis" target="_blank" class="contact-card" id="contactLI">
+              <div class="contact-icon">💼</div>
+              <div class="contact-info">
+                <div class="label">LinkedIn</div>
+                <div class="value">linkedin.com/in/rizalazis</div>
+              </div>
+              <span class="contact-arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Message Form -->
+        <form class="contact-form-area reveal-right" id="contactForm">
+          <h3 style="font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:600;margin-bottom:24px;">
+            Kirim Pesan Cepat
+          </h3>
+          <div class="form-group">
+            <label for="formName">Nama Lengkap</label>
+            <input type="text" id="formName" name="name" placeholder="Nama kamu..." autocomplete="off" required />
+          </div>
+          <div class="form-group">
+            <label for="formEmail">Email</label>
+            <input type="email" id="formEmail" name="email" placeholder="email@kamu.com" required />
+          </div>
+          <div class="form-group">
+            <label for="formMsg">Pesan</label>
+            <textarea id="formMsg" name="message" placeholder="Tuliskan pesan atau ide kolaborasimu..."
+              required></textarea>
+          </div>
+          <!-- Tombol submit form Formspree -->
+          <button type="submit" class="btn btn-primary" id="sendMsgBtn"
+            style="margin-top:8px;width:100%;justify-content:center;">
+            <span>🚀</span> Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════════ -->
+  <footer>
+    <p>
+      Dibuat oleh <strong>Rizal Azis Nur Abdur Rasyid</strong>
+      &nbsp;·&nbsp;
+      <span id="footerYear"></span>
+    </p>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="js/script.js?v=1.1"></script>
+</body>
+
+</html>
