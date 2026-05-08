@@ -160,7 +160,16 @@ const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   const el     = qs('#heroTyped');
   if (!el) return;
 
+  // Dynamic greeting based on time
+  const h = new Date().getHours();
+  let greeting = '';
+  if (h >= 5 && h < 12)       greeting = 'Selamat Pagi!';
+  else if (h >= 12 && h < 15) greeting = 'Selamat Siang!';
+  else if (h >= 15 && h < 19) greeting = 'Selamat Sore!';
+  else                         greeting = 'Selamat Malam!';
+
   const phrases = [
+    greeting,
     'HR Practitioner',
     'People & Culture',
     'Inclusivity Advocate',
@@ -572,19 +581,20 @@ document.addEventListener('DOMContentLoaded', function initLinkedInModal() {
 
 
 /* ════════════════════════════════════════════════════════════
-   LIGHTBOX — Portfolio & Sertifikat (+ Multi-Cert)
+   LIGHTBOX — Split Panel (Portfolio & Sertifikat)
 ════════════════════════════════════════════════════════════ */
 (function initLightbox() {
-  const lb        = qs('#lightbox');
-  const lbImg     = qs('#lightboxImg');
-  const lbTitle   = qs('#lightboxTitle');
-  const lbDesc    = qs('#lightboxDesc');
-  const lbClose   = qs('#lightboxClose');
-  const lbPrev    = qs('#lightboxPrev');
-  const lbNext    = qs('#lightboxNext');
-  const lbCounter = qs('#lbCounter');
+  const lb         = qs('#lightbox');
+  const lbImg      = qs('#lightboxImg');
+  const lbTitle    = qs('#lightboxTitle');
+  const lbDesc     = qs('#lightboxDesc');
+  const lbClose    = qs('#lightboxClose');
+  const lbPrev     = qs('#lightboxPrev');
+  const lbNext     = qs('#lightboxNext');
+  const lbCounter  = qs('#lbCounter');
+  const lbDotWrap  = qs('#lbDotWrap');
+  const lbBackdrop = qs('#lbBackdrop');
 
-  // pool: array of plain objects { src, title, desc }
   let pool    = [];
   let current = 0;
 
@@ -592,8 +602,8 @@ document.addEventListener('DOMContentLoaded', function initLinkedInModal() {
   function elToItem(el) {
     const imgEl = el.querySelector('img.portfolio-img')
                 || el.querySelector('.cert-img-wrap img')
-                || el.querySelector('.ig-slide') // for Instagram post (first image)
-                || el.querySelector('img'); // for ocert-img-card
+                || el.querySelector('.ig-slide')
+                || el.querySelector('img');
     return {
       src:   imgEl ? (imgEl.src || imgEl.currentSrc) : '',
       title: el.dataset.title || '',
@@ -601,10 +611,31 @@ document.addEventListener('DOMContentLoaded', function initLinkedInModal() {
     };
   }
 
+  /* ── Build dot navigation ────────────────────────────── */
+  function buildDots() {
+    if (!lbDotWrap) return;
+    lbDotWrap.innerHTML = '';
+    if (pool.length <= 1) return;
+    pool.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'lb-dot' + (i === current ? ' active' : '');
+      dot.setAttribute('aria-label', `Slide ${i + 1}`);
+      dot.addEventListener('click', () => { current = i; renderSlide(current); });
+      lbDotWrap.appendChild(dot);
+    });
+  }
+
+  /* ── Update dot active state ──────────────────────────── */
+  function updateDots() {
+    if (!lbDotWrap) return;
+    qsa('.lb-dot', lbDotWrap).forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
   /* ── Open lightbox ────────────────────────────────────── */
   function openLightbox(idx, itemPool) {
     pool    = itemPool;
     current = Math.max(0, Math.min(idx, pool.length - 1));
+    buildDots();
     renderSlide(current);
     lb.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -613,7 +644,12 @@ document.addEventListener('DOMContentLoaded', function initLinkedInModal() {
 
   /* ── Render slide ─────────────────────────────────────── */
   function renderSlide(idx) {
-    const item = pool[idx];
+    const item       = pool[idx];
+    const toolbar    = qs('#lbNavToolbar');
+
+    // Fade image
+    lbImg.style.opacity = '0';
+    setTimeout(() => { lbImg.style.opacity = '1'; }, 40);
 
     if (item.src) {
       lbImg.src           = item.src;
@@ -624,20 +660,19 @@ document.addEventListener('DOMContentLoaded', function initLinkedInModal() {
       lbImg.style.display = 'none';
     }
 
-    lbTitle.textContent = item.title || '';
+    // Info panel
+    lbTitle.textContent = item.title || '—';
     lbDesc.textContent  = item.desc  || '';
 
-    // Counter: hide when only 1 item
+    // Counter & nav arrows — show/hide toolbar
     if (pool.length > 1) {
-      lbCounter.textContent = `${idx + 1} / ${pool.length}`;
-      lbCounter.style.display = 'block';
-      lbPrev.style.display = 'flex';
-      lbNext.style.display = 'flex';
+      lbCounter.textContent       = `${idx + 1} / ${pool.length}`;
+      if (toolbar) toolbar.style.display = 'flex';
     } else {
-      lbCounter.style.display = 'none';
-      lbPrev.style.display = 'none';
-      lbNext.style.display = 'none';
+      if (toolbar) toolbar.style.display = 'none';
     }
+
+    updateDots();
   }
 
   /* ── Close ────────────────────────────────────────────── */
@@ -665,8 +700,6 @@ document.addEventListener('DOMContentLoaded', function initLinkedInModal() {
   /* ── Bind: Certificate (single + multi) ──────────────── */
   function bindCerts() {
     let dragStartX = 0;
-
-    // Single cert cards (non-multi)
     const singles = qsa('.cert-card:not(.cert-card-multi)');
     const singlePool = singles.map(elToItem);
     singles.forEach((card, idx) => {
@@ -677,7 +710,6 @@ document.addEventListener('DOMContentLoaded', function initLinkedInModal() {
       });
     });
 
-    // Multi-cert cards
     qsa('.cert-card-multi').forEach(card => {
       card.addEventListener('mousedown', e => { dragStartX = e.clientX; });
       card.addEventListener('click', e => {
@@ -686,15 +718,9 @@ document.addEventListener('DOMContentLoaded', function initLinkedInModal() {
           const srcs   = JSON.parse(card.dataset.images);
           const titles = JSON.parse(card.dataset.titles);
           const descs  = JSON.parse(card.dataset.descs);
-          const multiPool = srcs.map((src, i) => ({
-            src,
-            title: titles[i] || '',
-            desc:  descs[i]  || '',
-          }));
+          const multiPool = srcs.map((src, i) => ({ src, title: titles[i] || '', desc: descs[i] || '' }));
           openLightbox(0, multiPool);
-        } catch (err) {
-          console.warn('cert-card-multi: invalid JSON data', err);
-        }
+        } catch (err) { console.warn('cert-card-multi: invalid JSON data', err); }
       });
     });
   }
@@ -703,20 +729,15 @@ document.addEventListener('DOMContentLoaded', function initLinkedInModal() {
   function bindIgPosts() {
     qsa('.ig-post').forEach(post => {
       post.addEventListener('click', e => {
-        // Don't open lightbox if clicking navigation arrows or action buttons
         if (e.target.closest('.ig-nav-btn') || e.target.closest('.ig-action-btn')) return;
-
         const slides = qsa('.ig-slide', post);
         const multiPool = slides.map(img => ({
           src:   img.src || img.currentSrc,
           title: post.dataset.title || '',
           desc:  post.dataset.desc  || '',
         }));
-        
-        // Find current slide index for initial lightbox view if possible
         const wrapper = qs('.ig-media-wrapper', post);
         const idx = Math.round(wrapper.scrollLeft / wrapper.offsetWidth);
-        
         openLightbox(idx, multiPool);
       });
     });
@@ -739,7 +760,7 @@ document.addEventListener('DOMContentLoaded', function initLinkedInModal() {
   lbClose.addEventListener('click', closeLightbox);
   lbPrev.addEventListener('click',  () => navigate(-1));
   lbNext.addEventListener('click',  () => navigate(1));
-  lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); });
+  if (lbBackdrop) lbBackdrop.addEventListener('click', closeLightbox);
   document.addEventListener('keydown', e => {
     if (!lb.classList.contains('open')) return;
     if (e.key === 'Escape')     closeLightbox();
@@ -1044,4 +1065,72 @@ document.addEventListener('DOMContentLoaded', function initLinkedInModal() {
       qs('.proj-featured-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
+})();
+
+/* ════════════════════════════════════════════════════════════
+   SCROLL PROGRESS BAR
+════════════════════════════════════════════════════════════ */
+(function initScrollProgress() {
+  const bar = qs('#scrollProgress');
+  if (!bar) return;
+
+  function updateBar() {
+    const scrollTop    = window.scrollY || document.documentElement.scrollTop;
+    const docHeight    = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const pct          = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width    = pct + '%';
+  }
+
+  window.addEventListener('scroll', updateBar, { passive: true });
+  updateBar();
+})();
+
+/* ════════════════════════════════════════════════════════════
+   BACK TO TOP BUTTON
+════════════════════════════════════════════════════════════ */
+(function initBackToTop() {
+  const btn = qs('#backToTop');
+  if (!btn) return;
+
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY > 400;
+    btn.classList.toggle('visible', scrolled);
+  }, { passive: true });
+
+  btn.addEventListener('click', () => {
+    if (window.lenis) {
+      window.lenis.scrollTo(0, { duration: 1.4 });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  });
+})();
+
+/* ════════════════════════════════════════════════════════════
+   MAGNETIC BUTTONS
+════════════════════════════════════════════════════════════ */
+(function initMagneticBtns() {
+  const btns = qsa('.magnetic-btn');
+
+  btns.forEach(btn => {
+    const strength = 0.35; // how strong the magnetic pull is
+
+    btn.addEventListener('mousemove', e => {
+      const rect   = btn.getBoundingClientRect();
+      const cx     = rect.left + rect.width  / 2;
+      const cy     = rect.top  + rect.height / 2;
+      const dx     = e.clientX - cx;
+      const dy     = e.clientY - cy;
+      btn.style.transform = `translate(${dx * strength}px, ${dy * strength}px)`;
+    });
+
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
+      btn.style.transition = 'transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)';
+    });
+
+    btn.addEventListener('mouseenter', () => {
+      btn.style.transition = 'transform 0.1s linear';
+    });
+  });
 })();
