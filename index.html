@@ -16,24 +16,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="icon" type="image/png" href="assets/logo/favicon.png" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+  <!-- ── Scroll Progress Bar ────────────────────────────────── -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+  </div>
+
 
   <!-- ── Custom Cursor ──────────────────────────────────────── -->
   <div class="cursor-dot" id="cursorDot"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
-  <!-- ── Lightbox ───────────────────────────────────────────── -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
-    <img src="" alt="" class="lightbox-img" id="lightboxImg" />
-    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">✕</button>
-    <button class="lightbox-prev" id="lightboxPrev" aria-label="Sebelumnya">‹</button>
-    <button class="lightbox-next" id="lightboxNext" aria-label="Selanjutnya">›</button>
-    <div class="lb-counter" id="lbCounter"></div>
-    <div class="lightbox-caption">
-      <h4 id="lightboxTitle"></h4>
-      <p id="lightboxDesc"></p>
+  <!-- ── Lightbox (Split Panel) ───────────────────────────── -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Lihat Sertifikat">
+    <div class="lb-backdrop" id="lbBackdrop"></div>
+    <div class="lb-panel">
+      <!-- LEFT: Image -->
+      <div class="lb-image-side">
+        <!-- Image area -->
+        <div class="lb-img-wrap">
+          <img src="" alt="" class="lightbox-img" id="lightboxImg" />
+        </div>
+        <!-- Bottom navigation toolbar -->
+        <div class="lb-nav-toolbar" id="lbNavToolbar">
+          <button class="lightbox-prev" id="lightboxPrev" aria-label="Sebelumnya"><i class='bx bx-chevron-left'></i></button>
+          <span class="lb-counter" id="lbCounter"></span>
+          <button class="lightbox-next" id="lightboxNext" aria-label="Selanjutnya"><i class='bx bx-chevron-right'></i></button>
+        </div>
+      </div>
+      <!-- RIGHT: Info Panel -->
+      <div class="lb-info-side">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Tutup"><i class='bx bx-x'></i></button>
+        <div class="lb-info-body">
+          <div class="lb-info-tag"><i class='bx bx-certification'></i> Sertifikat</div>
+          <h4 class="lb-info-title" id="lightboxTitle">—</h4>
+          <p class="lb-info-desc" id="lightboxDesc"></p>
+          <div class="lb-info-meta">
+            <div class="lb-meta-item"><i class='bx bx-user-check'></i><span>Rizal Azis Nur Abdur Rasyid</span></div>
+            <div class="lb-meta-item"><i class='bx bx-shield-quarter'></i><span>Sertifikat Resmi Terverifikasi</span></div>
+          </div>
+          <div class="lb-dot-wrap" id="lbDotWrap"></div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -53,12 +80,12 @@
         <li><a href="#internship">Magang</a></li>
         <li><a href="#projects">Projek</a></li>
         <li><a href="#other-certs">Other</a></li>
-        <li><a href="#contact" class="nav-cta">Kontak</a></li>
+        <li><a href="#contact" class="nav-cta magnetic-btn">Kontak</a></li>
       </ul>
       <div style="display: flex; align-items: center; gap: 16px;">
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
-          <span class="icon-sun" id="iconSun" style="display: none;">☀️</span>
-          <span class="icon-moon" id="iconMoon">🌙</span>
+          <i class='bx bx-sun icon-sun' id="iconSun" style="display: none;"></i>
+          <i class='bx bx-moon icon-moon' id="iconMoon"></i>
         </button>
         <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -97,19 +124,19 @@
         </p>
 
         <div class="hero-tags">
-          <span class="hero-tag">🧠 Psikologi HR</span>
-          <span class="hero-tag">🤝 People & Culture</span>
-          <span class="hero-tag">🌍 Inklusivitas</span>
-          <span class="hero-tag">🎯 Kepemimpinan</span>
-          <span class="hero-tag">📢 Komunikasi</span>
+          <span class="hero-tag"><i class='bx bx-brain'></i> Psikologi HR</span>
+          <span class="hero-tag"><i class='bx bx-group'></i> People & Culture</span>
+          <span class="hero-tag"><i class='bx bx-globe'></i> Inklusivitas</span>
+          <span class="hero-tag"><i class='bx bx-target-lock'></i> Kepemimpinan</span>
+          <span class="hero-tag"><i class='bx bx-broadcast'></i> Komunikasi</span>
         </div>
 
         <div class="hero-btns">
-          <a href="assets/cv/Portofolio_Kreatif.pdf" target="_blank" class="btn btn-primary" id="btnLihatKarya">
-            <span>🎨</span> Portofolio Kreatif
+          <a href="assets/cv/Portofolio_Kreatif.pdf" target="_blank" class="btn btn-primary magnetic-btn" id="btnLihatKarya">
+            <i class='bx bx-palette'></i> Portofolio Kreatif
           </a>
-          <a href="assets/cv/Rizal_CV.pdf" class="btn btn-outline" download id="btnDownloadCV">
-            <span>📄</span> Download CV
+          <a href="assets/cv/Rizal_CV.pdf" class="btn btn-outline magnetic-btn" download id="btnDownloadCV">
+            <i class='bx bx-file'></i> Download CV
           </a>
         </div>
 
@@ -141,13 +168,13 @@
           </div>
 
           <div class="hero-float-badge hfb-1">
-            <span class="icon">🧠</span> Psikologi UB
+            <i class='bx bx-brain icon'></i> Psikologi UB
           </div>
           <div class="hero-float-badge hfb-2">
-            <span class="icon">📱</span> Digital Media
+            <i class='bx bx-mobile-alt icon'></i> Digital Media
           </div>
           <div class="hero-float-badge hfb-3">
-            <span class="icon">🩸</span> Human Resources
+            <i class='bx bx-donate-blood icon'></i> Human Resources
           </div>
         </div>
       </div>
@@ -388,23 +415,23 @@
           <div class="soft-skills">
             <h3>Keahlian Khusus</h3>
             <div class="tags-cloud">
-              <span class="skill-tag">🤝 Peer Counseling</span>
-              <span class="skill-tag">💙 Psychological First Aid (PFA)</span>
-              <span class="skill-tag">👥 Manajemen Tim</span>
-              <span class="skill-tag">🤟 Dasar Bahasa Isyarat</span>
-              <span class="skill-tag">🌍 Aksesibilitas</span>
-              <span class="skill-tag">📢 Strategi Komunikasi</span>
-              <span class="skill-tag">🧠 Analisis Perilaku</span>
+              <span class="skill-tag"><i class='bx bx-conversation'></i> Peer Counseling</span>
+              <span class="skill-tag"><i class='bx bx-heart'></i> Psychological First Aid (PFA)</span>
+              <span class="skill-tag"><i class='bx bx-group'></i> Manajemen Tim</span>
+              <span class="skill-tag"><i class='bx bx-hand'></i> Dasar Bahasa Isyarat</span>
+              <span class="skill-tag"><i class='bx bx-globe'></i> Aksesibilitas</span>
+              <span class="skill-tag"><i class='bx bx-broadcast'></i> Strategi Komunikasi</span>
+              <span class="skill-tag"><i class='bx bx-brain'></i> Analisis Perilaku</span>
             </div>
           </div>
 
           <div class="tools-skills" style="margin-top: 32px">
             <h3>Tools &amp; Software</h3>
             <div class="tags-cloud">
-              <span class="skill-tag">🔧 Microsoft Office</span>
-              <span class="skill-tag">🔧 R Studio &amp; SPSS</span>
-              <span class="skill-tag">🔧 Canva &amp; Figma</span>
-              <span class="skill-tag">🔧 Adobe Photoshop &amp; Illustrator</span>
+              <span class="skill-tag"><i class='bx bxl-windows'></i> Microsoft Office</span>
+              <span class="skill-tag"><i class='bx bx-bar-chart-alt-2'></i> R Studio &amp; SPSS</span>
+              <span class="skill-tag"><i class='bx bxl-figma'></i> Canva &amp; Figma</span>
+              <span class="skill-tag"><i class='bx bxl-adobe'></i> Adobe Photoshop &amp; Illustrator</span>
             </div>
           </div>
         </div>
@@ -429,10 +456,10 @@
       <!-- Filter Tabs -->
       <div class="filter-tabs reveal">
         <button class="filter-btn active" data-filter="all" id="filterAll">Semua</button>
-        <button class="filter-btn" data-filter="design" id="filterDesign">🎨 Editing &amp; Desain</button>
-        <button class="filter-btn" data-filter="doc" id="filterDoc">📸 Dokumentasi</button>
-        <button class="filter-btn" data-filter="digital" id="filterDigital">📱 Konten Digital</button>
-        <button class="filter-btn filter-btn-socmed" data-filter="socmed" id="filterSocmed">📲 Social Media
+        <button class="filter-btn" data-filter="design" id="filterDesign"><i class='bx bx-palette'></i> Editing &amp; Desain</button>
+        <button class="filter-btn" data-filter="doc" id="filterDoc"><i class='bx bx-camera'></i> Dokumentasi</button>
+        <button class="filter-btn" data-filter="digital" id="filterDigital"><i class='bx bx-mobile-alt'></i> Konten Digital</button>
+        <button class="filter-btn filter-btn-socmed" data-filter="socmed" id="filterSocmed"><i class='bx bx-share-alt'></i> Social Media
           Content</button>
       </div>
 
@@ -2562,6 +2589,11 @@
       <span id="footerYear"></span>
     </p>
   </footer>
+
+  <!-- ── Back to Top Button ──────────────────────────────── -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <i class='bx bx-up-arrow-alt'></i>
+  </button>
 
   <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
   <script src="js/script.js?v=1.1"></script>
