@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 export default function Hero() {
-  const [typedText, setTypedText] = useState('');
+  const [typedText, setTypedText] = useState('Psychology Graduate');
 
   useEffect(() => {
     // Dynamic greeting based on time
