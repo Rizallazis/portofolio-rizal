@@ -65,30 +65,11 @@ export default function Experience({ onOpenLightbox, onOpenLinkedIn }) {
   };
 
   const handleCertClick = (cert, idx) => {
-    if (cert.isMulti) {
-      const pool = cert.images.map((src, i) => ({
-        src,
-        title: cert.titles[i] || '',
-        desc: cert.descs[i] || ''
-      }));
-      onOpenLightbox(0, pool);
-    } else {
-      const pool = [{
-        src: cert.img,
-        title: cert.title,
-        desc: cert.desc
-      }];
-      onOpenLightbox(0, pool);
-    }
+    onOpenLightbox(idx, certifications);
   };
 
   const handleOtherCertClick = (certIdx) => {
-    const pool = otherCertificates.map(c => ({
-      src: c.img,
-      title: c.title,
-      desc: c.desc
-    }));
-    onOpenLightbox(certIdx, pool);
+    onOpenLightbox(certIdx, otherCertificates);
   };
 
   return (

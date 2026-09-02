@@ -144,6 +144,15 @@ export const certifications = [
     badge: "Training"
   },
   {
+    title: "Kita Sama Youth Capacity Building",
+    desc: "The Asia Foundation & Kita Sama · April - Juli 2023",
+    issuer: "The Asia Foundation · US Embassy Jakarta",
+    summary: "Pelatihan intensif pengembangan kapasitas pemuda dalam advokasi inklusivitas dan kepemimpinan sosial.",
+    date: "April – Juli 2023",
+    img: "/assets/images/certificates/cert-kita-sama-foundation.jpg",
+    badge: "International"
+  },
+  {
     title: "Basic Sign Language Training",
     desc: "Pusat Layanan Disabilitas (PLD) Universitas Brawijaya · Malang · Oktober 2023",
     issuer: "Pusat Layanan Disabilitas (PLD) — Universitas Brawijaya",
@@ -162,6 +171,15 @@ export const certifications = [
     badge: "Sertifikat"
   },
   {
+    title: "DBS BERSIAP 2024 Graduate",
+    desc: "PT Bank DBS Indonesia & KONEKIN · 4 September 2024",
+    issuer: "PT Bank DBS Indonesia · KONEKIN",
+    summary: "Penyelesaian program workshop dan mentoring intensif untuk kesiapan kerja dan pemberdayaan ekonomi inklusif.",
+    date: "April – Juli 2024",
+    img: "/assets/images/certificates/cert-dbs-bersiap-graduate.jpg",
+    badge: "Mentoring"
+  },
+  {
     title: "Pelatihan Kegawatdaruratan (Kebakaran & P3K)",
     desc: "Divisi K3L Universitas Brawijaya · Malang · November 2024",
     issuer: "Divisi K3L — Universitas Brawijaya",
@@ -178,6 +196,15 @@ export const certifications = [
     date: "Februari 2025",
     img: "/assets/images/certificates/cert-pfa-ub.jpg",
     badge: "Sertifikat"
+  },
+  {
+    title: "Microsoft Office Desktop Application",
+    desc: "Trust Training Partners & Universitas Brawijaya · No. 25UBC12124084 · 23 Desember 2025",
+    issuer: "Trust Training Partners · Microsoft Partner",
+    summary: "Sertifikasi kompetensi profesional dalam pengoperasian aplikasi perkantoran Microsoft Office dengan predikat \"Excellent Grade\".",
+    date: "23 Desember 2025",
+    img: "/assets/images/certificates/cert-ms-office-trust.jpg",
+    badge: "Professional"
   },
   {
     title: "Pelatihan Admin HR",
@@ -205,40 +232,26 @@ export const certifications = [
     ]
   },
   {
-    title: "Microsoft Office Desktop Application",
-    desc: "Trust Training Partners & Universitas Brawijaya · No. 25UBC12124084 · 23 Desember 2025",
-    issuer: "Trust Training Partners · Microsoft Partner",
-    summary: "Sertifikasi kompetensi profesional dalam pengoperasian aplikasi perkantoran Microsoft Office dengan predikat \"Excellent Grade\".",
-    date: "23 Desember 2025",
-    img: "/assets/images/certificates/cert-ms-office-trust.jpg",
-    badge: "Professional"
-  },
-  {
-    title: "Kita Sama Youth Capacity Building",
-    desc: "The Asia Foundation & Kita Sama · April - Juli 2023",
-    issuer: "The Asia Foundation · US Embassy Jakarta",
-    summary: "Pelatihan intensif pengembangan kapasitas pemuda dalam advokasi inklusivitas dan kepemimpinan sosial.",
-    date: "April – Juli 2023",
-    img: "/assets/images/certificates/cert-kita-sama-foundation.jpg",
-    badge: "International"
-  },
-  {
-    title: "DBS BERSIAP 2024 Graduate",
-    desc: "PT Bank DBS Indonesia & KONEKIN · 4 September 2024",
-    issuer: "PT Bank DBS Indonesia · KONEKIN",
-    summary: "Penyelesaian program workshop dan mentoring intensif untuk kesiapan kerja dan pemberdayaan ekonomi inklusif.",
-    date: "April – Juli 2024",
-    img: "/assets/images/certificates/cert-dbs-bersiap-graduate.jpg",
-    badge: "Mentoring"
-  },
-  {
-    title: "HR Staff Online Training Batch 40",
-    desc: "Quantum HR Indonesia · PT Kompeten Indonesia Unggul · No. 370/SRT/QHR/III/2026 · 28–29 Maret 2026",
-    issuer: "Quantum HR Indonesia · PT Kompeten Indonesia Unggul",
-    summary: "Certificate of Completion — No. 370/SRT/QHR/III/2026. Materi: Rekrutmen & Seleksi, Payroll, UU Ketenagakerjaan, SOP & PKB.",
-    date: "28–29 Maret 2026",
-    img: "/assets/images/certificates/cert-quantum-hr-completion.png",
-    badge: "Training"
+    title: "Practical Office Advance (PBK)",
+    desc: "UPT BLK Diskopnaker Kab. Boyolali · No. 563.2.5/232/4.13.1/4/2026 · 6 Juli – 19 Agustus 2026",
+    issuer: "UPT Balai Latihan Kerja (BLK) Boyolali",
+    summary: "Sertifikat Kelulusan Pelatihan Berbasis Kompetensi (PBK) Practical Office Advance (260 Jam Pelatihan). Menguasai MS Word, Excel, & PowerPoint tingkat dasar dan lanjut.",
+    date: "21 Agustus 2026",
+    img: "/assets/images/certificates/cert-blk-office-advance-1.jpg",
+    badge: "📄 2 Halaman",
+    isMulti: true,
+    images: [
+      "/assets/images/certificates/cert-blk-office-advance-1.jpg",
+      "/assets/images/certificates/cert-blk-office-advance-2.jpg"
+    ],
+    titles: [
+      "Sertifikat Kelulusan — Practical Office Advance",
+      "Daftar Unit Kompetensi — Practical Office Advance"
+    ],
+    descs: [
+      "UPT BLK Boyolali · Program Practical Office Advance (260 Jam Pelatihan) · No. 563.2.5/232/4.13.1/4/2026 · 6 Juli – 19 Agustus 2026",
+      "Daftar 7 Unit Kompetensi: Soft Skill, Pengolah Kata (Word) Dasar/Lanjut, Lembar Sebar (Excel) Dasar/Lanjut, & Presentasi (PowerPoint) Dasar/Lanjut"
+    ]
   }
 ];
 
