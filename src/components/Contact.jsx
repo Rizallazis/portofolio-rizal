@@ -101,11 +101,11 @@ export default function Contact() {
                 <span className="contact-arrow">→</span>
               </a>
 
-              <a 
+              <a
                 href="https://wa.me/6288226637840?text=Halo%20kak,%20saya%20tertarik%20dengan%20portofolio%20Anda.%20Boleh%20bertanya%20lebih%20lanjut?"
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="contact-card" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-card"
                 id="contactWA"
               >
                 <div className="contact-icon">💬</div>
@@ -116,11 +116,11 @@ export default function Contact() {
                 <span className="contact-arrow">→</span>
               </a>
 
-              <a 
-                href="https://instagram.com/rizalazis_12" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="contact-card" 
+              <a
+                href="https://instagram.com/rizalazis_12"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-card"
                 id="contactIG"
               >
                 <div className="contact-icon">📸</div>
@@ -131,17 +131,17 @@ export default function Contact() {
                 <span className="contact-arrow">→</span>
               </a>
 
-              <a 
-                href="https://linkedin.com/in/rizalazis" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="contact-card" 
+              <a
+                href="https://www.linkedin.com/in/rizallazis123/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-card"
                 id="contactLI"
               >
                 <div className="contact-icon">💼</div>
                 <div className="contact-info">
                   <div className="label">LinkedIn</div>
-                  <div className="value">linkedin.com/in/rizalazis</div>
+                  <div className="value">linkedin.com/in/rizallazis123</div>
                 </div>
                 <span className="contact-arrow">→</span>
               </a>
@@ -155,43 +155,43 @@ export default function Contact() {
             </h3>
             <div className="form-group">
               <label htmlFor="formName">Nama Lengkap</label>
-              <input 
-                type="text" 
-                id="formName" 
-                name="name" 
-                value={formData.name} 
+              <input
+                type="text"
+                id="formName"
+                name="name"
+                value={formData.name}
                 onChange={handleChange}
-                placeholder="Nama kamu..." 
-                autoComplete="off" 
-                required 
+                placeholder="Nama kamu..."
+                autoComplete="off"
+                required
               />
             </div>
             <div className="form-group">
               <label htmlFor="formEmail">Email</label>
-              <input 
-                type="email" 
-                id="formEmail" 
-                name="email" 
-                value={formData.email} 
+              <input
+                type="email"
+                id="formEmail"
+                name="email"
+                value={formData.email}
                 onChange={handleChange}
-                placeholder="email@kamu.com" 
-                required 
+                placeholder="email@kamu.com"
+                required
               />
             </div>
             <div className="form-group">
               <label htmlFor="formMsg">Pesan</label>
-              <textarea 
-                id="formMsg" 
-                name="message" 
-                value={formData.message} 
+              <textarea
+                id="formMsg"
+                name="message"
+                value={formData.message}
                 onChange={handleChange}
                 placeholder="Tuliskan pesan atau ide kolaborasimu..."
                 required
               ></textarea>
             </div>
-            <button 
-              type="submit" 
-              className="btn btn-primary" 
+            <button
+              type="submit"
+              className="btn btn-primary"
               id="sendMsgBtn"
               disabled={btnState.disabled}
               style={{ marginTop: '8px', width: '100%', justifyContent: 'center', ...btnState.style }}
