@@ -281,7 +281,7 @@ export const experiences = [
   {
     orgName: "FORMAPI – Universitas Brawijaya",
     orgType: "Forum Mahasiswa Peduli Inklusi · Organisasi Kampus",
-    orgPeriod: "2024 · 1 tahun",
+    orgPeriod: "2024",
     orgLogo: "/assets/logo/formapi.jpg",
     roles: [
       {
@@ -296,12 +296,12 @@ export const experiences = [
   {
     orgName: "Palang Merah Indonesia (PMI) Kota Malang",
     orgType: "Organisasi Kemanusiaan · Kota Malang",
-    orgPeriod: "2024 – 2026",
+    orgPeriod: "2024 – 2025",
     orgLogo: "/assets/logo/pmi.jpg",
     roles: [
       {
         title: "Digital Team",
-        period: "Oktober 2024 – 2026",
+        period: "Oktober 2024 – Desember 2025",
         type: "Organisasi",
         desc: "Bertanggung jawab dalam pengelolaan dan optimalisasi platform digital untuk mendukung operasional organisasi. Mengembangkan strategi komunikasi digital guna meningkatkan jangkauan informasi, efektivitas penyampaian pesan, serta keterlibatan masyarakat terhadap kegiatan kemanusiaan.",
         skills: ["Digital Strategy", "Social Media Management", "Content Development", "Public Communication"]
